@@ -1,0 +1,949 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>The Binomial Distribution</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m64918</md:content-id>
+  <md:title>The Binomial Distribution</md:title>
+  <md:abstract>An introduction to the binomial distribution an informal inferential statistics.</md:abstract>
+  <md:uuid>41ea760d-5818-4e8e-8bcc-c42970f1e99b</md:uuid>
+</metadata>
+
+<content>
+    <section id="import-auto-idm789238800">
+      <title>Binomial distribution </title><para id="import-auto-idm809217504">Flipping a coin a certain number of times, let’s say ten times, is a classic example of a binomial distribution. What are the characteristics of flipping a coin that makes it binomial?</para>
+      <para id="import-auto-idm481041248">Before we answer that question, let’s get a bit terminology out of the way. In probability theory, an <emphasis effect="bold">experiment</emphasis> is the actual process that you investigating. In the flipping coin example, the experiment is flipping a coin ten times. A <emphasis effect="bold">trial</emphasis> is a specific instance of an experiment. Flipping a coin only once is considered a trial. </para>
+      <para id="import-auto-idm668251120">Going back to the coin flipping example, let’s assume that we are dealing with a fair coin (i.e. probability of getting a head or a tail is 50%). We’ve already discussed that when we count the number of heads that this is an example of a discrete random variable. Notice that there are only two possible outcomes (heads or tails). This is a key criterion for a binomial distribution (<emphasis effect="italics">binomial</emphasis> derives from Latin for two terms). Also, notice that the events are independent of each other. That is, if you get a head on one flip, that has no impact on the probability of getting a head on the next flip. This also means that the probability of getting a head remains constant. This is another key criterion for a binomial distribution. The other thing to notice is that the number of times we flip the coin is fixed. We don’t flip it until we get bored or run out of time. Instead we flip it ten times. This means that the number of trials is fixed. This is the last key criterion of a binomial distribution. </para>
+      <para id="import-auto-idm471777680">There are five characteristics of a binomial experiment.</para>
+      <list xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm413962224" list-type="enumerated" number-style="arabic"><item>The variable being studied is random. </item>
+        <item>The outcomes of the variable are being counted. </item>
+        <item>There are a fixed number of trials. The letter <emphasis effect="italics">n</emphasis> denotes the number of trials.</item>
+        <item>There are only two possible outcomes, called "success" and "failure," for each trial<m:math>
+<m:pi/>
+</m:math> denotes the probability of a success on one trial, and 1-<m:math>
+<m:pi/>
+</m:math> denotes the probability of a failure on one trial.</item>
+        <item>The <emphasis effect="italics">n</emphasis> trials are independent and are repeated using identical conditions. Because the <emphasis effect="italics">n</emphasis> trials are independent, the outcome of one trial does not help in predicting the outcome of another trial. Another way of saying this is that for each individual trial, the probability, <m:math>
+<m:pi/>
+</m:math>, of a success and probability, 1-<m:math>
+<m:pi/>
+</m:math>, of a failure remain constant.</item>
+      </list><para id="import-auto-idm322110912">Other examples of binomial distributions: </para>
+      <list xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm461353760" list-type="bulleted"><item>Counting the number of 2’s that are rolled when you roll a die six times (trial = rolling a dice, success = rolling a 2, <emphasis effect="italics">n</emphasis> = 6, <m:math>
+<m:pi/>
+</m:math> = 1/6 = 0.1667)</item>
+        <item>Counting the number of times a jack is pulled out of deck of cards (with replacement) when you pull a card fifteen times (trial = pulling a card, success = pulling a jack, <emphasis effect="italics">n</emphasis> = 15, <m:math>
+<m:pi/>
+</m:math> = 4/52 = 0.0769)</item>
+        <item>Counting the number of times that you win a prize in Tim Hortons Roll up the Rim to Win contest out of four cups (trial = checking cup for win, success = winning a prize, <emphasis effect="italics">n</emphasis> = 4, <m:math>
+<m:pi/>
+</m:math> = 1/6 = 0.1667 – assuming no special rules (e.g. anniversary rules that changed the odds of winning)</item>
+      </list><para id="import-auto-idm504852192">Examples of situations that are not binomial include: </para>
+      <list id="import-auto-idm470296416" list-type="bulleted">
+        <item>Counting the number of times a jack is pulled out of deck of cards (without replacement) when you pull a card fifteen times. The fifth criterion is not met because the events are now dependent.</item>
+        <item>Counting the number times each number (1 to 6) is rolled when you roll a die fifty times. The fourth criterion is not met because there are six possible outcomes instead of two. </item>
+        <item>Counting the number of times that you win a prize in Tim Horton’s Roll up the Rim to Win contest out of how many cups you buy during the contest. Unless you know exactly how many you’ll buy during the contest, this would not meet the third criterion of having a fixed number of trials. </item>
+      </list><note id="eip-897">The Roll up the Rim example might not be binomial as it may fail the fifth criterion. At the beginning of the contest, the odds of winning are determined by counting how many prizes there are out of the total number of cups printed. As the contest goes on, the probability of winning may change depending on how many people have already won. At the beginning of the contest, this is also true but there are so many cups that it doesn’t really matter (think back to the sampling with replacement vs. without replacement in Chapter 1). Thus, this contest is only binomial at the beginning of the contest. </note>
+      </section>
+    <section id="import-auto-idm426923792">
+      <title>Notation</title>
+      <para id="import-auto-idm667997408">Suppose we are working on a probability question and there are multiple probabilities that need to be found. Then it gets time consuming to write out, for example, “the probability that three rolls of a die will result in at least one 2” or some variation over and over again. Instead we will use notation to reduce the work. We can write the previous statement more quickly as <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≥ 1). The <emphasis effect="italics">P</emphasis>(  ) means the “probability of”. <emphasis effect="italics">X</emphasis> is the random variable being studied (in this case the number of times 2 has been rolled out of 3 rolls). “<emphasis effect="italics">X </emphasis>≥ 1” means we are looking at the number of times a 2 is rolled at least once. </para>
+      <para id="import-auto-idm405785824">It is important to define <emphasis effect="italics">X</emphasis>. Otherwise, <emphasis effect="italics">P</emphasis>(2&lt;<emphasis effect="italics">X</emphasis>≤ 5) could refer to any random variable and the person reading the notation won’t know what it means. </para>
+      <section id="import-auto-idm414758784">
+        <title>Mean and standard deviation of the binomial distribution</title>
+        <para id="import-auto-idm670760912">Just like a set of data, a binomial distribution has a mean and a standard deviation. For the binomial distribution, these are given by the formulas:</para>
+        <para xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm591993328"><m:math>
+<m:apply><m:eq/><m:ci>μ</m:ci><m:apply><m:times/><m:ci>n</m:ci><m:pi/></m:apply></m:apply>
+</m:math></para><para xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm398381712"><m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>n</m:mi><m:pi/>
+
+<m:mi>(</m:mi><m:apply><m:minus/><m:cn>1</m:cn><m:pi/></m:apply> <m:mi>)</m:mi>
+</m:msqrt></m:math>
+</para><para xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm567667184">Going back to the Tim Hortons example, we had n=4 and <m:math>
+<m:pi/>
+</m:math>= 0.1667. Thus <m:math>
+<m:apply><m:eq/><m:ci>μ</m:ci><m:apply><m:times/><m:cn>4</m:cn><m:cn>0.1667</m:cn></m:apply></m:apply>
+</m:math>= 0.6667 and 
+
+
+<m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:apply><m:times/><m:cn>4</m:cn><m:cn>0.1667</m:cn><m:apply><m:minus/><m:cn>1</m:cn><m:cn>0.1667</m:cn></m:apply></m:apply>
+</m:msqrt></m:math> =
+
+
+
+0.745. This means that if we buy four random cups of Tim Hortons coffee during the Roll Up the Rim content, we will typically win 0.67 times, give or take 0.75. Thus, when buying four cups of coffee, we will typically win between -0.08 and 1.42 times. Since we can’t win negative times, we will round the lower bound to 0. Therefore, when buying four cups of coffee, we will typically win between 0 and 1.42 times.</para></section>
+      <exercise xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-267"><problem id="eip-97">
+  
+        <para id="import-auto-idm515624176">A market research study shows that 30% of all passengers on Canadian Airlines are business travelers. A random sample of 20 passengers is taken.</para>
+        <list id="import-auto-idm552073888" list-type="enumerated" number-style="arabic"><item>Explain why the above situation satisfies the criteria of a binomial distribution. If there are any issues with why this situation may not meet all of the criteria, discuss them. Define <emphasis effect="italics">n</emphasis>, <emphasis effect="italics">X</emphasis> and <m:math>
+<m:pi/>
+</m:math>.</item>
+          <item>For the random sample, determine the probability that:</item>
+        </list><list id="import-auto-idm463019264" list-type="enumerated" number-style="lower-alpha">
+          <item>Exactly seven of the passengers are business travelers.</item>
+          <item>From ten to fourteen (inclusive) are business travelers.</item>
+          <item>At least eleven of these passengers are business travelers.</item>
+          <item>Five of these passengers are NOT travelling on business.</item>
+        </list>
+        <list id="import-auto-idm290777984" list-type="enumerated" number-style="arabic" start-value="3">
+          <item>What is the typical range of business passengers in a random sample of 20?</item>
+        </list>
+</problem>
+
+<solution id="eip-736">
+  <para id="eip-979"><list id="import-auto-idm380461680" list-type="enumerated" number-style="arabic">
+          <item>The situation is a binomial distribution because: </item>
+        </list>
+        <list id="import-auto-idm658059440" list-type="bulleted"><item>It represents a random variable as the sample is randomly selected. </item>
+          <item>It is a discrete variable as we are counting the number of business travellers. <emphasis effect="italics">X</emphasis> is the number of business travellers in the sample.</item>
+          <item>There is a fixed number of trials (<emphasis effect="italics">n</emphasis> = 20)</item>
+          <item>There are only two options: the passenger is a business traveller (success) or they are not a business traveller (failure). </item>
+          <item>In a random sample whether one passenger is a business traveller does not affect the probability of another passenger being a business traveller. Therefore, the probability of success remains constant: <m:math>
+<m:pi/>
+</m:math> = 30% = 0.3</item>
+        </list><list id="import-auto-idm537833840" list-type="enumerated" number-style="arabic" start-value="2">
+          <item>Use a computer program to come up with the following output. </item>
+        </list>
+        <table id="import-auto-idm274578320" summary="">
+          <tgroup cols="3">
+            <colspec colnum="1" colname="c1"/>
+            <colspec colnum="2" colname="c2"/>
+            <colspec colnum="3" colname="c3"/>
+             
+            <tbody>
+              <row>
+                
+                <entry>
+                  <para id="import-auto-idm652927760">
+                    <emphasis effect="italics">X</emphasis>
+                  </para>
+                </entry>
+                <entry>
+                  <para id="import-auto-idm520394208">
+                    <emphasis effect="italics">P(X)</emphasis>
+                  </para>
+                </entry>
+                <entry>
+                  <para id="import-auto-idm675020848"><m:math>
+<m:apply><m:leq/><m:ci>P(X</m:ci><m:cn>x)</m:cn></m:apply>
+</m:math>
+
+                  </para></entry>
+              </row>
+              <row>
+                
+                <entry>0</entry>
+                <entry>0.00080</entry>
+                <entry>0.00080</entry>
+              </row>
+              <row>
+                
+                <entry>1</entry>
+                <entry>0.00684</entry>
+                <entry>0.00764</entry>
+              </row>
+              <row>
+                
+                <entry>2</entry>
+                <entry>0.02785</entry>
+                <entry>0.03548</entry>
+              </row>
+              <row>
+                
+                <entry>3</entry>
+                <entry>0.07160</entry>
+                <entry>0.10709</entry>
+              </row>
+              <row>
+               
+                <entry>4</entry>
+                <entry>0.13042</entry>
+                <entry>0.23751</entry>
+              </row>
+              <row>
+                
+                <entry>5</entry>
+                <entry>0.17886</entry>
+                <entry>0.41637</entry>
+              </row>
+              <row>
+                
+                <entry>6</entry>
+                <entry>0.19164</entry>
+                <entry>0.60801</entry>
+              </row>
+              <row>
+                
+                <entry>7</entry>
+                <entry>0.16426</entry>
+                <entry>0.77227</entry>
+              </row>
+              <row>
+                
+                <entry>8</entry>
+                <entry>0.11440</entry>
+                <entry>0.88667</entry>
+              </row>
+              <row>
+                
+                <entry>9</entry>
+                <entry>0.06537</entry>
+                <entry>0.95204</entry>
+              </row>
+              <row>
+                
+                <entry>10</entry>
+                <entry>0.03082</entry>
+                <entry>0.98286</entry>
+              </row>
+              <row>
+                
+                <entry>11</entry>
+                <entry>0.01201</entry>
+                <entry>0.99486</entry>
+              </row>
+              <row>
+                
+                <entry>12</entry>
+                <entry>0.00386</entry>
+                <entry>0.99872</entry>
+              </row>
+              <row>
+                
+                <entry>13</entry>
+                <entry>0.00102</entry>
+                <entry>0.99974</entry>
+              </row>
+              <row>
+                
+                <entry>14</entry>
+                <entry>0.00022</entry>
+                <entry>0.99996</entry>
+              </row>
+              <row>
+                
+                <entry>15</entry>
+                <entry>0.00004</entry>
+                <entry>0.99999</entry>
+              </row>
+              <row>
+                
+                <entry>16</entry>
+                <entry>0.00001</entry>
+                <entry>1.00000</entry>
+              </row>
+              <row>
+                
+                <entry>17</entry>
+                <entry>0.00000</entry>
+                <entry>1.00000</entry>
+              </row>
+              <row>
+                
+                <entry>18</entry>
+                <entry>0.00000</entry>
+                <entry>1.00000</entry>
+              </row>
+              <row>
+                
+                <entry>19</entry>
+                <entry>0.00000</entry>
+                <entry>1.00000</entry>
+              </row>
+              <row>
+               
+                <entry>20</entry>
+                <entry>0.00000</entry>
+                <entry>1.00000</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+            <list id="import-auto-idm420257088" list-type="enumerated" number-style="lower-alpha"><item>P(X=7)  = 0.16426</item>
+              <item>P(10 ≤ X ≤ 14) = 0.04792 (highlight the values in the column <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis>) for <emphasis effect="italics">X</emphasis> from 10 to 14, then look at the Sum in the lower right) </item>
+              <item>P(X ≥ 11) = 0.01714 (highlight the values in the column <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis>) for <emphasis effect="italics">X</emphasis> from 11 and higher, then look at the Sum in the lower right)</item>
+              <item>This changes <m:math>
+<m:pi/>
+</m:math> to 0.7, then re-run the computer program. Look at when <emphasis effect="italics">X</emphasis> is 5. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis>=5) = 0.00004</item>
+            </list><list id="import-auto-idm537833840a" list-type="enumerated" number-style="arabic" start-value="3">
+          <item>The mean is the same as the expected value, which is 6.0 and the standard deviation is 2.049. This gives us a typical range of 3.951 and 8.049 for the typical number of business passengers in a random sample of 20 passengers. </item>
+        </list>
+  </para>
+</solution>
+</exercise></section>
+    <section id="import-auto-idm486442624">
+      <title>Evaluating evidence using the binomial distribution </title>
+      <para id="import-auto-idm420266896">A company looked at its hiring practices. In particular, they found that their hiring practices appears to favour men over women. Based on past data, they have found that regardless of the number of applications by women, seventy-five percent of hires are men. Due to this issue, they decide to implement program. In this program, the name and any identifying features that may indicate the gender of an applicant are removed. For example, if the application says, “She executed a marketing campaign that increased revenue by 30%”, this would be changed to “They executed a marketing campaign that increased revenue by 30%.” The names on the applications were changed an alpha-numeric identification (like AB-101). The company <emphasis effect="italics">claims</emphasis> that the program has worked, but they want to check the claim.</para>
+      <para id="import-auto-idm422269760">How will the company determine if the program has worked? One way to do this would be using statistics. </para>
+      <para id="import-auto-idm656270832">Now suppose that after a recent round of hiring, the proportion of men hired was 70%. Would this be enough evidence that the program is working? 70% is definitely lower than 75%, but we know that there is variability in sampling. This means that, prior to the program being implemented, around 75% of hires are men, there may be some rounds of hiring where 70% of hires were men and some that were 80%. It won’t be 75% each time. Instead we expect it to be close to 75%. Therefore, if the program has caused the hiring practices to change, would a recent round of hiring that results in the proportion of men hires being 70% be enough evidence of change? What about 60%? What is the line between normal variability from 75% and abnormal variability? Statistics helps us figure that out and that is how we evaluate evidence using statistics.</para>
+      <para id="import-auto-idm524340864">Let’s say in a recent round of hires there were 30 new hires and 20 of these hires were men. </para>
+      <section xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-43"><title>Skepticism</title><para id="eip-idm1259123392">Any time we are trying to evaluate evidence, we always start from a position of skepticism. That is, we don’t want to assume what we are trying to show (i.e the claim). If we do that, we may bias the investigation. To illustrate, if you assume that your significant other is cheating on you, then this will colour all of the evidence you find (why did they show up five minutes late from work? They must be cheating!). A well-known real-world example of this position is the assumption in court that a defendant is innocent until proven guilty. That is, criminal court cases start with the assumption of innocence.</para>
+<para id="eip-idm472321600">In general, the position of skepticism is that nothing has changed, the program didn’t work, the experiment didn’t work, the effect being studied isn’t happening, etc. </para>
+<para id="eip-idm1392075488">In our example, we will assume that the program that the company implemented did not work. That is, we are assuming that the proportion of hires that are men is still 75%. Another way of writing this is <m:math>
+<m:pi/>
+</m:math> = 75% (i.e. the population proportion). </para></section><section id="import-auto-idm446631120">
+        <title>Evidence </title>
+        <para id="import-auto-idm523366016">In a court case, evidence would be witness testimony, forensics evidence, expert testimony, etc. </para>
+        <para id="import-auto-idm539622224">In statistics, evidence is sample data. The evidence has been collected to evaluate the claim. In this case, the evidence has been evaluated to determine if the program is working. </para>
+        <para xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm481812000">In our example, the sample data is the 20 men hires out of 30. This gives us a sample proportion of 20/30 = 66.67%. The symbol for sample proportion is <m:math>
+
+<m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+      </m:mrow>
+  <m:mo> ^ </m:mo>
+</m:mover> 
+
+</m:math> (said “p hat” - the symbol above the p is supposed to be "^", but the online textbook program does not properly show it).</para></section>
+      <section id="import-auto-idm465976320">
+        <title>Evaluating evidence in statistics </title>
+        <para id="import-auto-idm465792096">To evaluate the evidence, we want to determine the probability of observing the evidence (or even better evidence against the assumption) assuming the assumption is true. Once we determine this probability, we need to determine if the event is unlikely or not unlikely. That is, we want to determine if it unlikely we could have observed the evidence, if the assumption is true. Or is it not unlikely that we observed the evidence, if the assumption is true. If it is unlikely to have observed the evidence, then most likely there is something wrong with the assumption and the claim is likely true. If it is not unlikely to have observed the evidence, then we can’t actually conclude that there is something wrong with the assumption and we cannot conclude that the claim is true. </para>
+        <para id="import-auto-idm408512832">To go back to the court case example, if you are a juror, you have to evaluate how unlikely or not unlikely it is that the defendant would have had a heated argument with the victim, and was found covered in blood and holding the murder weapon at the scene, if the defendant was innocent. If you think that it is unlikely that all of the pieces of evidence could have happened if the defendant is innocent, then you would find the defendant guilty. That is, the evidence calls into question the assumption. If you think that this it is not unlikely that all of these pieces of evidence could have happened if the defendant is innocent, then you would find the defendant not guilty. Notice that we don’t conclude that the defendant is innocent. That is, we can’t say that they are innocent; we can only say that they are not guilty. </para>
+        <note id="import-auto-idm449959920" type="Note">When evaluating evidence, we are trying to evaluate the claim (i.e. not the position of skepticism). Therefore, the evidence has been collected about claim. No evidence has been collected about the assumption. Therefore, our conclusion can only be about the claim and not the assumption. </note>
+        <para id="import-auto-idm506892368">Therefore, if the probability is small and therefore unlikely, we can say that there is enough evidence to suggest that the assumption is likely false (i.e. guilty). </para>
+        <para id="import-auto-idm416946416">If the probability is not small and therefore not unlikely, we can say that there is not enough evidence to suggest that the assumption is false (i.e. not guilty).</para>
+        <note id="import-auto-idm461466896" type="Note">In statistics, if the probability of an event happening is less than 1%, we say that the event is unlikely to happen. If the probability is greater than 10%, we say the event is not unlikely to happen. If the probability is between 1% and 10%, then it is up to the researcher to determine whether they believe that the event is unlikely or not unlikely. Usually, the researcher decides on the threshold between unlikely and not unlikely before performing the experiment or study. </note>
+        <para xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm299056144">In our example, to evaluate the evidence, we want to work out what is the probability this company would have hired 20 men out 30 (or even better evidence against the assumption) if the proportion of men hires is still 75%. That is, we want to find <m:math>
+<m:apply><m:leq/><m:ci>P(X</m:ci><m:cn>20)</m:cn></m:apply>
+</m:math>, given <m:math> <m:pi/></m:math>
+ = 75%). Notice that this is a <emphasis effect="underline">conditional</emphasis> probability and the condition is the assumption.  </para><para id="import-auto-idm399973296">What does “or even better evidence against the assumption” mean? It means that we don’t just find the probability of exactly 20 out of 30 men hires. We find the probability of at most 20 out of 30 men hires because if the company hired 19, 18, 17, … men then that would be even better evidence that 75% is no longer correct (as the sample proportion is getting more and more different from the assumed population proportion). </para>
+        <para xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm492969200">Why do we look at “or even better evidence against the assumption”? Often the probability of exactly one event happening is quite small. For example, the probability of getting exactly 10 heads out of 20 coin tosses is 17.62%, even though that is the most likely event to occur. Therefore, if we only looked at the probability of exactly one event happening (i.e. P(X=20)) rather than <m:math>
+<m:apply><m:leq/><m:ci>P(X</m:ci><m:cn>20)</m:cn></m:apply>
+</m:math>
+, we may come to the false impression that an event is unlikely, when it could actually be explained by normal sampling variability. </para></section>
+      <section id="import-auto-idm548607984">
+        <title>Finding the probability</title>
+        <para id="import-auto-idm411116080">To find the probability, we need to find an appropriate distribution that models the situation. In later chapters, we will look at other models. Right now, the model we are going to use is the binomial distribution. For us to use this model, we have to ensure that the situation is meeting all of the conditions of the binomial distribution. </para>
+        <list id="import-auto-idm498975776" list-type="enumerated" number-style="arabic">
+          <item><emphasis effect="italics">The variable being studied is random</emphasis>:  This is not necessarily the case here as the applicants are not random and the hiring process is not random. If we randomly selected 30 hires from a greater number of hires, then it would be. </item>
+          <item><emphasis effect="italics">The outcomes of the variable are being counted</emphasis>: We are counting the number of men hired. </item>
+          <item><emphasis effect="italics">There are a fixed number of trials</emphasis>: We are looking at 30 hires (<emphasis effect="italics">n</emphasis> = 30)</item>
+          <item><emphasis effect="italics">There are only two possible outcomes</emphasis>: Either the hire is a man or the hire is not a man.</item>
+          <item><emphasis effect="italics">The n trials are independent and the probability of success and probability of failure remain constant</emphasis>: This is true because we are assuming that the probability of hiring a man remains constant at 75%. </item>
+        </list>
+        <para id="import-auto-idm653431024">Though the first condition is not met, we can still use the binomial distribution to model the situation. That the model is not perfectly met would be a limitation of the study. That means that we would want to put a caveat at the end of our conclusion to state that this might reduce the accuracy of our results. </para>
+        <note id="eip-134" type="warning">If the conditions of randomness and independence may not be fully met, then we can still utilize the binomial distribution. But we do have to be wary of the results. The other three conditions do need to be met to use the binomial distribution. </note><para xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm381012336">Now that we have the model, we can find the probability. In A computer program, we will use the binomial distribution with <emphasis effect="italics">n</emphasis> = 30 and π (or probability of occurrence) = 0.75. Then we will find <m:math>
+<m:apply><m:leq/><m:ci>P(X</m:ci><m:cn>20)</m:cn></m:apply>
+</m:math>
+. </para><para xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm380435760">From the computer program, we get  <m:math>
+<m:apply><m:leq/><m:ci>P(X</m:ci><m:cn>20)</m:cn></m:apply>
+</m:math>
+ = 0.19659 = 19.659. Again, this probability is found under the assumption that the program has not worked (i.e. <m:math>
+<m:pi/>
+</m:math>=75%) </para></section>
+      <section id="import-auto-idm512959488">
+        <title>Evaluating the probability </title>
+        <para id="import-auto-idm476741776">The probability that we would have observed at most 20 hires that were men out of 30, under the assumption that the program did not work, is 19.659%. Therefore, it is <emphasis effect="italics">not unlikely</emphasis>  that we could have observed this evidence as the probability is greater than 10%. This means that having 20 out of 30 hires being men falls within the normal sampling variability for this data. </para>
+        <para id="import-auto-idm540356640">Based on the evidence collected, there is not sufficient evidence to suggest that the program worked. Notice we don't conclude that the program is not working.  </para>
+        <note id="import-auto-idm440255856" type="Note">In statistics, we never use the words “prove” or “true” when making a conclusion. All of our conclusions are based off of sample data that we are using to make a conclusion about the population. Therefore, there is always the chance of error. </note>
+      </section>
+      <section xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm435634976"><title>Example </title><para id="import-auto-idm310806496">Olivier has spent five years honing his archery skills in various seedy locals around the world. Now he has returned to his city of birth to use these skills to take out criminals. One night while drinking vodka with his friends, he boasts that he can shoot an arrow into the bullseye, blindfolded at a distance of 50m 90% of the time. </para>
+        <para id="import-auto-idm655941744">“I don’t believe you!” Jack, Olivier’s best friend, slurred. </para>
+        <para id="import-auto-idm430941920">“I swear! I’ve really honed my skills.” Olivier countered. </para>
+        <para id="import-auto-idm669053888">“But remember last week when we were in that darkened factory, you missed two of your shots!” Thelma, Olivier’s sister, countered. </para>
+        <para id="import-auto-idm455363680">“No. I meant to miss them.” </para>
+        <para id="import-auto-idm404890880">Jack thought for a moment. “I think you are exaggerating and I’m going to test you.”</para>
+        <para id="import-auto-idm420495952">“You’re on!” Olivier sneered arrogantly.</para>
+        <para id="import-auto-idm296176320">To test that Olivier was exaggerating about his marksmanship, Jack set up a bunch of targets and, randomly had Olivier attempt the shot. Olivier hit the bullseye (blindfolded at a distance of 50m) 39 out of 50 times. </para>
+        <list id="import-auto-idm487644352" list-type="enumerated" number-style="lower-alpha">
+          <item>If Olivier’s is not exaggerating, how many times out of 50 do we typically expect him to hit the bullseye? Write your answer as a range that takes into account variation. </item>
+        </list>
+        <para id="import-auto-idm474346000">Answer: We would expect Olivier to hit the bullseye 45 times give or take 2.121 times. This means a typical range is 42.88 to 47.12 bullseyes out of 50. </para>
+        <list id="import-auto-idm661785984" list-type="enumerated" number-style="lower-alpha" start-value="2">
+          <item>Based on your answer in a), is 39 out of 50 times potentially abnormal? Explain. </item>
+        </list>
+        <para id="import-auto-idm655238448">Answer: Since 39 is outside of the range, it would be deemed atypical, but that does not necessarily mean that it is abnormal.</para>
+        <list id="import-auto-idm670990864" list-type="enumerated" number-style="lower-alpha" start-value="3">
+          <item>What assumption do we need to make before determining whether the 39 out of 50 provides evidence for or against Olivier exaggerating? </item>
+        </list>
+        <para id="import-auto-idm441531040">Answer: Since Jack wants to show that Olivier is exaggerating, we want to assume that Olivier is not exaggerating. This means we want to assume <m:math>
+<m:pi/>
+</m:math> = 90%, where <m:math>
+<m:pi/>
+</m:math> is the proportion of bullseyes that Olivier hits.</para><list id="import-auto-idm665202896" list-type="enumerated" number-style="lower-alpha" start-value="4">
+          <item>What model (i.e. distribution) will you use to test the evidence against the assumption? Explain why it is the best model to use. Note: This situation might not completely fit the model, but explain why it is still a reasonable model to use. </item>
+        </list>
+        <para id="import-auto-idm422419056">Answer: The distribution satisfies the conditions of the binomial distribution:</para>
+        <list id="import-auto-idm505773584" list-type="bulleted">
+          <item><emphasis effect="italics">The variable being studied is random</emphasis>:  Since Jack is randomly having Olivier take the shot, we can say this is a random event. </item>
+          <item><emphasis effect="italics">The outcomes of the variable are being counted</emphasis>: We are counting the number of bullseyes. </item>
+          <item><emphasis effect="italics">There are a fixed number of trials</emphasis>: We are looking at 50 shots with the bow and arrow.</item>
+          <item><emphasis effect="italics">There are only two possible outcomes</emphasis>: Either the shot is a bullseye or it is not. </item>
+          <item><emphasis effect="italics">The n trials are independent and the probability of success and probability of failure remain constant</emphasis>: This is true because we are assuming that the probability of hitting the bullseye remains constant at 90%.</item>
+        </list>
+        <list id="import-auto-idm403366928" list-type="enumerated" number-style="lower-alpha" start-value="5">
+          <item>What probability do you need to find to evaluate the evidence against the assumption?</item>
+        </list>
+        <para id="import-auto-idm493906560">Answer: We need to find the probability that Olivier hits at most 39 out of 50 bullseyes, assuming his accuracy is 90%. NOTE: We look at “at most 39” because having less bullseyes is even better evidence that Olivier is exaggerating (i.e. better evidence against the assumption).</para>
+        <list id="import-auto-idm424547040" list-type="enumerated" number-style="lower-alpha" start-value="6">
+          <item>Find that probability. </item>
+        </list>
+        <para id="import-auto-idm425389488">Answer: <m:math>
+<m:apply><m:leq/><m:ci>P(X</m:ci><m:cn>39</m:cn></m:apply>
+</m:math>
+ given <m:math>
+<m:pi/>
+</m:math>=90%) =0.00935=0.94%, (from computer program with n = 50, <m:math>
+<m:pi/>
+</m:math> (or probability of occurrence) = 90%).</para><list id="import-auto-idm502451728" list-type="enumerated" number-style="lower-alpha" start-value="7">
+          <item>In the context of the problem, interpret the probability. </item>
+        </list>
+        <para id="import-auto-idm445898288">Answer: The probability that Olivier hit at most 39 out of 50 bullseyes, under the assumption that he wasn’t exaggerating about his accuracy is 0.94%.</para>
+        <list id="import-auto-idm501922464" list-type="enumerated" number-style="lower-alpha" start-value="8">
+          <item>Does the probability provide evidence to support whether Olivier is exaggerating or not? Explain.</item>
+        </list>
+        <para id="import-auto-idm455494176">Answer: Since the probability that we observed our sample data is less than 1%, then it is unlikely that that Olivier is not exaggerating (i.e. that his accuracy is 90%). Therefore, it is likely that Olivier is exaggerating and cannot hit the bullseye 90% of the time blindfolded from 50m.</para>
+      </section><exercise xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-597"><problem id="eip-777">
+  <para id="import-auto-idm281410288">As stated in a previous question, the chance of an CRA audit for a tax return with over $25,000 in income is about 2% per year. An employee at I&amp;S Square, a company that helps individuals do their yearly tax returns and helps if there is an audit, has noticed that people in Seba Beach, Alberta appear to have a greater chance of an audit than the rest of Canadians. Out of a random sample of 45 residents, four of them have been audited. </para>
+        <list id="import-auto-idm477465584" list-type="enumerated" number-style="lower-alpha">
+          <item>If the residents of Seba Beach are being audited fairly, how many residents out of 45 do we typically expect to get audited in a year? Write your answer as a range that takes into account variation. </item>
+          <item>Based on your answer in a), is 4 out of 45 audits potentially abnormal? Explain. </item>
+          <item>What assumption do we need to make before determining whether the 4 out of 45 audits is unfair? </item>
+          <item>What model (i.e. distribution) will you use to test the assumption? Explain why it is the best model to use. Note: This situation might not completely fit the model, but explain why it is still a reasonable model to use. </item>
+          <item>What probability do you need to find to evaluate the assumption?</item>
+          <item>Find that probability. </item>
+          <item>In the context of the problem, interpret the probability. </item>
+          <item>Does the probability provide evidence to support or refute whether residents of Seba Beach are being unfairly audited? Explain. </item>
+        </list>
+
+</problem>
+
+<solution id="eip-708">
+ <list id="import-auto-idm464523488" list-type="enumerated" number-style="lower-alpha"><item>We would expect 0.9 give or take 0.939 to be audited. This means a typical range is 0 to 1.8 residents to be audited out of 45. </item>
+          <item>Since 4 is outside of the range, it would be deemed atypical, but that does not necessarily mean that it is abnormal. </item>
+          <item>Since the employee at I&amp;S Square wants to show that something strange is happening in Seba Beach, they would want to assume that nothing strange is happening. That is, the rate of audits is the same in Seba Beach as anywhere in Canada. This means we want to assume <m:math>
+<m:pi/>
+</m:math> = 2%, where <m:math>
+<m:pi/>
+</m:math> is the proportion of people who are audited. </item>
+          <item>The binomial distribution: </item>
+        </list><list id="import-auto-idm447163328" list-type="bulleted">
+          <item><emphasis effect="italics">The variable being studied is random</emphasis>:  We are looking at a random sample. </item>
+          <item><emphasis effect="italics">The outcomes of the variable are being counted</emphasis>: We are counting the number of audits. </item>
+          <item><emphasis effect="italics">There are a fixed number of trials</emphasis>: We are looking at 45 residents.</item>
+          <item><emphasis effect="italics">There are only two possible outcomes</emphasis>: Either the resident is audited or they are not. </item>
+          <item><emphasis effect="italics">The n trials are independent and the probability of success and probability of failure remain constant</emphasis>: This is true because we are assuming that the probability of being audited remains constant at 2%. </item>
+        </list>
+        <list id="import-auto-idm460952144" start-value="5" list-type="enumerated" number-style="lower-alpha"><item>We need to find the probability that at least 4 out of 45 residents are audited, assuming an audit rate of 2%. </item>
+          <item><m:math>
+<m:apply><m:geq/><m:ci>P(X</m:ci><m:cn>4</m:cn></m:apply>
+</m:math>
+ given <m:math>
+<m:pi/>
+</m:math> = 2%) = 0.01242 = 1.24% (from computer program with n = 45, <m:math>
+<m:pi/>
+</m:math> (or probability of occurrence) = 2%).</item>
+          <item>The probability that at least 4 out of 45 Seba Beach residents are audited, under the assumption that the audit rate is 2%, is 1.24%. </item>
+          <item>Since the probability that we observed our sample data is between 1% and 10%, then we have to determine if the probability is unlikely or not unlikely. Since it is closer to 1% than 10%, we can say that the sample data is unlikely to have occurred under the assumption. Therefore, the evidence suggests that there is something wrong with the assumption. That is, there is evidence that the residents of Seba Beach are being audited at a higher rate than the rest of Canada. </item>
+        </list></solution>
+</exercise><exercise xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-592"><problem id="eip-860">
+          <para id="import-auto-idm529541200">Executives at Bull, a Canadian own cell phone company, are not very happy with their current customer satisfaction surveys. Using a Likert scale, they surveyed a very large sample of clients who phoned Bull and spoke to a customer service representative. They have determined that only 60% of customers rate their overall satisfaction with the service they received at 4 or higher. That is, they either strongly agree or agreed with the statement, “I am happy with the overall customer service I received during my most recent call to Bull.”</para>
+        <para id="import-auto-idm447095344">They feel that this is too low as 40% of customers were not happy with their service. To address these issues, they’ve brought in a consultant who has suggested that customers are happier with their service if they feel they’ve built a rapport with the customer service representative. Thus, Bull has decided to train their customer service representatives to start each call with a short conversation. As customers are from across Canada and it would be bad if the conversations were generic, to help their customer service representatives build rapport, a short notice shows up on their screens before they take the call that contains suggested conversation topic for the area the person is calling from. For example, it might include information about weather in the local area and how the local sporting team has done in their most recent game. </para>
+        <para id="import-auto-idm533901440">After the customer service representatives have been trained in how to make small talk to build rapport, a random sample of sixty customers who called Bull and spoke to a customer service representative is taken. The participants are asked the same question about their overall satisfaction with their customer service phone call as stated above. The results of the survey are listed below: </para>
+        <table id="import-auto-idm380406688" summary="Table of data for example">
+<tgroup cols="20"><colspec colnum="1" colname="c1"/>
+            <colspec colnum="2" colname="c2"/>
+            <colspec colnum="3" colname="c3"/>
+            <colspec colnum="4" colname="c4"/>
+            <colspec colnum="5" colname="c5"/>
+            <colspec colnum="6" colname="c6"/>
+            <colspec colnum="7" colname="c7"/>
+            <colspec colnum="8" colname="c8"/>
+            <colspec colnum="9" colname="c9"/>
+            <colspec colnum="10" colname="c10"/>
+            <colspec colnum="11" colname="c11"/>
+            <colspec colnum="12" colname="c12"/>
+            <colspec colnum="13" colname="c13"/>
+            <colspec colnum="14" colname="c14"/>
+            <colspec colnum="15" colname="c15"/>
+            <colspec colnum="16" colname="c16"/>
+            <colspec colnum="17" colname="c17"/>
+            <colspec colnum="18" colname="c18"/>
+            <colspec colnum="19" colname="c19"/>
+            <colspec colnum="20" colname="c20"/>
+           <tbody>
+              <row>
+                <entry>1</entry>
+                <entry>1</entry>
+                <entry>1</entry>
+                <entry>1</entry>
+                <entry>1</entry>
+                <entry>1</entry>
+                <entry>2</entry>
+                <entry>2</entry>
+                <entry>2</entry>
+                <entry>2</entry>
+                <entry>2</entry>
+                <entry>3</entry>
+                <entry>3</entry>
+                <entry>3</entry>
+                <entry>3</entry>
+                <entry>3</entry>
+                <entry>3</entry>
+                <entry>3</entry>
+                <entry>3</entry>
+                <entry>4</entry>
+              </row>
+        
+            
+              <row>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+              </row>
+              <row>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>4</entry>
+                <entry>5</entry>
+                <entry>5</entry>
+                <entry>5</entry>
+                <entry>5</entry>
+                <entry>5</entry>
+                <entry>5</entry>
+                <entry>5</entry>
+                <entry>5</entry>
+                <entry>5</entry>
+                <entry>5</entry>
+              </row>
+            </tbody>
+          
+</tgroup>
+</table><para id="import-auto-idm790181552">Does the recent sample provide sufficient evidence to suggest that the proportion of customers who are happy with their overall service when they call Bull has increased from 60%? Explain your answer in detail. </para>
+
+</problem>
+
+<solution id="eip-866">
+  <para id="eip-833">To be skeptical, we want to assume that the program has not worked (i.e. <m:math>
+<m:pi/>
+</m:math> stayed at 60%). The evidence is 41 out of 60 customers gave a rating of 4 or 5. Perfect evidence that the program worked would be 60 out of 60 happy customers in every single sample. The probability that we would observe at least 41 out of 60 customers who gave a score of four or five regarding their overall satisfaction, assuming that the new program has not worked, is 11.70% (from a computer program with <emphasis effect="italics">n</emphasis>=60, <m:math>
+<m:pi/>
+</m:math>=0.60). Therefore, it is not unlikely that we observed the evidence that we did, under the assumption the program did not work. This means that we cannot conclude that the program worked. 
+
+  </para></solution>
+</exercise><note id="eip-155">What we can conclude when the probability is “not unlikely”: If the probability is greater than 10%, then it means that it is not unlikely that we observed this evidence under the assumption. We can NOT conclude that the assumption is likely true as the evidence was collected to evaluation the claim (not the assumption). Instead, we can only conclude that there is not enough evidence to say that the claim is true. When the probability is “not unlikely”, we have really learned very little about the claim.</note></section><section xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-911"><title>Chapter Review</title><para id="fs-idp48275616">A statistical experiment can be classified as a binomial experiment if the following conditions are met:</para>
+<list id="fs-idm159853952" list-type="enumerated"><item>The variable being studied is random. </item>
+        <item>The outcomes of the variable are being counted. </item>
+        <item>There are a fixed number of trials. The letter <emphasis effect="italics">n</emphasis> denotes the number of trials.</item>
+        <item>There are only two possible outcomes, called "success" and "failure," for each trial<m:math>
+<m:pi/>
+</m:math> denotes the probability of a success on one trial, and 1-<m:math>
+<m:pi/>
+</m:math> denotes the probability of a failure on one trial.</item>
+        <item>The <emphasis effect="italics">n</emphasis> trials are independent and are repeated using identical conditions. Because the <emphasis effect="italics">n</emphasis> trials are independent, the outcome of one trial does not help in predicting the outcome of another trial. Another way of saying this is that for each individual trial, the probability, <m:math>
+<m:pi/>
+</m:math>, of a success and probability, 1-<m:math>
+<m:pi/>
+</m:math>, of a failure remain constant.</item>
+</list><para id="fs-idp5771264">The outcomes of a binomial experiment fit a binomial probability distribution. The random variable <emphasis effect="italics">X</emphasis> = the number of successes obtained in the <emphasis effect="italics">n</emphasis> independent trials. The mean of <emphasis effect="italics">X</emphasis> can be calculated using the formula <emphasis effect="italics">μ</emphasis> = <emphasis effect="italics">n</emphasis><m:math>
+<m:pi/>
+</m:math>, and the standard deviation is given by the formula <m:math><m:mi>σ</m:mi><m:mo>=</m:mo><m:msqrt><m:mi>n</m:mi><m:pi/>
+
+<m:mi>(</m:mi><m:apply><m:minus/><m:cn>1</m:cn><m:pi/></m:apply> <m:mi>)</m:mi>
+</m:msqrt></m:math>.</para><para id="eip-83">To evaluate evidence, we must first begin from a position of skepticism (i.e. assume the opposite of what we want to show). Then we must find a probability which is the distance from the actual evidence to perfect evidence against the assumption. We can then evaluate the probability by determining whether it is less than 1% (which means it is unlikely the evidence occurred under the assumption) or if it is greater than 10% (which means it is not unlikely the evidence occurred under the assumption). If the probability is deemed unlikely, then we reject the assumption, which means there is enough evidence to support what we originally wanted to show (the claim). If the probability is deemed not unlikely, then we do not reject the assumption, which means there is not enough evidence to support what we originally wanted to show (the claim). In the latter situation, we cannot make any conclusions about the assumption as the evidence was collected only for the claim. </para></section><section xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-848"><title>Practice</title><para id="eip-39">The first few exercises provided are from the textbook Business Statistics -- BSTA 200 -- Humber College -- Version 2016RevA -- DRAFT 2016-04-04 by Alexander Holmes, Lyryx Learning: http://cnx.org/contents/f3aefa9e-58d2-41ea-969f-04dc2cb04c82@5.20
+</para><para id="eip-249"><emphasis effect="italics">Use the following information to answer the next seven exercises:</emphasis> The Higher Education Research Institute at UCLA collected data from 203,967 incoming first-time, full-time freshmen from 270 four-year colleges and universities in the U.S. 71.3% of those students replied that, yes, they believe that same-sex couples should have the right to legal marital status. Suppose that you randomly pick eight first-time, full-time freshmen from the survey. You are interested in the number that believes that same sex-couples should have the right to legal marital status.
+</para><exercise id="eip-774"><problem id="id8424885">
+<para id="prob_1">In words, define the random variable <emphasis effect="italics">X</emphasis>.</para>
+</problem>
+<solution id="id8424902">
+<para id="element-88758234"><emphasis effect="italics">X</emphasis> = the number that reply “yes”</para></solution>
+</exercise><exercise id="eip-872"><problem id="id7617633">
+<para id="prob_3">What values does the random variable <emphasis effect="italics">X</emphasis> take on?</para>
+</problem>
+<solution id="id7617656">
+<para id="element-88758223434">0, 1, 2, 3, 4, 5, 6, 7, 8</para>
+</solution>
+</exercise><exercise id="eip-130"><problem id="id7617683">
+<para id="prob_4">Construct the probability distribution function (PDF). That is, fill in the table below. In the left column put in the possible values for X. In the right column, put in the probability for exactly X, i.e. <m:math>
+<m:apply><m:eq/><m:ci>P(X</m:ci><m:cn>x)</m:cn></m:apply>
+</m:math>
+</para>
+<table id="id7383862" summary="PDF table with number of full-time freshmen that believes that same sex-couples should have the right to legal marital status and probabilities.">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+        <colspec colnum="2" colname="c2"/>
+<thead>
+<row>
+            <entry><emphasis effect="italics">x</emphasis></entry>
+            <entry><m:math>
+<m:apply><m:eq/><m:ci>P(X</m:ci><m:cn>x)</m:cn></m:apply>
+</m:math>
+</entry>
+          </row>
+</thead>
+        <tbody>
+          <row>
+            <entry/>
+            <entry/>
+          </row>
+          <row>
+            <entry/>
+            <entry/>
+          </row>
+          <row>
+            <entry/>
+            <entry/>
+          </row>
+          <row>
+            <entry/>
+            <entry/>
+          </row>
+          <row>
+            <entry/>
+            <entry/>
+          </row>
+          <row>
+            <entry/>
+            <entry/>
+          </row>
+          <row>
+            <entry/>
+            <entry/>
+          </row>
+          <row>
+            <entry/>
+            <entry/>
+          </row>
+          <row>
+            <entry/>
+            <entry/>
+          </row>
+
+        </tbody>
+  
+</tgroup>
+</table></problem>
+
+ <solution id="fs-idm163794480">
+<table id="fs-idm129196976" summary="Solutions to PDF">
+<tgroup cols="2"><colspec colnum="1" colname="c1"/>
+        <colspec colnum="2" colname="c2"/>
+<thead>
+<row>
+            <entry><emphasis effect="italics">x</emphasis></entry>
+            <entry><m:math>
+<m:apply><m:eq/><m:ci>P(X</m:ci><m:cn>x)</m:cn></m:apply>
+</m:math></entry>
+          </row>
+</thead>
+        <tbody>
+          
+          <row>
+            <entry>0</entry>
+            <entry>0.00005</entry>
+          </row>
+          <row>
+            <entry>1</entry>
+            <entry>0.0009</entry>
+          </row>
+          <row>
+            <entry>2</entry>
+            <entry>0.0080</entry>
+          </row>
+          <row>
+            <entry>3</entry>
+            <entry>0.0395</entry>
+          </row>
+          <row>
+            <entry>4</entry>
+            <entry>0.1227</entry>
+          </row>
+          <row>
+            <entry>5</entry>
+            <entry>0.2439</entry>
+          </row>
+          <row>
+            <entry>6</entry>
+            <entry>0.3030</entry>
+          </row>
+          <row>
+            <entry>7</entry>
+            <entry>0.2151</entry>
+          </row>
+          <row>
+            <entry>8</entry>
+            <entry>0.0668</entry>
+          </row>
+        </tbody>
+  
+</tgroup>
+</table></solution> 
+
+</exercise><exercise id="eip-77"><problem id="id2585221">
+<para id="prob_5">On average (<emphasis effect="italics">μ</emphasis>), how many would you expect to answer yes?</para></problem>
+<solution id="id2585250">
+<para id="element-88758233254">5.7</para></solution>
+</exercise><exercise id="eip-557"><problem id="id8562214">
+<para id="prob_6">What is the standard deviation (<emphasis effect="italics">σ</emphasis>)?</para></problem>
+
+<solution id="id8562245">
+<para id="element-88758232434">1.2795</para>
+</solution> 
+</exercise><exercise id="eip-178"><problem id="id8562271">
+<para id="prob_7">What is the probability that at most five of the freshmen reply “yes”?</para></problem>
+<solution id="id8562288">
+<para id="element-88758232344">0.4151</para></solution>
+</exercise><exercise id="eip-824"><problem id="id8562314">
+<para id="prob_9">What is the probability that at least two of the freshmen reply “yes”?</para></problem>
+
+<solution id="id8562331">
+<para id="element-88758233244">0.9990</para></solution> 
+</exercise><exercise id="eip-430"><problem id="id18885508">
+  <para id="element-423">A school newspaper reporter decides to randomly survey 12 students to see if they will attend Tet (Vietnamese New Year) festivities this year. Based on past years, she knows that 18% of students attend Tet festivities. We are interested in the number of students who will attend the festivities.</para>
+
+<list id="element-942" list-type="enumerated" number-style="lower-alpha">
+<item>In words, define the random variable <emphasis effect="italics">X</emphasis>.</item>
+<item>List the values that <emphasis effect="italics">X</emphasis> may take on.</item>
+
+<item>How many of the 12 students do we expect to attend the festivities?</item>
+<item>Find the probability that at most four students will attend.</item>
+<item>Find the probability that more than two students will attend.</item></list>
+</problem>
+
+<solution id="id17988422">
+  <list id="element-567" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">X</emphasis> = the number of students who will attend Tet.</item>
+<item>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12</item>
+
+<item>2.16</item>
+<item>0.9511</item>
+<item>0.3702</item></list></solution> 
+</exercise><para id="eip-547"><emphasis effect="italics">Use the following information to answer the next three multiple choice questions:</emphasis> The probability that the Calgary Flames will win any given game is 0.4617 based on a 45-year win history of 1,616 wins out of 3,500 games played (as of Sept. 2017). An upcoming monthly schedule contains 12 games.</para><exercise id="eip-844"><problem id="eip-896">
+  <para id="eip-233">
+    The expected number of wins for that upcoming month is:
+  </para>
+<list id="eip-idm77891776" list-type="enumerated" number-style="lower-alpha"><item>1.67</item>
+<item>12</item>
+<item><m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mn>1616</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>3500</m:mn>
+   </m:mrow>
+  </m:mfrac>
+ </m:mrow>
+</m:math></item>
+<item>5.54</item>
+</list></problem>
+<solution id="eip-909">
+  <para id="eip-715">d. 5.54
+  </para></solution>
+</exercise><para id="eip-519">Let <emphasis effect="italics">X</emphasis> = the number of games won in that upcoming month.</para><exercise id="eip-280"><problem id="id18490769">
+  <para id="element-374">What is the probability that the Calgary Flames win exactly six games in that upcoming month?</para>
+<list id="element-877" list-type="enumerated" number-style="lower-alpha"><item>0.2178</item>
+<item>0.4167</item>
+<item>0.7664</item>
+<item>0.7116</item>
+</list></problem>
+
+<solution id="id17994552">
+  <para id="element-162">a</para>
+</solution> 
+</exercise><exercise id="eip-386"><problem id="id13466783">
+<para id="element-757">What is the probability that the Calgary Flames win at least five games in that upcoming month</para>
+<list id="element-388" list-type="enumerated" number-style="lower-alpha">
+<item>0.2176</item>
+<item>0.2762</item>
+<item>0.7238</item>
+<item>0.5062</item>
+</list>
+</problem>
+
+<solution id="id19072980">
+  <para id="element-895">c</para>
+</solution></exercise><exercise id="eip-516"><problem id="id15835890">
+  <para id="element-334">The chance of an Canadian Revenue Agency audit for a tax return with over $25,000 in income is about 2% per year. We are interested in the expected number of audits a person with that income has in a 20-year period. Assume each year is independent.</para>
+<list id="element-778" list-type="enumerated" number-style="lower-alpha">
+<item>In words, define the random variable <emphasis effect="italics">X</emphasis>.
+</item>
+<item>List the values that <emphasis effect="italics">X</emphasis> may take on.</item>
+
+<item>How many audits are expected in a 20-year period?</item>
+<item>Find the probability that a person is not audited at all.</item>
+<item>Find the probability that a person is audited more than twice.</item></list></problem>
+<solution id="fs-idm54319888">
+<list id="fs-idm54319632" list-type="enumerated" number-style="lower-alpha"><item><emphasis effect="italics">X</emphasis> = the number of audits in a 20-year period</item>
+<item>0, 1, 2, …, 20</item>
+<item>0.4</item>
+<item>0.6676</item>
+<item>0.0071</item>
+</list></solution>
+</exercise><exercise id="eip-7"><problem id="fs-idm51462656">
+<para id="fs-idp72203552">According to The World Bank, only 9% of the population of Uganda had access to electricity as of 2009. Suppose we randomly sample 150 people in Uganda. Let <emphasis effect="italics">X</emphasis> = the number of people who have access to electricity.</para>
+<list id="fs-idm81777984" list-type="enumerated" number-style="lower-alpha">
+<item>Calculate the mean and standard deviation of <emphasis effect="italics">X</emphasis>.</item>
+<item>Find the probability that 15 people in the sample have access to electricity.</item>
+<item>Find the probability that at most ten people in the sample have access to electricity.</item>
+<item>Find the probability that more than 25 people in the sample have access to electricity.</item>
+</list></problem>
+
+<solution id="fs-idm37905376">
+<list id="fs-idm76226176" list-type="enumerated" number-style="lower-alpha"><item>
+
+Mean = <emphasis effect="italics">np</emphasis> = 150(0.09) = 13.5; 
+Standard Deviation = <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mi>n</m:mi><m:mi>p</m:mi><m:mi>q</m:mi>
+   </m:mrow>
+  </m:msqrt>
+  
+ </m:mrow>
+</m:math> = <m:math>
+ <m:mrow>
+  <m:mtext> </m:mtext><m:msqrt>
+   <m:mrow>
+    <m:mn>150</m:mn><m:mo stretchy="false">(</m:mo><m:mn>0.09</m:mn><m:mo stretchy="false">)</m:mo><m:mo stretchy="false">(</m:mo><m:mn>0.91</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+  </m:msqrt>
+  
+ </m:mrow>
+</m:math> ≈ 3.5050
+</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> = 15) =  0.0988</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≤ 10) = 0.1987</item>
+<item><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 25) =  0.0009</item>
+</list></solution> 
+
+</exercise><exercise id="eip-773"><problem id="eip-432">
+ <para id="eip-idm783702464"> Jenna and Megan looked at the new packaging.</para>
+	
+ <para id="eip-idm323018208">	 “I guess it looks ok.” Megan hedged.</para>
+
+ <para id="eip-idm494483056">	“The design team says that this new packaging really sells the time-saving nature of the kit.” </para>
+
+ <para id="eip-idm905994192">	“But it’s kinda off-putting.” They continued to stare at the new packaging. Jenna and Megan had developed a make-up kit called ‘5 minute make-up’, which was aimed at women on the go who wanted to put ‘their face on’ but a lot quicker than they usually did. Their target market was new moms, moms with full-time jobs, full-time students working full-time, …. In other words, anyone who didn’t have 30 minutes every morning to do their make-up. Their little start-up was doing well. They’d arranged for their product to be produced, had made how-to videos on YouTube, and were starting to get their products put into stores. Their dream placement was in Sephora. </para>
+
+ <para id="eip-idm527932448">	Now that they were more established, they had decided to hire a marketing expert who could help take them to the next level. The first thing that Leticia suggested was to change the packaging. She argued that their old packaging didn’t convey the premise of the product clearly enough. With the help of a design team, Leticia had come up with a packaging that showed a harried woman with hair everywhere and bags under her eyes looking overwhelmed. But when you flip the package over, the woman was now perfectly put together – ‘only five-minute make-up can save you from being a hot mess’. </para>
+
+	 <para id="eip-idm327546464">Jenna finally broke the silence. “I don't know if I would even pick up this package. It just looks so depressing. But what do we do?”</para>
+
+ <para id="eip-idm780972672">	“Leticia wants to put the product in this new packaging in five stores that carry our products. Based off of previous sales numbers, we know that the stores sell 68% of the product we give them in a two-week period.” </para>
+ <para id="eip-idm210741824">
+	“How does that help us? Do we just watch our sales plummet?” Jenna was sounding exasperated.</para>
+
+ <para id="eip-idm242992480">	“I’m getting to that.” Megan soothed. “Leticia is convinced this packaging will increase sales. But what if we can show her that it doesn’t? Let’s put this packaging into the five stores and then see how many kits were actually sold. I bet that we can show her that the sales went down.”</para>
+
+ <para id="eip-idm966807440">	“I don’t see how that is useful. We still have to pay her stupid fee.”</para>
+
+ <para id="eip-idm756975872">	“You should read her contract more closely. She only gets paid if she can show that sales increased. If they don’t, then not only does she not get paid but she also has to pay for any contractors (i.e. the design team).” </para>
+
+ <para id="eip-idm2111838016">	Jenna perked up visibly at this. </para>
+
+ <para id="eip-idm302710464">	Over the next two weeks, five stores carried the new packaging. Megan and Jenna provided each store with 100 kits. At the end of the two weeks, 306 of the kits were sold.  </para>
+<list id="eip-idm480290064" list-type="enumerated" number-style="arabic"><item>What is the observation unit? What is the variable? Categorize it. </item>
+<item>What do Jenna and Megan want to show? </item>
+<item>What assumption do Jenna and Megan need to make in order to investigate your answer in question 2? Write your answer both as a sentence and as a probability.  </item>
+<item>What is the evidence that Jenna and Megan have found?  </item>
+<item>Describe the process that Jenna and Megan will go through to evaluate this evidence. Your description should include (but is not limited to) what probability they will find and what they will do with that probability once they’ve found it. Don’t actually do the process (that comes later). Just describe what they will do.  </item>
+<item>Jenna and Megan believe that the binomial distribution will be the best model to find the required probability. Does this situation meet the criteria for a binomial? Examine each criterion and comment on whether it is satisfied here or not. </item>
+<item>Regardless of your answer above, use a binomial distribution to model this situation. Find the appropriate probability to evaluate the evidence using MegaStat. 
+ </item>
+<item>In sentence form, explain what the probability you have found means in the context of the question. Do not make a conclusion yet. Instead explain what it is a probability of.  </item>
+<item> Now make a conclusion. In particular, answer this question: Is their enough evidence to suggest that Leticia’s new packaging has reduced sales? Justify your answer.</item>
+</list></problem>
+
+<solution id="eip-834">
+ <list id="eip-idm2358059776" list-type="enumerated" number-style="arabic"><item>Observational unit: Five-minute make-up kit;
+Variable: Did it sell or not;
+Categorize: Categorical </item>
+<item> They want to show that the new packaging will decrease sales. </item>
+<item>They need to assume the opposite of what they want to show. Therefore, they need to assume that the new packaging does not decrease sales. Therefore, the proportion of kits sold stays the same at 68%. </item>
+<item>They have found that out of 500 kits supplied, 306 of them have been sold. </item>
+<item>They first need to start with an assumption ( = 68%). Then they need to come up with a model based on this assumption. 
+
+Once they have the model, they will use it to find the probability that the stores sold at most 306 out of 500 kits, assuming that the new packaging has not decreased sales (i.e. stayed at 68%). 
+
+Once they have the probability, they need to determine whether the event is likely or unlikely. An event is unlikely if the probability is less than 1%. An event is likely if the probability is more than 10%. If the event is unlikely, then it means that it is unlikely we observed the evidence under the assumption. Since we know the evidence actually happened, that makes us question the assumption. Thus, it is unlikely the assumption is true based off of the evidence. If the event is likely to happen, then the assumption is likely to be true based off of the evidence. </item>
+<item> <list id="eip-idm454238848"><item>	Is the data randomly collected? Most likely not. The 500 kits that we are looking at were not randomly selected. </item>
+<item>	Is the data discrete (countable)? As we are counting the number of kits that are sold the data is discrete. </item>
+<item>	Are the events independent? This may be a fair assumption for this study. Most likely the sale of one kit is not dependent on whether another kit is sold. Though if two friends buy the kits together or someone buys a bunch as presents, this is not the case, but in general it is more likely independent than dependent. </item>
+<item>	Are there a fixed number of trials? In this case, the number of trials would be the 500 kits with the new packaging. </item>
+<item>	Are there two possible outcomes? Either a kit is sold or it is not. </item></list>
+</item>
+<item><m:math>
+<m:apply><m:leq/><m:ci>P(X</m:ci><m:cn>36)</m:cn></m:apply>
+</m:math>
+= 0.00077 = 0.077% </item>
+<item>The probability that we observed at most 306 out of 500 kits sold (1), assuming the rate of sales is 68%, is 0.077%
+ </item>
+<item>Since the probability is less than 1%, then it is very unlikely that we would have observed this evidence under the assumption. Since we actually observed the evidence but assumed that the rate was 68%, what we have assumed is called into question. Therefore, it is unlikely that the assumption is true . Therefore, it is likely that the new packaging has resulted in a decrease in sales .   
+ </item>
+
+</list></solution>
+</exercise><exercise id="eip-468"><problem id="eip-34">
+  
+
+<para id="eip-idm229883632">Striking Donkey Coffee recently sold an 80% stake in their company to Baravalle, an Italian coffee conglomerate. Striking Donkey’s logo is simplistic. Baravalle wants to maintain brand recognition, but also wants to put their stamp on the company. In particular, Baravalle is known for its modern and stylish advertisements. </para><para id="eip-idm482791648"> Designers and marketers at Baravalle have worked tirelessly for the last month to come up with two revised Striking Donkey logos (not included, because it is top secret). They are referred to as Logo 1 and Logo 2.</para>
+
+<para id="eip-idm821692592"> Now they want to determine whether customers show any preference to either logo. To do this, they asked a random sample of 40 customers who were familiar with the Striking Donkey Brand which logo they prefer. Participants had to make a choice between the logos. 
+</para>
+<para id="eip-idm822964752"> The results of the study were that 26 out of the 40 participants preferred Logo 2.</para>
+
+<para id="eip-idm691414464"> The marketers at Baravalle now want to do a statistical analysis to determine whether Logo 2 is preferred significantly more than Logo 1.   </para>
+
+<list id="eip-idm1280188544" list-type="enumerated" number-style="arabic"><item>What assumption do you need to start with when determining whether Logo 2 is preferred significantly more than Logo 1? State your answer both in a sentence and mathematically. </item>
+<item>Can this situation be modelled by the binomial distribution? Support your answer by showing why or why not this situation satisfies each of the five criteria of the binomial distribution.  </item>
+<item>After previous issues with horrible new logo launches, Baravalle only wants to go forward if there is clear evidence that Logo 2 is preferred. Based on this, what level of significance should they use? Explain your reasoning. 
+ </item>
+<item>Regardless of your answer in b, assume that this situation satisfies the binomial distribution for the remainder of the question. Use a computer program to find that appropriate probability that will allow you to evaluate the evidence.    </item>
+<item>In sentence form, explain what the probability you have found means in the context of the question. Do not make a conclusion yet. Instead explain what it is a probability of. </item>
+<item>Based on the probability, determine whether Logo 2 is preferred significantly more than Logo 1. Explain your reasoning. </item>
+
+</list></problem>
+
+<solution id="eip-758">
+<para id="eip-idm1390458016">Observational unit: People who are familiar with Striking Donkey Coffee;
+Variable: Whether they prefer Logo 2; 
+Type of variable: Categorical. 
+</para>
+ <list id="eip-idm1420205584" list-type="enumerated" number-style="arabic"><item>They need to assume the opposite of what they want to show. This means they need to assume that Logo 2 is NOT preferred significantly more than Logo 1. This would mean they are preferred equally. Therefore, there is a 50% chance that someone will choose Logo 2. </item>
+<item> 
+<list id="eip-idm2306916496">
+<item>The data is collected randomly: Yes. It is a random sample of participants.  </item>
+<item>The outcomes are counted: Yes. They count how many people like Logo 2.  </item>
+<item> There are two possible outcomes: Yes. Either they prefer Logo 2 or they did not. </item>
+<item> There are a fixed number of trials: Yes. They asked 40 people. </item>
+<item>The trials are independent of each other. Yes. It is fair to assume that no participant’s preference is based on another participants preference.  </item>
+
+</list> 
+</item>
+<item>The more unlikely it is that we observed our evidence, the smaller the probability will be. This means, the smaller the probability, the more unlikely it is that the assumption (i.e. that there is no preference between the logos) is true. Since the marketers want clear evidence that there is a preference, they want a smaller probability, which would show it is unlikely that there is a preference between the logos. 
+
+The level of significance is the threshold between likely and unlikely. Thus, if they want clear evidence, they want to set their threshold “high”, meaning they want to make it a small number. Since the level of significance is between 1% and 10%, the lowest level of significance (meaning the highest threshold of evidence) is at 1%.  
+ </item>
+<item><m:math>
+<m:apply><m:geq/><m:ci>P(X</m:ci><m:cn>26)</m:cn></m:apply>
+</m:math>
+ = 0.04035 = 4.04% </item>
+<item>The probability that we observed at least 26 out of 40 people who preferred Logo 2, assuming that there was no preference between the logos, is 4.04%.
+ </item>
+<item> Since the probability is greater than 1% (it is 4.04%), it is not unlikely that we observed at least 26 out of 40 people who preferred Logo 2, assuming that there was no preference between the logos. Therefore, we do not reject that there was no preference between the logos. This suggests that Logo 2 is NOT preferred significantly more than Logo 1.
+</item>
+</list></solution>
+</exercise></section>
+  </content>
+</document>

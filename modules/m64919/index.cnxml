@@ -1,0 +1,64 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Introduction to Discrete Probability Distributions</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m64919</md:content-id>
+  <md:title>Introduction to Discrete Probability Distributions</md:title>
+  <md:abstract/>
+  <md:uuid>22bee063-eeee-48ea-9592-beb143f0ca0a</md:uuid>
+</metadata>
+
+<content>
+    <section id="import-auto-idm510858352">
+      <title>Introduction</title>
+      <section id="import-auto-idm614205728">
+        <title>Chapter Objectives</title>
+        <para id="import-auto-idm803619056"/>
+        <para id="import-auto-idm616760464">By the end of this chapter, the student should be able to: </para>
+        <list id="eip-993"><item>Recognize the binomial probability distribution and apply it appropriately.
+</item>
+<item>Be able to evaluate evidence using the binomial distribution.</item>
+</list><para id="import-auto-idm275857456">Suppose you flip a coin ten times and each time it comes up heads. This might make you start to wonder if there is something wrong with the coin. Perhaps it is a trick coin and is heads on both sides? Perhaps it is imbalanced and it is more likely to come up heads over tails. You may also wonder what is the probability of getting 10 heads in a row, if the coin was fair. </para>
+        <para id="import-auto-idm438005728">Coin flipping is interesting because it is a random event. We cannot predict whether the next flip will be heads or tails (assuming it isn’t a trick coin). That means the outcome would be a random variable. A <emphasis effect="bold">random variable</emphasis> is any variable where the outcome is determined by a random event. The outcome is also discrete because we count it. Above you flipped a coin ten times and counted the number of heads. A <emphasis effect="bold">discrete random variable</emphasis> is a variable whose outcome is determined by a random event and where we count the outcomes. Other examples of discrete random variables include how many times you roll an even number with a die out of ten rolls; how many customers enter a store during a five-minute interval; how many times you draw a high card out of a deck of cards out of eight draws (without replacement). </para>
+        <para id="import-auto-idm523302640">In each of these situations (coin toss, rolling die, number of customers, drawing cards), you could look at each situation and, each time, come up with a new formula to find the probability of these events happening. But this would take a lot of work and be inefficient. Instead, you would want to see if the situation can be <emphasis effect="bold">modelled</emphasis> by a distribution. A <emphasis effect="bold">probability</emphasis> <emphasis effect="bold">distribution </emphasis>provides the theoretical probabilities of all of the possible events in a situation. For example, the following is a probability model of how many heads you can get when you flip a fair coin three times: </para><table id="import-auto-idm523959360" summary="">
+          <tgroup cols="2">
+            <colspec colnum="1" colname="c1"/>
+            <colspec colnum="2" colname="c2"/>
+            <thead>
+              <row>
+                <entry>
+                  <emphasis effect="bold"># of heads</emphasis>
+                </entry>
+                <entry>
+                  <emphasis effect="bold">Probability</emphasis>
+                </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>0</entry>
+                <entry>0.125</entry>
+              </row>
+              <row>
+                <entry>1</entry>
+                <entry>0.375</entry>
+              </row>
+              <row>
+                <entry>2</entry>
+                <entry>0.375</entry>
+              </row>
+              <row>
+                <entry>3</entry>
+                <entry>0.125</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <para id="import-auto-idm333489696">Notice that the probabilities range from 0 to 1 and that the sum of the probabilities is 1. </para>
+        <para id="import-auto-idm1957911776">The above table could be determined by working out all of the possible outcomes (TTT, TTH, THT, HTT, etc.), then counting how many heads were in each outcome. But again, that is time consuming. Instead, you want to see if there is a probability distribution that models your situation that you can use. For example, coin tossing can be modelled by the T distribution. </para>
+        <para id="import-auto-idm481725088">The binomial distribution is an example of a model for discrete random variables. There are many other models for discrete random variables including Poisson, geometric, hypergeometric, and discrete uniform to name a few. Each distribution comes with a set of criteria and if a situation fits that criteria, then the distribution can model it. That is, the distribution can produce theoretical probabilities for that situation. </para>
+        <note id="eip-627" type="important"><title>Theoretical vs. experimental probabilities</title>In simplest terms, a theoretical probability is determined by using a formula while an experimental probability is found by actually doing the event. For example, if you flip a coin 3 times and get 2 heads, then the experimental probability is 2/3 = 0.6667. The theoretical probability is 0.375. The theoretical probability is also called the <emphasis effect="bold">long-run probability</emphasis>, because the longer you do the experimental probability the closer the experimental results will get to the theoretical probability. This is an example of the <emphasis effect="bold">law of large numbers</emphasis>. </note><para id="import-auto-idm2807799200">In this chapter, we are going to learn about the binomial distribution, which is a model for discrete random variables. In the next chapter, we will learn about the normal distribution, which is a model for continuous random variables. </para>
+        <para id="import-auto-idm805130192">In particular, we want to use the binomial distribution to evaluate evidence. For example, going back to the example flipping a coin ten times and getting ten heads, we want to use the evidence (getting ten heads) to determine whether we think there is something wrong with the coin. </para>
+      </section>
+    </section>
+  </content>
+</document>

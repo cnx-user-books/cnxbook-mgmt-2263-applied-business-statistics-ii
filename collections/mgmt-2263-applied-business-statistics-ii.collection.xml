@@ -1,0 +1,80 @@
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:md="http://cnx.rice.edu/mdml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:content-id>col23820</md:content-id>
+    <md:title>MGMT 2263: Applied Business Statistics II</md:title>
+    <md:language>en</md:language>
+    <md:license url="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</md:license>
+    <md:uuid>d961b574-3571-4993-8788-f60577b1095a</md:uuid>
+<md:slug>mgmt-2263-applied-business-statistics-ii</md:slug>
+</metadata>
+  <col:content>
+    <col:subcollection>
+      <md:title>Business Statistics - Module 1 - Data collection and descriptive statistics</md:title>
+      <col:content>
+        <col:module document="m62095"/>
+        <col:module document="m64275"/>
+        <col:module document="m64281"/>
+        <col:module document="m62317"/>
+        <col:module document="m64282"/>
+        <col:module document="m64905"/>
+        <col:module document="m64906"/>
+        <col:module document="m64907"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Business Statistics - Module 2 - Probability</md:title>
+      <col:content>
+        <col:module document="m62337"/>
+        <col:module document="m62329"/>
+        <col:module document="m54220"/>
+        <col:module document="m62330"/>
+        <col:module document="m64919"/>
+        <col:module document="m64918"/>
+        <col:module document="m62345"/>
+        <col:module document="m64939"/>
+        <col:module document="m64940"/>
+        <col:module document="m64932"/>
+        <col:module document="m64934"/>
+        <col:module document="m64935"/>
+        <col:module document="m64931"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Business Statistics - Module 3 - Confidence Intervals and Hypothesis Tests</md:title>
+      <col:content>
+        <col:module document="m65024"/>
+        <col:module document="m65023"/>
+        <col:module document="m65026"/>
+        <col:module document="m65027"/>
+        <col:module document="m65028"/>
+        <col:module document="m65311"/>
+        <col:module document="m65305"/>
+        <col:module document="m65304"/>
+        <col:module document="m65318"/>
+        <col:module document="m65319"/>
+        <col:module document="m65509"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Business Statistics - Module 4 - Linear Regression and Correlation</md:title>
+      <col:content>
+        <col:module document="m65507"/>
+        <col:module document="m55719"/>
+        <col:module document="m55726"/>
+        <col:module document="m55718"/>
+        <col:module document="m55838"/>
+        <col:module document="m64846"/>
+        <col:module document="m56649"/>
+        <col:module document="m55852"/>
+      </col:content>
+    </col:subcollection>
+    <col:subcollection>
+      <md:title>Business Statistics - Module 5 - Two Population Hypothesis Testing</md:title>
+      <col:content>
+        <col:module document="m68659"/>
+        <col:module document="m68660"/>
+        <col:module document="m47060"/>
+      </col:content>
+    </col:subcollection>
+  </col:content>
+</col:collection>

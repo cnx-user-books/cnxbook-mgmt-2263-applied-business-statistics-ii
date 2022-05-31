@@ -1,0 +1,136 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Introduction to Sampling Distributions</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m64932</md:content-id>
+  <md:title>Introduction to Sampling Distributions</md:title>
+  <md:abstract>Introduces the concept of sampling distributions.</md:abstract>
+  <md:uuid>22901cb4-4b08-4e91-91a5-390124fddb4a</md:uuid>
+</metadata>
+
+<content>
+    <para id="import-auto-idm339972560">When we take a random sample from a population, we expect that there is going to be some variability (i.e. sampling variability) between the information the sample gives us and the whole population. That is, we might find that the sample mean and the population mean are different. We may also find that if we take multiple random samples of size <emphasis effect="italics">n</emphasis> that the sample mean for each sample is different. The following chapter looks at how we can better understand the sampling variability in statistics. </para><para id="import-auto-idm1300453808">Before we go on, here is a reminder of a few terms and symbols. </para>
+    <para id="import-auto-idm1220690000">A <emphasis effect="bold">parameter</emphasis> is a descriptive measure of the population (eg. population mean, population standard deviation, population proportion).</para>
+    <para id="import-auto-idm398310656">A <emphasis effect="bold">statistic</emphasis> is a descriptive measure of the sample (eg. sample mean, sample standard deviation, sample proportion).</para>
+    <table xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm339510080" summary="Table of important symbols">
+<tgroup cols="3"><colspec colnum="1" colname="c1"/>
+        <colspec colnum="2" colname="c2"/>
+        <colspec colnum="3" colname="c3"/>
+        <thead>
+          <row>
+            <entry>
+              
+                <emphasis effect="bold">Measure</emphasis>
+              
+            </entry>
+            <entry>
+              
+                <emphasis effect="bold">Population</emphasis>
+             
+            </entry>
+            <entry>
+              
+                <emphasis effect="bold">Sample</emphasis>
+           
+            </entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Sample size</entry>
+            <entry>
+              
+                <emphasis effect="italics">N</emphasis>
+             
+            </entry>
+            <entry>
+              
+                <emphasis effect="italics">n</emphasis>
+             
+            </entry>
+          </row>
+          <row>
+            <entry>Mean</entry>
+            <entry> <m:math>
+<m:msub><m:mi>μ</m:mi><m:mi>x</m:mi></m:msub>
+</m:math> </entry>
+           <entry> 
+<m:math>
+<m:mover accent="true">
+  <m:mrow>
+    <m:mi> x </m:mi>
+    
+  </m:mrow>
+  <m:mo> - </m:mo>
+</m:mover> 
+
+</m:math> </entry>
+          </row>
+          <row>
+            <entry>Standard deviation</entry>
+            <entry> <m:math>
+<m:ci><m:msub><m:mi>σ</m:mi><m:mi>x</m:mi></m:msub></m:ci>
+</m:math></entry>
+            <entry><m:math>
+<m:ci><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:ci>
+</m:math> </entry>
+          </row>
+          <row>
+            <entry>Proportion</entry>
+            <entry><m:math>
+<m:pi/>
+</m:math> </entry>
+            <entry> <m:math>
+<m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+    
+  </m:mrow>
+  <m:mo> &gt; </m:mo>
+</m:mover> 
+
+</m:math> </entry>
+          </row>
+        </tbody>
+      
+
+
+
+
+</tgroup><caption>Table of important symbols</caption>
+</table><para id="import-auto-idm1176034048">The population mean, population standard deviation, and sample standard deviation have a subscript of <emphasis effect="italics">x</emphasis> to demonstrate that they are the measure for the variable <emphasis effect="italics">X</emphasis>. Though this is mostly notational, it does become important later in this chapter. </para><section id="import-auto-idm1158001712">
+      <title>What is a sampling distribution?</title>
+      <para id="import-auto-idm395339952">Suppose we take many different random samples of 100 university students from a university that has an equal number of men and women. </para>
+      <para id="import-auto-idm1171058576">The number of women will vary amongst the samples. For example, one sample could have 45 women, another sample could have 48 women, another sample could have 52 women, etc. </para>
+      <para id="import-auto-idm1197629392">Though it could be possible that we get a random sample that only has 2 women in it, it would be pretty unlikely. Instead, we would expect that most of the samples would have around 50 women in it with some variation around that value. </para>
+      <para id="eip-984">Figure 1 is the result of a simulation that took 10,000 samples of size 100 from a population that had an equal about of women and men. The horizontal axis is the number of women in each sample. The height of each bar is the number of samples that had that many women.
+</para><figure id="fs-idm1305466368">
+<media id="import-auto-idm1436923040" alt="Drawing">
+        <image mime-type="image/png" src="../../media/Picture1.png"/>
+      </media>
+<caption>Number of women in each sample of size 100</caption>
+</figure>
+
+      <para id="import-auto-idm1057907248">Notice how the most common number of women is around 50 (i.e. the average), but there is variation from that 50. Most samples have between 40 and 60 women. </para><para id="import-auto-idm384297664">The variability among random samples of size <emphasis effect="italics">n</emphasis> from the same population is called <emphasis effect="bold">sampling variability</emphasis>.</para>
+      <para id="import-auto-idm1448081696">A probability distribution that characterizes some aspect of sampling variability is termed a <emphasis effect="bold">sampling distribution</emphasis>. A sampling distribution is constructed by taking all possible samples of a size <emphasis effect="italics">n</emphasis> from a population. Then for each sample, a statistic is calculated (e.g. sample mean, sample proportion, sample standard deviation). The sampling distribution is then created by making a graph of all of these samples. </para><para xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm1047362800">Actually constructing a sampling distribution is often very difficult. A medium sized university in Canada might have 12,000 students. All possible samples of size 100 from that population would result in 
+<m:math>
+<m:apply><m:times/><m:cn>5.87</m:cn><m:apply><m:power/><m:cn>10</m:cn><m:cn>249</m:cn></m:apply></m:apply>
+</m:math>
+
+ unique samples! Think about that. One billion is 
+<m:math>
+<m:apply><m:power/><m:cn>10</m:cn><m:cn>9</m:cn></m:apply>
+</m:math>. Google is named after a googol (
+<m:math>
+<m:apply><m:power/><m:cn>10</m:cn><m:cn>100</m:cn></m:apply>
+</m:math>) because they wanted Google to be associated with an immense amount of data. Yet a googol is smaller than all possible samples at 100 from the medium sized university. If we got a computer to find all possible samples, it would take it over a billion years to find them<sup><footnote id="import-auto-footnote-1"> This is based off of calculations on how long it would take a network of supercomputer in 2011 to work through all possible combinations of a 256 bit encryption. By the way, there are less possibilities in a 256 bit encryption than there are all possible samples of size 100 from a population of 12,000.</footnote></sup>! Therefore, actually constructing a true sampling distribution in most situations is incredibly hard, incredibly time consuming, and not really worth it. Thus when we talk about sampling distributions, we talk about a <emphasis effect="bold">theoretical sampling distribution</emphasis>. That is, we theorize what this sampling distribution would look like if it was possible to examine all possible samples. </para><para id="import-auto-idm1304975760">Due to these limitations, we often look at an empirical sampling distribution, instead of a theoretical sampling distribution. An <emphasis effect="bold">empirical sampling distribution </emphasis>is created by taking many samples from a population and finding a statistic for each sample, but not doing this for all possible samples. The plot shown in  is an example of an empirical sampling distribution as it only contains 10,000 samples and not all possible samples. The statistic in  is the number of women, but we could have also looked at the proportion of women. </para>
+      <para id="import-auto-idm377264464">In summary, a sampling distribution is a distribution of a statistic. This differs from other distributions, like the population distribution, which are distributions for individual data values. </para>
+    </section>
+    <section id="import-auto-idm1018327136">
+      <title>Why do we care about sampling distributions?</title>
+      <para id="import-auto-idm1026155856">Suppose we take a random sample of 100 students from a medium sized university and we find that 75 of them are women. Does this call into question the assumption that 50% of the students are women? This is hard to figure out unless we know how likely it is that we could have found this random sample, assuming that there are an equal number of men and women. </para><para id="import-auto-idm385507872">The sampling distribution helps us find this probability. From the empirical sampling distribution in <link document="fs-idm1305466368" version="2.1">Figure 1</link>
+ we can find the probability of getting a random sample of 75 women, assuming that there are an equal number of men and women is 0.0000%. That is, it is really unlikely to get a random sample of 75 women out of 100 if there are an equal number of men and women in the population. Based on this, we can be fairly confident that this university probably doesn’t have an equal number of men and women. Instead, it is more likely that there are women than men at this university. </para><para id="import-auto-idm1060229840">The process described above is called <emphasis effect="bold">inferential statistics</emphasis>. Inferential statistics is used to make a conclusion about the population (all students at the university) from a sample (100 students). In general, to do any form of inferential statistics, we need to use a sampling distribution to either determine how likely or unlikely a statistic is (in hypothesis testing) or to estimate a parameter from a statistic (confidence intervals). </para>
+      <para id="import-auto-idm1689970848">Thus sampling distributions are the backbone of inferential statistics. </para>
+      <para id="import-auto-idm1027954224">Note: What was described above about the proportion of women at a university should sound familiar. In Chapter 4, we used the binomial distribution to determine how not unlikely or unlikely events were. The binomial distribution was helping us understand the sampling distribution of proportions. </para>
+    </section>
+  </content>
+</document>

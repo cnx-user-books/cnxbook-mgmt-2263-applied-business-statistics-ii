@@ -1,0 +1,1638 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+  <title>Numerical Summaries</title>
+  <metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m64905</md:content-id>
+  <md:title>Numerical Summaries</md:title>
+  <md:abstract/>
+  <md:uuid>5fcc946e-1178-4530-9223-10f5189f8db6</md:uuid>
+</metadata>
+
+<content>
+
+<para id="eip-583">By the end of this section, we want to be able to describe the distribution of quantitative data (i.e. shape, centre and variation). In the previous section, we looked at the shape of quantitative data. This section focuses on numerical summaries of data for quantitative data. In particular, it focuses on measures of centre and measures of variation. 
+
+</para><para id="eip-528">There are other numerical summaries of data called measures of location, which will be discussed in the next section. </para><section id="eip-597"><title>Measures of centre</title><para id="element-848">Measures of centre or average give us a sense of what a typical value in a data set is. For example, the average number of children in a family in Canada is 1.9. This means that a typical family will have about 1.9 children. Obviously, no family has exactly 1.9 children, but this gives a sense of how many children families have on average. Further, some families may have 8 children. Others may have no children. The measure of centre gives a sense of what is going on in the middle of the data set.  </para><note id="eip-196">Even though you may wish to round an average to a whole number (especially when it is about the number of people), this is not necessary nor is it appropriate as it is giving a sense of the centre of the data, which is not necessarily an actual data value. 
+</note><para id="eip-810">The "center" of a data set is a way of describing a typical value in a data set. The three most widely used measures of the "center" of the data are the <term>mean</term>, <term>median</term> and <term>mode</term>. </para><para id="eip-205">To explain these three measures of centre, let’s look at an example. Suppose we want to find the average weight of 50 people. To calculate the mean weight of the 50 people, we would add the 50 weights together and divide by 50. To find the median weight of the 50 people, order the data from least heavy to most heavy, and find the weight that splits the data into two equal parts. The mode is the most commonly occurring value. To find the mode, find the weight that occurs the most frequently. 
+</para><para id="eip-527">This section provides more details on how to find the measures of centre, the notation for the measures, and when it is best to used which measure. </para><note id="eip-13"><label/>
+<title>NOTE</title>
+<para id="fs-idp62684352">Though the words “mean” and “average” are sometimes used interchangeably, they do not necessarily mean the same thing. In general, “average” is any measure of centre and “mean” is a specific type of centre. Many people use average and mean as the same, but not always. For example, when people talk about average housing price, they are usually referring to the median house price. </para></note>
+
+<section id="eip-444"><title>Mean</title>
+<para id="eip-629">The mean of a data set can be thought of as a balancing point (or fulcrum). If you think of numbers as weighted, then the mean is the number that will balance the data values evenly. Suppose your data values are 1, 2, 3, 4, 5. Then the number that balances the data is 3. To go a little deeper, the balance point is three because the distance between 3 and the data values less than it is equal to the distance between 3 and the data values greater than it as shown in <link target-id="mean1" document=""/>. </para><para id="eip-672"><figure id="mean1">
+<media id="mean1pic" alt="mean11">
+<image mime-type="image/jpeg" src="../../media/Mean1.png" width="1000"/>
+</media>
+
+<caption>To find the mean of this data, we need to find the number that balances the data equally on both sides.</caption>
+
+</figure>
+</para><para id="eip-314">Let's try a harder example. Suppose our data values are 0, 1, 1, 2, 3, 3, 4, 6. The mean will be the number such that the total distance to the data values below it and the total distance to the data values above it are the same. Let's see 3 is the mean again. Then the distance between our suggested "mean" and 0 is 3; the distance between our "mean" and 1 is 2 (but there are two of them); and the distance between our "mean" and 2 is 1. That is, the distance between our "mean" and all of the data values below it are 3+2+2+1 = 8. If 3 is actually our mean, then the total distance between 3 and the data values above it will also be 8. Let's check. The distance between our "mean" and 4 is 1; the distance between our "mean" and 6 is 3. The total distance above 3 is only 4. Therefore, 3 cannot be our mean as it doesn't balance our data.  </para><note id="eip-847">The two data values of 3 were ignored as their distance from the suggested mean is 0. Therefore, they would not change the answer if included. </note><para id="eip-470">From our calculations above, the choice of 3 was too big as the lower was too heavy. Let's try 2.5 as our mean. If the mean is 2.5, then the distance between our "mean" and 0 is 2.5; the distance between our "mean" and 1 is 1.5 (but there are two of them); the distance between our "mean" and 2 is 0.5. Thus the total distance between our mean of 2.5 and the data values below is is 2.5 + 1.5 + 1.5 + 0.5 = 6. If 2.5 is our mean, then the total distance above 2.5 should also be 6. The distance between our "mean" and 3 is 0.5 (but there are two of them); the distance between our "mean" and 4 is 1.5; the distance between our "mean" and 6 is 3.5. Thus the total distance between the data values and our suggested mean of 2.5 is 0.5 + 0.5 + 1.5 + 3.5 = 6! Therefore, 2.5 is the mean for this data. </para><para id="eip-969"><figure id="mean2">
+<media id="mean2pic" alt="mean21">
+<image mime-type="image/jpeg" src="../../media/Mean 2.png" width="1000"/>
+</media>
+
+<caption>To find the mean of this data, we need to find the number that balances the data equally on both sides. Notice that the mean here is not a data value. </caption>
+
+</figure>
+</para><para id="eip-551">Thankfully we don't have to do these in-depth calculations and guesses each time. Instead the formula is pretty straight-forward. </para><para id="element-705">The Greek letter <emphasis effect="italics">μ</emphasis> (pronounced "mew") represents the <emphasis>population mean</emphasis>. That is, it is the mean for the population data. </para><equation id="eip-181"><title>Formula for Population Mean</title><m:math>
+<m:mi>μ</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac><m:mn>1</m:mn><m:mi>N</m:mi></m:mfrac>
+<m:munderover><m:mo>∑</m:mo>
+<m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mi>N</m:mi>
+</m:munderover>
+<m:msub><m:mi>x</m:mi><m:mi>i</m:mi></m:msub>
+</m:math></equation><para id="eip-911">The letter used to represent the <emphasis>sample mean</emphasis> is an <emphasis effect="italics">x</emphasis> with a bar over it (pronounced “<emphasis effect="italics">x</emphasis> bar”): <m:math><m:apply><m:conjugate/><m:ci>x</m:ci></m:apply></m:math>. It is the mean of a sample of data from the population.</para><para id="eip-89">The sample mean is an estimate of the population mean. One of the requirements for the <emphasis>sample mean</emphasis> to be a good estimate of the <emphasis>population mean</emphasis> is for the sample taken to be truly random.</para><equation id="eip-834"><title>Formula for Sample Mean</title><m:math>
+<m:mover>
+<m:mi>x</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+<m:mo>=</m:mo>
+<m:mfrac><m:mn>1</m:mn><m:mi>n</m:mi></m:mfrac>
+<m:munderover><m:mo>∑</m:mo>
+<m:mrow><m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+<m:mi>n</m:mi>
+</m:munderover>
+<m:msub><m:mi>x</m:mi><m:mi>i</m:mi></m:msub>
+</m:math></equation><para id="element-228">To see how the formula words, consider the sample:
+<newline/>1; 1; 1; 2; 2; 3; 4; 4; 4; 4; 4</para><equation id="element-46"><m:math>
+<m:mover>
+<m:mi>x</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mn>1</m:mn>
+<m:mo>+</m:mo>
+<m:mn>1</m:mn>
+<m:mo>+</m:mo>
+<m:mn>1</m:mn>
+<m:mo>+</m:mo>
+<m:mn>2</m:mn>
+<m:mo>+</m:mo>
+<m:mn>2</m:mn>
+<m:mo>+</m:mo>
+<m:mn>3</m:mn>
+<m:mo>+</m:mo>
+<m:mn>4</m:mn>
+<m:mo>+</m:mo>
+<m:mn>4</m:mn>
+<m:mo>+</m:mo>
+<m:mn>4</m:mn>
+<m:mo>+</m:mo>
+<m:mn>4</m:mn>
+<m:mo>+</m:mo>
+<m:mn>4</m:mn>
+</m:mrow>
+<m:mn>11</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mn>2.7</m:mn>
+</m:math>
+</equation><para id="eip-892">Note: Since it is sample data, we use the symbol <m:math><m:apply><m:conjugate/><m:ci>x</m:ci></m:apply></m:math>. </para><note id="eip-233"><label/><title>Application of the law of large numbers</title>
+<para id="eip-idm634646352">If the size of a random sample is increased, then the sample mean will more likely be a better estimate of the population mean. </para>
+
+<para id="eip-idm193017072"> 
+Note: Just because the sample size increases does not mean that the sample mean for the larger sample must be a better estimate. It is only that it is more likely to be a better estimate. 
+</para></note></section>
+<section id="eip-358"><title>Median</title>
+<para id="eip-301">On a road, the median is in the middle of the road. In statistics, the median is the middle data value (when the data is in order). </para><para id="element-429">You can quickly find the <emphasis effect="italics">location</emphasis> or position of the median by using the expression <m:math>
+<m:mfrac>
+<m:mrow>
+<m:mi>n</m:mi>
+<m:mo>+</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:math>.</para><para id="element-860">The letter <emphasis effect="italics">n</emphasis> is the total number of data values in the sample. If <emphasis effect="italics">n</emphasis> is an odd number, the median is the middle value of the ordered data (ordered smallest to largest). If <emphasis effect="italics">n</emphasis> is an even number, the median is equal to the two middle values added together and divided by two after the data has been ordered. For example, if the total number of data values is 97, then <m:math>
+<m:mfrac>
+<m:mrow>
+<m:mi>n</m:mi>
+<m:mo>+</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:math>=
+<m:math>
+<m:mfrac>
+<m:mrow>
+<m:mn>97</m:mn>
+<m:mo>+</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:math> = 49. The median is the 49<sup>th</sup> value in the ordered data. If the total number of data values is 100, then <m:math>
+<m:mfrac>
+<m:mrow>
+<m:mi>n</m:mi>
+<m:mo>+</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:math>=
+<m:math>
+<m:mfrac>
+<m:mrow>
+<m:mn>100</m:mn>
+<m:mo>+</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+</m:math> = 50.5. The median occurs midway between the 50<sup>th</sup> and 51<sup>st</sup> values. The location of the median and the value of the median are <emphasis>not</emphasis> the same. The upper case letter <emphasis effect="italics">M</emphasis> is often used to represent the median. The next example illustrates the location of the median and the value of the median.</para>
+</section>
+<section id="eip-582"><title>Mode</title>
+<para id="element-584">Another measure of the center is the mode. The <term>mode</term> is the data value that occurs most frequently and at least twice. 
+
+</para><para id="eip-561">A data set can have either</para><list id="eip-383"><item>no mode.</item>
+<item>one mode (unimodal)</item>
+<item>two modes (bimodal)</item>
+<item>or many modes (multimodal).</item>
+</list><para id="eip-159">Consider the statistics exam scores for 20 students:
+<newline/>
+<list id="set-536" list-type="labeled-item" display="inline">
+<item>50</item><item>53</item><item>59</item><item>59</item><item>63</item><item>63</item><item>72</item><item>72</item><item>72</item><item>72</item><item>72</item><item>76</item><item>78</item><item>81</item><item>83</item><item>84</item><item>84</item><item>84</item><item>90</item><item>93</item></list>
+<newline/>
+The most frequent score is 72, which occurs five times. Mode  =  72.
+</para><note id="eip-991"><label/><title>Note</title>
+<para id="fs-idm78257648">The mode can be calculated for qualitative data as well as for quantitative data. For example, if the data set is: red, red, red, green, green, yellow, purple, black, blue, the mode is red.</para></note></section><example id="element-3"><exercise id="exer4">
+<problem id="id45306962">
+<para id="element-226">AIDS data indicating the number of months a patient with AIDS lives after taking a new antibody drug are as follows (smallest to largest):
+<newline/>3; 4; 8; 8; 10; 11; 12; 13; 14; 15; 15; 16; 16; 17; 17; 18; 21; 22; 22; 24; 24; 25; 26; 26; 27; 27; 29; 29; 31; 32; 33; 33; 34; 34; 35; 37; 40; 44; 44; 47;
+<newline/>Calculate the mean, median and mode.</para></problem>
+<solution id="id45386042">
+<para id="element-471">The calculation for the mean is:</para>
+<para id="element-197"><m:math>
+<m:mover>
+<m:mi>x</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mo>[</m:mo>
+<m:mn>3</m:mn>
+<m:mo>+</m:mo>
+<m:mn>4</m:mn>
+<m:mo>+</m:mo>
+<m:mo>(</m:mo>
+<m:mn>8</m:mn>
+<m:mo>)</m:mo>
+<m:mo>(</m:mo>
+<m:mn>2</m:mn>
+<m:mo>)</m:mo>
+<m:mo>+</m:mo>
+<m:mn>10</m:mn>
+<m:mo>+</m:mo>
+<m:mn>11</m:mn>
+<m:mo>+</m:mo>
+<m:mn>12</m:mn>
+<m:mo>+</m:mo>
+<m:mn>13</m:mn>
+<m:mo>+</m:mo>
+<m:mn>14</m:mn>
+<m:mo>+</m:mo>
+<m:mo>(</m:mo>
+<m:mn>15</m:mn>
+<m:mo>)</m:mo>
+<m:mo>(</m:mo>
+<m:mn>2</m:mn>
+<m:mo>)</m:mo>
+<m:mo>+</m:mo>
+<m:mo>(</m:mo>
+<m:mn>16</m:mn>
+<m:mo>)</m:mo>
+<m:mo>(</m:mo>
+<m:mn>2</m:mn>
+<m:mo>)</m:mo>
+<m:mo>+</m:mo>
+<m:mtext>...</m:mtext>
+<m:mo>+</m:mo>
+<m:mn>35</m:mn>          
+<m:mo>+</m:mo>
+<m:mn>37</m:mn>          
+<m:mo>+</m:mo>
+<m:mn>40</m:mn>          
+<m:mo>+</m:mo>
+<m:mo>(</m:mo>
+<m:mn>44</m:mn>
+<m:mo>)</m:mo>
+<m:mo>(</m:mo>
+<m:mn>2</m:mn>
+<m:mo>)</m:mo>
+<m:mo>+</m:mo>
+<m:mn>47</m:mn> 
+<m:mo>]</m:mo>
+</m:mrow>
+<m:mn>40</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mi>23.6</m:mi>
+</m:math>
+<newline/>To find the median, <emphasis effect="italics">M</emphasis>, first use the formula for the location. The location is:
+<newline/><m:math>
+<m:mfrac>
+<m:mrow>
+<m:mi>n</m:mi>
+<m:mo>+</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mn>40</m:mn>
+<m:mo>+</m:mo>
+<m:mn>1</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mn>20.5</m:mn>
+</m:math>
+<newline/>Starting at the smallest value, the median is located between the 20<sup>th</sup> and 21<sup>st</sup> values (the two 24s):
+<newline/>3; 4; 8; 8; 10; 11; 12; 13; 14; 15; 15; 16; 16; 17; 17; 18; 21; 22; 22; 24; 24; 25; 26; 26; 27; 27; 29; 29; 31; 32; 33; 33; 34; 34; 35; 37; 40; 44; 44; 47;</para><para id="element-904">
+<m:math>
+<m:mi>M</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mn>24</m:mn>
+<m:mo>+</m:mo>
+<m:mn>24</m:mn>
+</m:mrow>
+<m:mn>2</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mn>24</m:mn>
+</m:math>
+To find the mode, we first have to determine if any data values repeat. If no data values repeat, there is no mode. Since 8 repeats, we know there is a mode. 8 repeats twice. We need to check if any data value repeats more than twice. If a data value repeats more than twice, then it is the mode. Since no data value repeats more than twice, any data value that repeats twice is the mode. <newline/> Therefore, the modes are 8, 15, 16, 17, 22, 24, 26, 27, 29, 34, 44. This data set is multi-modal.
+</para>
+</solution>
+</exercise>
+</example><example id="element-231">
+<exercise id="exer6"><problem id="id45393377">
+<para id="element-213">Suppose that in a small town of 50 people, one person earns $5,000,000 per year and the other 49 each earn $30,000. Which is the better measure of the "center": the mean, the median or the mode?</para></problem>
+<solution id="id45393396">
+<para id="element-444"><m:math>
+ <m:mrow>
+  <m:mover accent="true">
+   <m:mi>x</m:mi>
+   <m:mo>–</m:mo>
+  </m:mover>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>5</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mo>+</m:mo><m:mn>49</m:mn><m:mo stretchy="false">(</m:mo><m:mn>30</m:mn><m:mo>,</m:mo><m:mn>000</m:mn><m:mo stretchy="false">)</m:mo>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>50</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>129,400</m:mn>
+ </m:mrow>
+</m:math></para><para id="element-311"><emphasis effect="italics">M</emphasis> = 30,000
+</para><para id="element-831">(There are 49 people who earn $30,000 and one person who earns $5,000,000.)</para>
+<para id="eip-idm1425745504">
+The mode is 30,000 as this data value occurs 49 times.
+</para>
+<para id="element-564">Since the median and mode are equal, lets focus on the median. The median is a better measure of the "center" than the mean because 49 of  the values are 30,000 and one is 5,000,000.  The 5,000,000 is an outlier.  The 30,000 gives us a better sense of the middle of the data.</para>
+</solution>
+</exercise></example>
+
+
+<note id="eip-763" type="important">The above example highlights two important ideas: 
+<list id="eip-idm636046128">
+<item> <emphasis>Outliers</emphasis>: We have defined outliers as data values that are significantly different from other data 
+ values, but we have not provided a way of finding them. This will be discussed in the next section.
+ Regardless, we can see that 5 million is significantly different than 30 thousand in the above example.
+ </item>
+<item> <emphasis>Skew</emphasis>: When a data set has outliers, the outliers have the potential to skew the mean. In the above example, the centre of the data is 30,000, but the mean is 129,400. Thus the outlier of 5 million is pulling the mean up. That is, it is skewing the centre value by pulling it to the right on the number line. </item>
+
+</list>
+</note><section id="eip-945"><title>Comparing measures of centre</title><para id="eip-372">
+Above we have described how to find each of the measures of centre. But how do you choose which measure of centre to use in which situation? One option is to provide all three measures of centre, but sometimes this can be overwhelming to the audience. Instead you want to pick the best one that best describes that data. The following are some general guidelines for choosing the best measure of centre.</para>
+
+<para id="eip-idm611623824">The mean is often the best measure of centre to use because it is the most well-known and familiar of the measures of centre. It is also the only measure of centre that is computed using all of the sample values. But the mean is susceptible to outliers. As was seen in <link target-id="element-231" document=""/>, if there is an outlier, the mean can be pulled in one direction away from the centre. </para><para id="eip-idm442874912">Outliers are any data value that are significantly different from the other data values. In <link target-id="element-231" document=""/>, the outlier is 5 million as it is significantly higher than the other data values. We will discuss how to find outliers in the section 2.3 (Boxplots).</para><para id="eip-idm368101824">If there is an outlier in the data set that is skewing the mean, the best measure of centre to use is the median as it is not susceptible to outliers.</para> 
+
+<para id="eip-idm630996080">But be careful: The presence of outliers does not necessarily mean that the median is the best measure of centre. Here are a couple of examples where this is the case: 
+<list id="eip-idm447659008" list-type="enumerated" number-style="arabic"><item> Suppose there are 200 data values in a sample and one data value is an outlier, then the mean will most likely not be affected by the outlier. </item>
+<item>Suppose there is a data set that has outliers, but one is a high outlier and one is a low outlier. Then the outliers may balance out and not affect the mean. 
+</item>
+</list></para>
+
+<para id="eip-idm385829968">The mode is best used for categorical data, but can sometimes be used for quantitative data. For example, in <link target-id="element-231" document=""/>, the mode would be a good measure of centre because the majority of data values are the same. </para><para id="eip-idm309054080">In <link target-id="element-3" document=""/>, since there are no outliers, the mean is the best measure of centre to use. In <link target-id="element-231" document=""/>, since there is an outlier (5 million) and the mean and median are quite different, the median is the best measure of centre to use. </para><para id="eip-idm447370224">The following tables compare the measures of centre. 
+
+</para><table id="eip-435" summary="Table of how common measures of centre are.">
+<tgroup cols="2"><thead><row><entry>Measure</entry>
+<entry>How Common</entry></row></thead>
+<tbody>
+  <row>
+    <entry>Mean</entry>
+    <entry>most familiar</entry>
+  </row>
+  <row>
+    <entry>Median</entry>
+    <entry>commonly used</entry>
+  </row>
+  <row>
+    <entry>Mode</entry>
+    <entry>sometimes used</entry>
+  </row>
+</tbody>
+</tgroup>
+</table><table id="eip-558" summary="Every score used">
+<tgroup cols="2"><thead><row><entry>Measure</entry>
+<entry>Every Score Used</entry></row></thead>
+<tbody>
+  <row>
+    <entry>Mean</entry>
+    <entry>yes</entry>
+  </row>
+  <row>
+    <entry>Median</entry>
+    <entry>no</entry>
+  </row>
+  <row>
+    <entry>Mode</entry>
+    <entry>no</entry>
+  </row>
+</tbody>
+</tgroup>
+</table><table id="eip-842" summary="Affected by outliers">
+<tgroup cols="2"><thead><row><entry>Measure</entry>
+<entry>Affected by Outliers</entry></row></thead>
+<tbody>
+  <row>
+    <entry>Mean</entry>
+    <entry>yes</entry>
+  </row>
+  <row>
+    <entry>Median</entry>
+    <entry>no</entry>
+  </row>
+  <row>
+    <entry>Mode</entry>
+    <entry>no</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table></section><section id="eip-344"><title>How to mislead with averages</title><para id="eip-35">
+Consider the following situation:
+<quote id="hamlet-quote"> 
+  
+As you arrive at an open house in your preferred new home location, a neighbour comes up to you while he is walking his dog. “This is a great neighbourhood to live in! The average income in this neighbourhood is $60,000,” he tells you. You are pleased to hear how affluent the community is. A year after you’ve moved into your new home, the same neighbour comes to your door and asks you to sign a petition. “The city is overvaluing the homes in our neighbourhood again, which means more taxes. The average income in this neighbourhood is $20,000. We can’t afford these increases.” You dutifully sign the petition because you don’t want to pay more taxes, but you’re also confused. Wasn’t the average income a lot higher last year? What happened? Is your neighbour a liar? </quote>
+In this example, there are many different possible scenarios that could explain the discrepancy. But no matter what the scenario is, the neighbour is picking his statistics to fit his situation. </para>
+
+<para id="eip-idm1428800608">One scenario: The neighbour may be picking and choosing which measure of centre to use. Suppose that most people in the neighbourhood make around $20,000 a year, but there are a few people who live on the street with the super nice view who make $300,000 a year. Then in the first case, when he says the average income is $60,000, he has used the mean which has been pulled higher by the outliers of $300,000. He chose to use the mean to make the neighbourhood look more affluent than it really is. </para>
+
+<para id="eip-idm459642064">But when he wanted to make the argument that the neighbourhood wasn’t as affluent and should be in a lower tax bracket, he changed which measure of centre to use. Instead he may have the used the median or mode because they aren’t influenced by the outliers. </para>
+
+<para id="eip-idm1053514752">Another scenario: The neighbour may be choosing how he defines income to help make his point. In the first case, he may have only used those who are employed to come up with the average salary. While in the second case, he may have used all adults in the neighbourhood including students living with their parents, stay-at-home parents, retired people or people out of work. Their incomes may be very low or non-existent which would skew the average to being lower. In this scenario, he may be using the same measure of centre, but is picking what he means by income to get the results he wants. </para>
+
+<para id="eip-idm538081984">There are other possible scenarios. Can you think of any? 
+</para></section><section id="eip-91"><title>Skew</title><para id="eip-381">
+As has been noted above, if there are outliers in a data set, this can cause the mean to be pulled up or down (i.e. be either higher than expected or lower than expected) by these outliers. Outliers don't have to be present for this to happen. Essentially, any time that there are data values that cause the mean and median to be significantly different, then we say the data is <term>skewed</term>.  
+<list id="eip-idm1043405264">
+<item> 
+If the mean is significantly larger than the median and the histogram has a long tail on the right, then the data is right skewed or positively skewed.</item> 
+<item>If the mean is significantly smaller than the median and the histogram has a long tail on the left, then the data is left skewed or negatively skewed.</item>
+<item>If the mean and the median are approximately the same and the histograms has balanced tails, then the data is symmetric.
+</item>
+</list>
+
+</para><para id="eip-831"><figure id="skew"><title>Examples of skewness and symmetry </title><media id="skewpic" alt="Skewness">
+<image mime-type="image/jpeg" src="../../media/Skew.jpg" width="1000"/>
+</media>
+
+<caption>These are "perfect" examples of skewness and symmetry. In reality, there may be multiple modes or the mean and median will be similar but not equal. These are provided to give an example. </caption></figure></para></section><section id="eip-186"><title>Measures of variation</title><para id="element-683">An important characteristic of any set of data is the variation in the data. In some data sets, the data values are concentrated closely near the mean; in other data sets, the data values are more widely spread out from the mean. There are five measures of variation: range, standard deviation, 
+variance, interquartile range and coefficient of variation. </para><para id="eip-110">The range is the easiest to calculate. It is found by subtracting the maximum value in the data set from the minimum value in the data set. Though the range is easy to calculate, it is very much affected by outliers. </para><para id="eip-653">The interquartile range will be discussed in the section on box plots (section 2.3). </para><para id="eip-663">The most common measure of variation, or spread, is the standard deviation. The <term>standard deviation</term> measures how far data values are from their mean, on average.</para><note id="eip-706" type="important"><title>Variation within a sample vs. variation between samples</title><para id="eip-idm618401488">When talking about variable or variability in statistics, there are two different kinds: <emphasis>variation within a sample </emphasis>and <emphasis>variation between samples</emphasis>. 
+</para>
+<para id="eip-idm718392192">When we discuss finding the standard deviation, range or any measure of variation of a sample, we are discussing variation within a sample. In this case, we are looking at how the data values vary from each other. Most of the time, when we talk about variation this is what we are talking about.</para>
+
+<para id="eip-idm595534480">We can also talk about how much different samples vary from each other. For example, we could take multiple samples and find the sample mean of each sample. If we talk about how much the means vary from each other, we are discussing variation between samples. We will discuss this specific type of variation in Chapter 6. </para>
+
+<para id="eip-idm505899408">The law of large numbers saws that, for random samples, as the sample size increases, then the sample will more closely resemble the population. For example, as the sample size increases, the sample standard deviation will approach the population standard deviation. Thus, <emphasis effect="italics">the variation within the sample will more closely mimic the variation within the population as the sample size increases</emphasis>. But as the sample size increases, the sample means will approach the population mean. Thus, there will be less variation between the sample means. This means that <emphasis effect="italics">the variation between samples decreases, as the sample size increases</emphasis>. When we discuss <emphasis>sampling variability</emphasis>, we are discussing variation between samples. </para>
+
+<para id="eip-idm500994912"> 
+For this chapter, we are focusing on variation within a sample. </para></note><section id="fs-idm94849104">
+<title>The standard deviation (and variance)</title><list id="eip-id1169998044652" list-type="bulleted">
+<item>provides a numerical measure of the overall amount of variation in a data set, and</item>
+<item>can be used to determine whether a particular data value is close to or far from the mean.</item>
+</list>
+
+
+<section id="fs-idm34509216"><title>The standard deviation provides a measure of the overall variation in a data set</title><para id="fs-idm111390400">The standard deviation is small when the data are all concentrated close to the mean, exhibiting little variation or spread. The standard deviation is larger when the data values are more spread out from the mean, exhibiting more variation. 
+</para><para id="eip-419">Suppose that we are studying the amount of time customers wait in line at the checkout at supermarket A and supermarket B. It is known that the average wait time at both supermarkets is about five minutes. At supermarket A, though, the standard deviation for the wait time is two minutes; at supermarket B the standard deviation for the wait time is four minutes.
+</para> 
+<para id="fs-idm8407856">Because supermarket B has a higher standard deviation, we know that there is more variation in the wait times at supermarket B. Overall, wait times at supermarket B are more spread out from the average; wait times at supermarket A are more concentrated near the average. This means that at supermarket B, you have a greater chance of having a short wait time, but also a greater chance of having a long wait time, compared to supermarket A. That means the wait times are more volatile at supermarket B. On the other hand, you will be waiting about the same amount of time at supermarket A. That means there are more consistent waits times at supermarket A. </para><para id="eip-405">One way, we could summarize the supermarket situation is as follows: 
+</para><list id="eip-766"><item>A typical wait time at supermarket A is 5 minutes give or take 2 minutes. This means that someone typically has to wait 3 to 7 minutes in the checkout line.</item>
+<item>A typical wait time at supermarket B is 5 minutes give or take 4 minutes. This means that someone typically has to wait 1 to 9 minutes in the checkout line.</item>
+</list><para id="eip-692">Here the term “typical” means common, normal. So normally people will wait between 3 to 7 minutes at supermarket A, but there will be some people who only wait 2 minutes and some who wait 10 minutes at the checkout. That is, the typical range only provides a sense of what is going on in the middle of the data, but there are values occurring outside of that range. </para><note id="eip-804">For the typical value, you can use any measure of centre. But for the give or take value, you have to use standard deviation. No other measure of variation works. 
+</note></section><section id="fs-idm36185184"><title>Calculating the Standard Deviation</title><note id="eip-116">The following explains how to calculate the standard deviation by hand. We will be using computer software to do this. Thus it is not important to know this section in detail, but it is helpful to know the basics of how the standard deviation is calculated to help understand what the standard deviation is. </note><para id="fs-idm109226656">If <emphasis effect="italics">x</emphasis> is a number, then the difference "<emphasis effect="italics">x</emphasis> – mean" is called its <emphasis>deviation</emphasis>. In a data set, there are as many deviations as there are items in the data set. The deviations are used to calculate the standard deviation. If the numbers belong to a population, in symbols a deviation is <emphasis effect="italics">x</emphasis> – <emphasis effect="italics">μ</emphasis>. For sample data, in symbols a deviation is <emphasis effect="italics">x</emphasis> – <m:math>
+ <m:mover accent="true">
+  <m:mi>x</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+ 
+</m:math>.</para><para id="eip-45">The procedure to calculate the standard deviation depends on whether the numbers are the entire population or are data from a sample.  The calculations are similar, but not identical.  Therefore the symbol used to represent the standard deviation depends on whether it is calculated from a population or a sample. The lower case letter s represents the sample standard deviation and the Greek letter <emphasis effect="italics">σ</emphasis> (sigma, lower case) represents the population standard deviation. If the sample has the same characteristics as the population, then s should be a good estimate of <emphasis effect="italics">σ</emphasis>.</para>
+<para id="eip-689">To calculate the standard deviation, we need to calculate the variance first.  The <term>variance</term> is the <emphasis>average of the squares of the deviations</emphasis> (the <emphasis effect="italics">x</emphasis> – <m:math>
+ <m:mover accent="true">
+  <m:mi>x</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+ 
+</m:math> values for a sample, or the <emphasis effect="italics">x</emphasis> – <emphasis effect="italics">μ</emphasis> values for a population). The symbol <emphasis effect="italics">σ</emphasis><sup>2</sup> represents the population variance; the population standard deviation <emphasis effect="italics">σ</emphasis> is the square root of the population variance. The symbol <emphasis effect="italics">s</emphasis><sup>2</sup> represents the sample variance; the sample standard deviation <emphasis effect="italics">s</emphasis> is the square root of the sample variance. You can think of the standard deviation as a special average of the deviations.</para><para id="eip-790">If the numbers come from a census of the entire <emphasis>population</emphasis> and not a sample, when we calculate the average of the squared deviations to find the variance, we divide by <emphasis effect="italics">N</emphasis>, the number of items in the population. If the data are from a <emphasis>sample</emphasis> rather than a population, when we calculate the average of the squared deviations, we divide by <emphasis><emphasis effect="italics">n</emphasis> – 1</emphasis>, one less than the number of items in the sample.</para></section><section id="fs-idm36483152">
+<title>Formulas for the Sample Standard Deviation</title>
+<list id="eip-id1172772662272"><item> <m:math>
+ <m:mrow>
+  <m:mi>s</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>Σ</m:mi><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi> <m:mo>−</m:mo> <m:mover accent="true">
+         <m:mi>x</m:mi>
+         <m:mo>–</m:mo>
+        </m:mover>
+        <m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      
+     </m:mrow>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  </m:msqrt>
+  
+ </m:mrow>
+</m:math> 
+    </item>
+<item> For the sample standard deviation, the denominator is <emphasis><emphasis effect="italics">n</emphasis> - 1</emphasis>, that is the sample size <m:math><m:mo>-</m:mo></m:math> 1.</item>
+</list></section>
+
+<section id="fs-idm102220704">
+<title>Formulas for the Population Standard Deviation</title>
+<list id="eip-id1171740197716"><item>
+<m:math>
+ <m:mrow>
+   <m:mi>σ</m:mi>
+  <m:mo> </m:mo><m:mo>=</m:mo><m:mo> </m:mo><m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:mi>Σ</m:mi><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      
+     </m:mrow>
+     <m:mi>N</m:mi>
+    </m:mfrac>
+    
+   </m:mrow>
+  </m:msqrt>
+  
+ </m:mrow>
+</m:math> </item>
+<item>For the population standard deviation, the denominator is <emphasis effect="italics">N</emphasis>, the number of items in the population.</item>
+</list></section><para id="eip-606">Since the standard deviation is found by square rooting something, the standard deviation is always positive or zero. </para><para id="eip-60">Since the variance is the square of the standard deviation, it is not helpful as a descriptive statistic. For example, if
+you are looking at the weights of basketballs in kg, then the standard deviation will be in kg, while the variance will be
+in kg^2. Thus the variance is meaningless when trying to interpret the variation in data. It is helpful later on in
+statistics, but at this point it is not.</para><example id="eip-637"><para id="element-440">In a fifth grade class, the teacher was interested in the average age and the sample standard deviation of the ages of her students. The following data are the ages for a SAMPLE of <emphasis effect="italics">n</emphasis> = 20 fifth grade students. The ages are rounded to the nearest half year: </para>
+
+<para id="element-433">9; 9.5; 9.5; 10; 10; 10; 10; 10.5; 10.5; 10.5; 10.5; 11; 11; 11; 11; 11; 11; 11.5; 11.5; 11.5;</para><equation id="element-320"><m:math>
+ <m:mrow>
+  <m:mover accent="true">
+   <m:mi>x</m:mi>
+   <m:mo>–</m:mo>
+  </m:mover>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mtext>9 + 9</m:mtext><m:mtext>.5(2) + 10(4) + 10</m:mtext><m:mtext>.5(4) + 11(6) + 11</m:mtext><m:mtext>.5(3)</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>20</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>10.525</m:mn>
+ </m:mrow>
+</m:math></equation>
+
+<para id="element-642">The average age is 10.53 years, rounded to two places.</para>
+
+<para id="element-442">The variance may be calculated by using a table. Then the standard deviation is calculated by taking the square root of the variance. We will explain the parts of the table after calculating <emphasis effect="italics">s</emphasis>.</para>
+
+<table id="element-978" summary="This table presents the formulas and calculations of various values. The first column has the data, second column has frequency, third column has deviations, fourth column has deviations squared, fifth column has frequency times deviations squared. There are 6 rows of values.">
+<tgroup cols="5"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+<colspec colnum="5" colname="c5"/>
+<thead>
+  <row>
+    <entry>Data</entry>
+    <entry>Freq.</entry>
+    <entry>Deviations</entry>
+    <entry><emphasis effect="italics">Deviations</emphasis><sup>2</sup></entry>
+    <entry>(Freq.)(<emphasis effect="italics">Deviations</emphasis><sup>2</sup>)</entry>
+  </row>
+  </thead>
+  <tbody>
+  <row>
+    <entry><emphasis effect="italics">x</emphasis></entry>
+    <entry><emphasis effect="italics">f</emphasis></entry>
+    <entry>(<emphasis effect="italics">x</emphasis> – <m:math>
+ <m:mover accent="true">
+  <m:mi>x</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+ </m:math>)</entry>
+    <entry>(<emphasis effect="italics">x</emphasis> – <m:math>
+ <m:mover accent="true">
+  <m:mi>x</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+ 
+</m:math>)<sup>2</sup></entry>
+    <entry>(<emphasis effect="italics">f</emphasis>)(<emphasis effect="italics">x</emphasis> – <m:math>
+ <m:mover accent="true">
+  <m:mi>x</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+ 
+</m:math>)<sup>2</sup></entry>
+  </row>
+  <row>
+    <entry>9</entry>
+    <entry>1</entry>
+    <entry>9 – 10.525 = –1.525</entry>
+    <entry>(–1.525)<sup>2</sup> = 2.325625</entry>
+    <entry>1 × 2.325625 = 2.325625</entry>
+  </row>
+  <row>
+    <entry>9.5</entry>
+    <entry>2</entry>
+    <entry>9.5 – 10.525 = –1.025</entry>
+    <entry>(–1.025)<sup>2</sup> = 1.050625</entry>
+    <entry>2 × 1.050625 = 2.101250</entry>
+  </row>
+  <row>
+    <entry>10</entry>
+    <entry>4</entry>
+    <entry>10 – 10.525 = –0.525</entry>
+    <entry>(–0.525)<sup>2</sup> = 0.275625</entry>
+    <entry>4 × 0.275625 = 1.1025</entry>
+  </row>
+  <row>
+    <entry>10.5</entry>
+    <entry>4</entry>
+    <entry>10.5 – 10.525 = –0.025</entry>
+    <entry>(–0.025)<sup>2</sup> = 0.000625</entry>
+    <entry>4 × 0.000625 = 0.0025</entry>
+  </row>
+  <row>
+    <entry>11</entry>
+    <entry>6</entry>
+    <entry>11 – 10.525 = 0.475</entry>
+    <entry>(0.475)<sup>2</sup> = 0.225625</entry>
+    <entry>6 × 0.225625 = 1.35375</entry>
+  </row>
+  <row>
+    <entry>11.5</entry>
+    <entry>3</entry>
+    <entry>11.5 – 10.525 = 0.975</entry>
+    <entry>(0.975)<sup>2</sup> = 0.950625</entry>
+    <entry>3 × 0.950625 = 2.851875</entry>
+  </row>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry/>
+<entry>The total is 9.7375</entry>
+</row>
+</tbody>
+
+
+</tgroup>
+</table><para id="element-367">The sample variance, <emphasis effect="italics">s</emphasis><sup>2</sup>, is equal to the sum of the last column (9.7375) divided by the total number of data values minus one (20 – 1):</para><para id="element-631"><m:math>
+ <m:mrow>
+  <m:msup>
+   <m:mi>s</m:mi>
+   <m:mn>2</m:mn>
+  </m:msup>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>9.7375</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>20</m:mn><m:mo>−</m:mo><m:mn>1</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mn>0.5125</m:mn>
+ </m:mrow>
+</m:math></para>
+
+<para id="element-424">The <emphasis>sample standard deviation</emphasis> <emphasis effect="italics">s</emphasis> is equal to the square root of the sample variance:</para>
+<para id="element-127"><m:math>
+ <m:mrow>
+  <m:mi>s</m:mi><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:mn>0.5125</m:mn>
+   </m:mrow>
+  </m:msqrt>
+  <m:mo>=</m:mo><m:mn>0.715891</m:mn><m:mo>,</m:mo>
+ </m:mrow>
+</m:math> which is rounded to two decimal places, <emphasis effect="italics">s</emphasis> = 0.72.</para></example>
+</section>
+
+
+
+<section id="fs-idm60688208"><title/><section id="fs-idm66792288"><title>Explanation of the standard deviation calculation shown in the table</title><para id="element-877">The deviations show how spread out the data are about the mean. The data value 11.5 is farther from the mean than is the data value 11 which is indicated by the deviations 0.97 and 0.47. A positive deviation occurs when the data value is greater than the mean, whereas a negative deviation occurs when the data value is less than the mean. The deviation is –1.525 for the data value nine. <emphasis>If you add the deviations, the sum is always zero</emphasis>. (For <link target-id="eip-637"/>, there are <emphasis effect="italics">n</emphasis> = 20 deviations.) So you cannot simply add the deviations to get the spread of the data. By squaring the deviations, you make them positive numbers, and the sum will also be positive. The variance, then, is the average squared deviation.</para><para id="element-969">The variance is a squared measure and does not have the same units as the data. Taking the square root solves the problem. The standard deviation measures the spread in the same units as the data.</para>
+
+<para id="eip-880">Notice that instead of dividing by <emphasis effect="italics">n</emphasis> = 20, the calculation divided by <emphasis effect="italics">n</emphasis> – 1 = 20 – 1 = 19 because the data is a sample. For the <emphasis>sample</emphasis> variance, we divide by the sample size minus one (<emphasis effect="italics">n</emphasis> – 1). Why not divide by <emphasis effect="italics">n</emphasis>?  The answer has to do with the population variance. <emphasis>The sample variance is an estimate of the population variance.</emphasis> Based on the theoretical mathematics that lies behind these calculations, dividing by (<emphasis effect="italics">n</emphasis> – 1) gives a better estimate of the population variance.</para>
+
+<para id="eip-323">The standard deviation, <emphasis effect="italics">s</emphasis> or <emphasis effect="italics">σ</emphasis>, is either zero or larger than zero. When the standard deviation is zero, there is no spread; that is, the all the data values are equal to each other. The standard deviation is small when the data are all concentrated close to the mean, and is larger when the data values show more variation from the mean. When the standard deviation is a lot larger than zero, the data values are very spread out about the mean; outliers can make <emphasis effect="italics">s</emphasis> or <emphasis effect="italics">σ</emphasis> very large.</para></section></section><section id="eip-365"><title>Coefficient of variation</title><para id="eip-732">The standard deviation is a very good measure of variation, but when comparing two data sets it is not always the best. In particular, if the means of the two data sets are different. Suppose you are comparing the yearly salaries (excluding bonuses) of junior employees versus CEOs at oil and gas companies around Alberta. The yearly salaries for the junior employees will be significantly smaller than the CEOs. Let’s say the average salary for junior employees is $45,000 while for CEOs is $500,000. Now suppose that the standard deviation for both groups is $50,000. If we only looked at the standard deviation, we might say that the variation in both groups is the same. But really variation of $50,000 when the average salary is $45,000 is quite a bit more than for a salary of $500,000. That is, there is more relative variation in the junior employees’ salary. The standard deviation doesn’t capture this difference. But the coefficient of variation does and is a measure of <emphasis>relative variation</emphasis>. That is, it takes into account that bigger data values might have a larger standard deviation, but that doesn’t mean it has larger variation. 
+</para><para id="eip-362">The coefficient of variation is found by expressing the standard deviation as a percentage of the mean: 
+</para><equation id="eip-506"><m:math>
+<m:mtext>Coefficient of Variation = </m:mtext>
+  <m:mfrac>
+   <m:mrow><m:mi>s</m:mi> </m:mrow>
+   <m:mrow> 
+   <m:mover accent="true">
+   <m:mi>x</m:mi>
+   <m:mo>–</m:mo>
+   </m:mover>
+   </m:mrow>
+  </m:mfrac>
+<m:mn>(100%)</m:mn> 
+</m:math></equation><para id="eip-779">In the above example, the coefficient of variation would be: 
+</para><equation id="eip-425"><m:math>
+<m:mtext>CofV for Junior employees = </m:mtext>
+  <m:mfrac>
+   <m:mrow><m:mi>50,000</m:mi> </m:mrow>
+   <m:mrow> 
+   <m:mover>
+   <m:mi>45,000</m:mi>
+      </m:mover>
+   </m:mrow>
+  </m:mfrac>
+<m:mn>(100%)</m:mn> <m:mo>=</m:mo><m:mn>111.1%</m:mn>
+</m:math>
+
+</equation><equation id="eip-287"><m:math>
+<m:mtext>CofV for CEOs = </m:mtext>
+  <m:mfrac>
+   <m:mrow><m:mi>50,000</m:mi> </m:mrow>
+   <m:mrow> 
+   <m:mover>
+   <m:mi>5,000,000</m:mi>
+      </m:mover>
+   </m:mrow>
+  </m:mfrac>
+<m:mn>(100%)</m:mn> <m:mo>=</m:mo><m:mn>1%</m:mn>
+</m:math></equation><para id="eip-714">The larger the coefficient of variation, the larger the relative variation. Thus, as a measure of relative variation, the junior employees have significantly more relative variation (111.11%) compared to the CEOs (1%). 
+</para><para id="eip-468">Here are some points about the coefficient of variation: 
+</para><list id="eip-215"><item>The coefficient of variation is not affected by multiplicative changes of scale.</item>
+<item><emphasis>The coefficient of variation is used to compare variation between data sets. </emphasis> This is very important to remember. For multiple data sets, if the means are the same, you can compare the standard deviations. BUT if the means are different, you MUST use the coefficient of variation of compare the variation in the data sets. </item>
+<item>If the standard deviation is larger than the mean, the coefficient of variation is bigger than 100%.
+</item></list></section><table id="eip-379" summary="When to use"><title>When to use which measure of variation</title>
+<tgroup cols="2"><thead>
+          <row>
+            <entry>Measure</entry>
+            <entry>When to use</entry>          
+          </row>
+</thead>
+<tbody>
+  <row>
+    <entry>Range</entry>
+    <entry>The range is rarely the best measure of variation to use. But it is a good quick calculation of variation.</entry>
+  </row>
+  <row>
+    <entry>Standard deviation</entry>
+    <entry>Similar to the mean, this is the most common measure of variation. Also, it is derived from the mean. Therefore, if your best measure of centre is the mean, then the standard deviation is a good complement to it. Further, it is best used when finding the variation for one data set. </entry>
+  </row>
+  <row>
+    <entry>Variance</entry>
+    <entry>As it the square of the standard deviation, it is NEVER the best measure of variation to use. It is helpful in later topics in statistics though. </entry>
+  </row>
+  <row>
+    <entry>Interquartile range</entry>
+    <entry>This is a not very well known measure of variation, but it is helpful in describing the range for middle 50% of the data values. Further, it is based on measures of location. Therefore, if your best measure of centre is the median, then the IQR is a good complementary measure of variation. </entry>
+  </row>
+  <row>
+    <entry>Coefficient of variation</entry>
+    <entry>This is not well known, but it is useful for giving a context free interpretation of variation. It is the best measure to use when comparing the variations of two or more data sets that have different measures of centre. </entry>
+  </row>
+
+</tbody>
+
+
+</tgroup>
+</table><example id="eip-368"><para id="eip-545">
+  Suppose you are looking at two companies and each company has 24 employees. At one company, everybody except the CEO makes $30,000. The CEO makes $490,000. Thus, the data values would be 
+</para>
+<para id="eip-idm1094761888">$30,000;
+$30,000;
+$30,000;
+$30,000;
+$30,000;
+…
+;$490,000
+ </para><para id="eip-idm1016104064">The second company has an interesting policy. Everybody who starts at the company makes $30,000 a year, but as soon as someone else gets hired, they get paid $20,000 more. They only hire one person at a time. So, the first person who was hired started at $30,000, then when a second person got hired, the first person’s salary was raised to $50,000. When a third person got hired, the first person’s salary was raised to $70,000 while the salary of the second person hired was raised to $50,000. This has been done 23 times. Therefore, their data values (i.e. salaries) would look like this:
+</para><para id="eip-idm331982336">$30,000
+$50,000;
+$70,000;
+$90,000;
+$110,000;
+…
+;$490,000
+</para><para id="eip-idm969491200"> Without doing any calculations, we can see that company one has fairly consistent salaries except for the CEO. While company two has salaries that are more spread out.  </para>
+<para id="eip-idm848584800">The following table provides the count (i.e. sample size), mean, and the measures of variation for the two companies.</para><table id="eip-486" summary="This table provides a summary of the measures of variation for the above data set.">
+<tgroup cols="3"><tbody>
+  <row>
+    <entry> </entry>
+    <entry>Company One</entry>
+    <entry> Company Two</entry>
+  </row>
+  <row>
+    <entry>Count</entry>
+    <entry>24</entry>
+    <entry>24</entry>
+  </row>
+<row>
+    <entry>Mean</entry>
+    <entry>49,166.67</entry>
+    <entry>260,000.00</entry>
+  </row>
+  <row>
+    <entry>Range</entry>
+    <entry>460,000</entry>
+    <entry>460,000</entry>
+  </row>
+  <row>
+    <entry>Population standard deviation</entry>
+    <entry>91,820.10</entry>
+    <entry>138,443.73</entry>
+  </row>
+  <row>
+    <entry>Coefficient of Variation</entry>
+    <entry>190.98%</entry>
+    <entry>54.39%</entry>
+  </row>
+</tbody>
+</tgroup>
+</table><para id="eip-idm1240472384"> In the table above, notice that the range is the same for the two data sets. If we only looked at the range, this would give a false sense that the amount of variation in the two data sets is the same, but we know it isn’t. 
+</para>
+<para id="eip-idm861245888"> The standard deviation is measuring how much, on average, the data values vary from the mean. For company one, 23 of the 24 data values deviate the same amount from the mean ($49,166.67 – $30,000 = $19,166.67) with only the $490,000 deviating a large amount from the mean. 
+ </para>
+<para id="eip-idm1279686320"> For company two, two data values only deviate by only $10,000 ($250,000 and $270,000) while two data values deviate by a whopping $230,000 ($30,000 and $490,000). 
+</para>
+<para id="eip-idm1275526144">In company one, 23 out of 24 data values deviate by less than $20,000. But for company two, only 2 out of 24 deviate by less than $20,000. This suggests that company one will have a smaller standard deviation than company two because there is less average deviation. This is supported by MegaStat, which shows that the population standard deviation for company one is $91,920.10 versus company two, which has a population standard deviation of $138,443.73. </para>
+<para id="eip-idm1246301328">Notice that even though company one has an outlier (the CEO’s salary), the standard deviation is less than company two. That is, the average variation from the mean is less for company one. Thus, <emphasis effect="italics">the presence of an outlier does not necessarily result in a larger standard deviation</emphasis>. 
+ </para><para id="eip-idm779902496">The story is different when we look at the coefficient of variation. For company one, it is 190.98%. While for company two, it is 54.39%. This means that company one has larger relative variation than company two. This is because company two has a higher mean than company one and thus the variation, relative to the mean, isn’t as large as it is in company one. 
+ </para>
+<para id="eip-idm297077344"> In this situation, the best measure of variation to use would be the coefficient of variation as we are comparing two data sets with two different means. Based on this, company one has larger relative variation than company two. 
+</para>
+<para id="eip-idm281712576">Notice that variance is not discussed here. As stated above, the variance is the square of the standard deviation. Therefore, the units for variance in this example would be $^2, which makes no sense. Again, variance is not a useful descriptive statistic. 
+ </para>
+
+</example><note id="eip-623" type="warning"><title>Common Mistake</title>Variation and variance might seem like the same word but they aren’t. <emphasis>Variation</emphasis> is a general term used to discuss how much the data values vary from each other, how much spread there is in the data, how consistent the data is, how volatile or risky the data is, and how much deviation there is in the data values. It is an umbrella term. <emphasis>Variance</emphasis> is a specific type of variation. It specifically refers to the square of the standard deviation. Therefore, it is  <emphasis effect="italics">incorrect</emphasis> to say, “There is a lot of variance in the data” or “The best measure of variance is …”. 
+</note><section id="fs-idm77326096">
+<title>Optional section: Comparing Values from Different Data Sets </title><para id="eip-276">The standard deviation is useful when comparing data values that come from different data sets. If the data sets have different means and standard deviations, then comparing the data values directly can be misleading.</para>
+<list id="eip-id1170599203736"><item>For each data value, calculate how many standard deviations away from its mean the value is.</item>
+<item>Use the formula: value = mean + (#ofSTDEVs)(standard deviation); solve for #ofSTDEVs.</item>
+<item><m:math>
+ <m:mrow>
+  <m:mo>#</m:mo><m:mi>o</m:mi><m:mi>f</m:mi><m:mi>S</m:mi><m:mi>T</m:mi><m:mi>D</m:mi><m:mi>E</m:mi><m:mi>V</m:mi><m:mi>s</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mtext>value – mean</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>standard deviation</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+  
+ </m:mrow>
+</m:math></item> 
+<item>Compare the results of this calculation.</item>
+</list><para id="eip-946">#ofSTDEVs is often called a "<emphasis effect="italics">z</emphasis>-score"; we can use the symbol <emphasis effect="italics">z</emphasis>. In symbols, the formulas become:</para>
+<table id="eip-329" summary="The table shows the z-score formula.">
+<tgroup cols="3"><tbody>
+  <row>
+    <entry>Sample</entry>
+    <entry><m:math><m:mi>x</m:mi></m:math> = <m:math>
+<m:apply>
+  <m:conjugate/>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> + <emphasis effect="italics">zs</emphasis> </entry>
+    <entry><m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mtext> </m:mtext><m:mo>−</m:mo><m:mtext> </m:mtext><m:mover accent="true">
+     <m:mi>x</m:mi>
+     <m:mo>–</m:mo>
+    </m:mover>
+    
+   </m:mrow>
+   <m:mi>s</m:mi>
+  </m:mfrac>
+  
+ </m:mrow>
+</m:math></entry>
+  </row>
+  <row>
+    <entry>Population</entry>
+    <entry><m:math><m:mi>x</m:mi></m:math> = <m:math>
+<m:mi>μ</m:mi>
+</m:math> + <emphasis effect="italics">zσ</emphasis></entry>
+    <entry><m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mtext> </m:mtext><m:mo>−</m:mo><m:mtext> </m:mtext><m:mi>μ</m:mi>
+   </m:mrow>
+   <m:mi>σ</m:mi>
+  </m:mfrac>
+  
+ </m:mrow>
+</m:math></entry>
+  </row>
+</tbody>
+
+
+</tgroup>
+</table><example id="element-387"><exercise id="exer1">
+<problem id="id6380897">
+<para id="element-928">Two students, John and Ali, from different high schools, wanted to find out who had the highest GPA when compared to his school. Which student had the highest GPA when compared to his school?
+
+<table id="element-798" summary="This table provides two students and their GPAs. The first row represents John and the second row represents Ali. The first column lists students, second column lists GPA, third column lists school mean GPA, and the fourth column list the school standard deviation.">
+
+<tgroup cols="4"><thead>
+  <row>
+    <entry>Student</entry>
+    <entry>GPA</entry>
+    <entry>School Mean GPA</entry>
+    <entry>School Standard Deviation</entry>
+  </row>
+</thead>
+<tbody>
+  <row>
+    <entry>John</entry>
+    <entry>2.85</entry>
+    <entry>3.0</entry>
+    <entry>0.7</entry>
+  </row>
+  <row>
+    <entry>Ali</entry>
+    <entry>77</entry>
+    <entry>80</entry>
+    <entry>10</entry>
+  </row>
+</tbody>
+</tgroup>
+</table>
+</para></problem>
+<solution id="id7180364">
+<para id="element-71">For each student, determine how many standard deviations (#ofSTDEVs) his GPA is away from the average, for his school. Pay careful attention to signs when comparing and interpreting the answer.</para>
+<para id="element-590"><m:math>
+ <m:mrow><m:mi>z</m:mi><m:mo>=</m:mo>
+  <m:mo># of STDEVs</m:mo><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mtext>value </m:mtext><m:mo>–</m:mo><m:mtext>mean</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>standard deviation</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mo>-</m:mo><m:mi>μ</m:mi>
+   </m:mrow>
+   <m:mi>σ</m:mi>
+  </m:mfrac>
+  
+ </m:mrow>
+</m:math>
+</para><para id="element-378">For John, <m:math display="">
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mo>#</m:mo><m:mi>o</m:mi><m:mi>f</m:mi><m:mi>S</m:mi><m:mi>T</m:mi><m:mi>D</m:mi><m:mi>E</m:mi><m:mi>V</m:mi><m:mi>s</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>2.85</m:mn><m:mo>–</m:mo><m:mn>3.0</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>0.7</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>–</m:mo><m:mn>0.21</m:mn>
+ </m:mrow>
+</m:math>
+</para><para id="element-712">For Ali, <m:math>
+ <m:mrow>
+  <m:mi>z</m:mi><m:mo>=</m:mo><m:mo>#</m:mo><m:mi>o</m:mi><m:mi>f</m:mi><m:mi>S</m:mi><m:mi>T</m:mi><m:mi>D</m:mi><m:mi>E</m:mi><m:mi>V</m:mi><m:mi>s</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mn>77</m:mn><m:mo>−</m:mo><m:mn>80</m:mn>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>10</m:mn>
+   </m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:mo>-</m:mo><m:mn>0.3</m:mn>
+ </m:mrow>
+</m:math>
+</para><para id="element-344">John has the better GPA when compared to his school because his GPA is 0.21 standard deviations <emphasis>below</emphasis> his school's mean while Ali's GPA is 0.3 standard deviations <emphasis>below</emphasis> his school's mean.</para>
+<para id="fs-idp36263696">John's <emphasis effect="italics">z</emphasis>-score of –0.21 is higher than Ali's <emphasis effect="italics">z</emphasis>-score of –0.3. For GPA, higher values are  better, so we conclude that John has the better GPA when compared to his school.</para>
+</solution>
+</exercise></example><note id="fs-idm22007088" class="statistics try"><label/>
+<title>Try It</title>
+<exercise id="fs-idm30975248">
+<problem id="fs-idm30974992">
+<para id="fs-idm30974736">Two swimmers, Angie and Beth, from different teams, wanted to find out who had the fastest time for the 50 meter freestyle when compared to her team. Which swimmer had the fastest time when compared to her team?</para>
+<table id="fs-idm44209040" summary="">
+<tgroup cols="4">
+<thead><row><entry>Swimmer</entry><entry>Time (seconds)</entry><entry>Team Mean Time</entry>	<entry>Team Standard Deviation</entry></row></thead>
+<tbody>
+<row><entry>Angie</entry><entry>26.2</entry><entry>27.2</entry><entry>0.8</entry></row>
+<row><entry>Beth</entry><entry>27.3</entry><entry>30.1</entry><entry>1.4</entry></row>
+</tbody>
+</tgroup>
+</table>
+</problem>
+<solution id="fs-idm21971664" class="solutions">
+<para id="fs-idm21971408">For Angie: <emphasis effect="italics">z</emphasis> = <m:math>
+ <m:mrow><m:mfrac><m:mrow>
+<m:mtext>26</m:mtext><m:mtext>.2 – 27</m:mtext><m:mtext>.2</m:mtext>
+   </m:mrow><m:mrow><m:mtext>0</m:mtext><m:mtext>.8</m:mtext></m:mrow></m:mfrac>  
+ </m:mrow></m:math> = –1.25</para><para id="fs-idm92282736">For Beth: <emphasis effect="italics">z</emphasis> = <m:math>
+ <m:mrow>
+  <m:mfrac>
+   <m:mrow>
+    <m:mtext>27</m:mtext><m:mtext>.3</m:mtext><m:mo>–</m:mo><m:mtext>30</m:mtext><m:mtext>.1</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mn>1.</m:mn><m:mtext>4</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+  
+ </m:mrow>
+</m:math> = –2</para></solution>
+</exercise></note></section>
+
+
+</section></section>
+<section id="eip-409"><title>Distributions</title><para id="eip-54">
+Now that we have learned about determining shape (histogram), centre (mean, median or mode), and variation (standard deviation, coefficient of variation and range), we can now describe the distribution of a data set. 
+</para><para id="eip-930">In <link target-id="eip-368" document=""/>, we examined the salaries for two different companies. </para>
+
+<para id="eip-idm723327600"> Though we have not done the histogram for either of these data sets, we can imagine what they will look like to determine the shape. Company A will have one peak at $30,000 with an outlier at $490,000. This will make it skewed to the right. For Company B each data value has the same frequency, which makes the data uniform. </para>
+
+<para id="eip-idm670842800">For company A, we would describe the distribution of salaries to be skewed to the right(shape), centred at $49,166.67 (mean) and have variation of $91,820.10 (standard deviation). </para>
+
+<para id="eip-idm438579952">For company B, we would describe the distribution of salaries to be uniform(shape), centred at $260,000 (mean) and have variation of $138,443.73 (standard deviation). </para>
+
+</section><section id="fs-idp2891248" class="references"><title>References</title><para id="fs-idp41166864">Data from The World Bank, available online at http://www.worldbank.org (accessed April 3, 2013).</para>
+<para id="fs-idp18149184">“Demographics: Obesity – adult prevalence rate.” Indexmundi. Available online at http://www.indexmundi.com/g/r.aspx?t=50&amp;v=2228&amp;l=en (accessed April 3, 2013).</para>
+</section><section id="fs-idm7033248" class="summary">
+<title>Chapter Review</title>
+<para id="fs-idm18283152">The mean and the median can be calculated to help you find the "center" of a data set. The mean is the best estimate for the actual data set, but the median is the best measurement when a data set contains several outliers or extreme values. The mode will tell you the most frequently occuring datum (or data) in your data set. The mean, median, and mode are extremely helpful when you need to analyze your data, but if your data set consists of ranges which lack specific values, the mean may seem impossible to calculate. However, the mean can be approximated if you add the lower boundary with the upper boundary and divide by two to find the midpoint of each interval. Multiply each midpoint by the number of values found in the corresponding range. Divide the sum of these values by the total number of data values in the set.</para><para id="eip-424">The standard deviation can help you calculate the spread of data. There are different equations to use if are calculating the standard deviation of a sample or of a population. </para><list id="eip-728"><item>The Standard Deviation allows us to compare individual data or classes to the data set mean numerically.</item>
+<item><emphasis effect="italics">s</emphasis> = <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle>
+       <m:mtext>​</m:mtext>
+      </m:msup>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mover accent="true">
+         <m:mi>x</m:mi>
+         <m:mo>–</m:mo>
+        </m:mover>
+        <m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      
+     </m:mrow>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  </m:msqrt>
+  
+ </m:mrow>
+</m:math> or <emphasis effect="italics">s</emphasis> = <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle>
+       <m:mtext>​</m:mtext>
+      </m:msup>
+      <m:mi>f</m:mi><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mover accent="true">
+         <m:mi>x</m:mi>
+         <m:mo>–</m:mo>
+        </m:mover>
+        <m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      
+     </m:mrow>
+     <m:mrow>
+      <m:mi>n</m:mi><m:mo>−</m:mo><m:mn>1</m:mn>
+     </m:mrow>
+    </m:mfrac>
+    
+   </m:mrow>
+  </m:msqrt>
+  
+ </m:mrow>
+</m:math> is the formula for calculating the standard deviation of a sample. To calculate the standard deviation of a population, we would use the population mean, <emphasis effect="italics">μ</emphasis>, and the formula <emphasis effect="italics">σ</emphasis> = <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle>
+       <m:mtext>​</m:mtext>
+      </m:msup>
+      <m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      
+     </m:mrow>
+     <m:mi>N</m:mi>
+    </m:mfrac>
+    
+   </m:mrow>
+  </m:msqrt>
+  
+ </m:mrow>
+</m:math> or <emphasis effect="italics">σ</emphasis> = <m:math>
+ <m:mrow>
+  <m:msqrt>
+   <m:mrow>
+    <m:mfrac>
+     <m:mrow>
+      <m:msup>
+       <m:mstyle mathsize="140%" displaystyle="true"><m:mo>∑</m:mo></m:mstyle>
+       <m:mtext>​</m:mtext>
+      </m:msup>
+      <m:mi>f</m:mi><m:msup>
+       <m:mrow>
+        <m:mo stretchy="false">(</m:mo><m:mi>x</m:mi><m:mo>−</m:mo><m:mi>μ</m:mi><m:mo stretchy="false">)</m:mo>
+       </m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      
+     </m:mrow>
+     <m:mi>N</m:mi>
+    </m:mfrac>
+    
+   </m:mrow>
+  </m:msqrt>
+  
+ </m:mrow>
+</m:math>.</item>
+</list></section>
+
+<section id="fs-idp67676496" class="practice">
+<para id="eip-193"><emphasis effect="italics">Use the following information to answer the next three exercises:</emphasis> The following data show the lengths of boats moored in a marina. The data are ordered from smallest to largest:
+<list list-type="labeled-item" display="inline">
+<item>16</item><item>17</item><item>19</item><item>20</item><item>20</item><item>21</item><item>23</item><item>24</item><item>25</item><item>25</item><item>25</item><item>26</item><item>26</item><item>27</item><item>27</item><item>27</item><item>28</item><item>29</item><item>30</item><item>32</item><item>33</item><item>33</item><item>34</item><item>35</item><item>37</item><item>39</item><item>40</item></list></para><exercise id="fs-idp3713376"><problem id="fs-idp45051248">
+<para id="fs-idp72372672">Calculate the mean.</para>
+</problem>
+
+<solution id="fs-idp54737296">
+<para id="fs-idp31759600">Mean: 16 + 17 + 19 + 20 + 20 + 21 + 23 + 24 + 25 + 25 + 25 + 26 + 26 + 27 + 27 + 27 + 28 + 29 + 30 + 32 + 33 + 33 + 34 + 35 + 37 + 39 + 40 = 738;</para><para id="fs-idp62762816"><m:math><m:mrow><m:mfrac>
+    <m:mrow><m:mn>738</m:mn></m:mrow>
+    <m:mrow><m:mn>27</m:mn></m:mrow></m:mfrac></m:mrow>
+   </m:math> = 27.33</para>
+</solution>
+</exercise><exercise id="fs-idp23937584"><problem id="fs-idm6016496">
+<para id="fs-idp65368416">Identify the median.</para>
+</problem>
+<solution id="eip-idm544804112">
+<para id="eip-idm590911040">Median = 27 </para>
+</solution></exercise><exercise id="fs-idm35941040">
+<problem id="fs-idp155088">
+<para id="fs-idp27706128">Identify the mode.</para>
+</problem>
+<solution id="fs-idm53012848">
+<para id="fs-idp8367280">The most frequent lengths are 25 and 27, which occur three times. Mode = 25, 27</para>
+</solution>
+</exercise>
+
+<para id="fs-idp43142960"><newline/><emphasis effect="italics">Use the following information to answer the next three exercises:</emphasis> Sixty-five randomly selected car salespersons were asked the number of cars they generally sell in one week. Fourteen people answered that they generally sell three cars; nineteen generally sell four cars; twelve generally sell five cars; nine generally sell six cars; eleven generally sell seven cars. Calculate the following:</para><exercise id="exercisefour"><problem id="id5461618">
+<para id="prob_4">sample mean = <m:math>
+<m:apply>
+  <m:conjugate/>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math> = _______
+</para></problem>
+<solution id="eip-idm520347440">
+<para id="eip-idm971004704">Mean = (14*3+19*4+12*5+9*6+11*7)/65 = 4.75 </para>
+</solution></exercise><exercise id="eip-83"><problem id="eip-718">
+  <para id="eip-423">median = _______</para>
+</problem>
+
+<solution id="eip-288">
+  <para id="eip-669">4</para>
+</solution>
+</exercise>
+
+<exercise id="eip-630"><problem id="eip-353">
+  <para id="eip-212">mode = _______</para>
+</problem>
+<solution id="eip-idm240544672">
+<para id="eip-idm351452320">Mode = 4 (occurs 19 times) </para>
+</solution></exercise><exercise id="eip-722"><problem id="fs-idm25484000">
+<para id="fs-idm83184320" class="finger">The following data are the distances between 20 retail stores and a large distribution center. The distances are in miles.
+<newline/>29; 37; 38; 40; 58; 67; 68; 69; 76; 86; 87; 95; 96; 96; 99; 106; 112; 127; 145; 150
+<newline/>
+Use a computer to find the standard deviation and round to the nearest tenth.</para></problem>
+<solution id="fs-idm109784640">
+<para id="fs-idm109784384"><emphasis effect="italics">s</emphasis> = 34.5</para>
+</solution>
+</exercise></section>
+
+
+<section id="fs-idm1725088" class="bring-together-homework"><title>Bringing It Together</title>
+<exercise id="element-832"><problem id="id6092616">
+<para id="JavErc">Javier and Ercilia are supervisors at a shopping mall. Each was given the task of estimating the mean distance that shoppers live from the mall. They each randomly surveyed 100 shoppers.  The samples yielded the following information.</para>
+<table id="element-72" summary="This table presents two shopping mall supervisors and their estimations of the mean distance shoppers live from the mall. Javier's data is in the second column and Ercilia is in the third column. The first row is for sample means and the second row is for standard deviations.">
+<tgroup cols="3">
+<colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<thead>
+  <row>
+    <entry/>
+    <entry>Javier</entry>
+    <entry>Ercilia</entry>
+  </row>
+</thead>
+<tbody>
+  <row>
+    <entry><m:math>
+<m:apply>
+  <m:conjugate/>
+  <m:ci>x</m:ci>
+</m:apply>
+</m:math></entry>
+    <entry>6.0 km</entry>
+    <entry>6.0 km</entry>
+  </row>
+  <row>
+    <entry><m:math><m:mi>s</m:mi></m:math></entry>
+    <entry>4.0 km</entry>
+    <entry>7.0 km</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+
+<list id="element-305" list-type="enumerated" number-style="lower-alpha"><item>How can you determine which survey was correct ?</item>
+<item>Explain what the difference in the results of the surveys implies about the data.</item>
+<item>If the two histograms depict the distribution of values for each supervisor, which one depicts Ercilia's sample?  How do you know?<newline/>
+<figure id="eip-idm218452576"><media id="id8387446" display="block" alt="This shows two histograms. The first histogram shows a fairly symmetrical distribution with a mode of 6. The second histogram shows a uniform distribution."><image src="../../media/fig-ch02_13_09.jpg" mime-type="image/jpg" width="450"/></media>
+</figure></item>
+</list></problem>
+<solution id="eip-idm1262317456">
+<para id="eip-idm940378768">
+<list id="eip-idm1933153440" list-type="enumerated" number-style="lower-alpha">
+<item>It is difficult to determine which survey is correct. Both surveys include the same number of shoppers and the shoppers were randomly selected. We could look at how the random selection was done to see if one of the sampling techniques would result in a more representative sample. But if they used the same sampling technique, there is no way to know which sample is right. The only way would be to take another, larger sample and see which of the two supervisor's samples most closely matches that sample. But really we expect there to be sampling variability so it is not really an appropriate question to ask which is "correct".  </item>
+<item> Since the mean is the same for both samples, this suggests that it is fair to say that on average shoppers travel 6.0 km to the mall. But the standard deviations are different. This suggests that it is not yet clear how much variation there is from the 6.0km. </item>
+<item> Ercilia's data has a larger standard deviation. Therefore, on average, the data needs to be more spread out from the mean than Javier's. This suggests (b) is the answer.   </item>
+</list>
+</para>
+</solution></exercise><para id="fs-idm4887840"><emphasis effect="italics">Use the following information to answer the next three exercises</emphasis>: We are interested in the number of years students in a particular elementary statistics class have lived in California. The information in the following table is from the entire section.
+  </para><table id="element-368" summary="This table presents the number of years students in a statistics class have lived in California. The first column lists the number of years and the second column lists the frequency.">
+<tgroup cols="4"><colspec colnum="1" colname="c1"/>
+<colspec colnum="2" colname="c2"/>
+<colspec colnum="3" colname="c3"/>
+<colspec colnum="4" colname="c4"/>
+
+<thead>
+<row>
+<entry>Number of years</entry>
+<entry>Frequency</entry>
+<entry>Number of years</entry>
+<entry>Frequency</entry>
+</row>
+</thead>
+<tfoot>
+<row>
+<entry/>
+<entry/>
+<entry/>
+<entry>Total = 20</entry>
+</row>
+</tfoot>
+     <tbody>
+        <row>
+          <entry>7</entry>
+          <entry>1</entry>
+          <entry>22</entry>
+          <entry>1</entry>
+        </row>
+        <row>
+          <entry>14</entry>
+          <entry>3</entry>
+          <entry>23</entry>
+          <entry>1</entry>
+        </row>
+        <row>
+          <entry>15</entry>
+          <entry>1</entry>
+          <entry>26</entry>
+          <entry>1</entry>
+        </row>
+        <row>
+          <entry>18</entry>
+          <entry>1</entry>
+          <entry>40</entry>
+          <entry>2</entry>
+        </row>
+        <row>
+          <entry>19</entry>
+          <entry>4</entry>
+          <entry>42</entry>
+          <entry>2</entry>
+        </row>
+        <row>
+          <entry>20</entry>
+          <entry>3</entry>
+          <entry/>
+          <entry/>
+        </row>
+      </tbody>
+
+</tgroup>
+</table>
+<exercise id="element-720"><problem id="id4942656">
+    <para id="element-780">What is the mode?</para>
+  <list id="ni2" mark-suffix="." list-type="enumerated" number-style="lower-alpha"><item>19</item>
+  <item>19.5</item>
+<item>14 and 20</item>
+<item>22.65</item>
+</list></problem>
+<solution id="eip-idm379919168">
+<para id="eip-idm1044879072">Mode = 19 (occurs 4 times) </para>
+</solution></exercise><exercise id="element-346">
+<problem id="id5971682">
+  <para id="element-972">Is this a sample or the entire population?</para>
+<list id="ni3" mark-suffix="." list-type="enumerated" number-style="lower-alpha"><item>sample</item>
+<item>entire population</item>
+<item>neither</item>
+</list></problem>
+<solution id="id4081124">
+  <para id="element-366">b</para></solution>
+</exercise><exercise id="eip-912"><problem id="id3671813">
+<para id="element-707">A survey of enrollment at 35 community colleges across the United States yielded the following figures:</para><para id="element-23455">6414;  1550; 2109; 9350; 21828; 4300;  5944; 5722; 2825; 2044; 5481;  5200; 5853; 2750; 10012; 6357;  27000; 9414; 7681; 3200; 17500;  9200; 7380; 18314; 6557; 13713;  17768; 7493; 2771; 2861; 1263;  7285; 28165; 5080; 11622</para><list id="id12992735" mark-suffix="." list-type="enumerated" number-style="lower-alpha"><item>Organize the data into a chart with six intervals of equal width. Label the two columns "Enrollment" and "Frequency."</item>
+<item>Construct a histogram of the data.</item>
+<item> What is the shape of the data? What does the shape tell you about the enrollment at these community colleges? </item>
+<item>What is the best measure of centre for this data and why? State the measure. </item>
+<item>What is the best measure of variation for this data and why? State the measure. </item>
+<item>If you were to build a new community college, what is the typical range for the enrollment?
+ Why would this information be helpful? What caveats would you want to think about when you look at this typical range? </item>
+</list></problem>
+
+<solution id="eip-idm26749440">
+<list id="id12992735a" list-type="enumerated" number-style="lower-alpha"><item>
+<table id="fs-idm103039104a" summary="Frequency table for exercise">
+<tgroup cols="2"><thead><row><entry>Enrollment</entry><entry>Frequency</entry></row></thead>
+<tbody>
+<row><entry>0-4999</entry><entry>10</entry></row>
+<row><entry>5000-9999</entry><entry>16</entry></row>
+<row><entry>10000-14999</entry><entry>3</entry></row>
+<row><entry>15000-19999</entry><entry>3</entry></row>
+<row><entry>20000-24999</entry><entry>1</entry></row>
+<row><entry>25000-29999</entry><entry>2</entry></row>
+</tbody>
+
+
+</tgroup>
+</table></item>
+<item><figure id="histogrampic"><title>Histogram for enrollment at community colleges.</title><media id="histopic" alt="Histo">
+<image mime-type="image/png" src="../../media/Histogram-BringingItTogether.png"/>
+</media> </figure> </item>
+<item>The shape is skewed to the right which means that there a few community colleges that have greater enrollment compared to most of the other colleges in the sample. 
+</item>
+<item>Since the mean (8628.74) is being skewed (as it is larger than the median of 6,414), the median is the best measure of centre. </item>
+<item>Since we are only looking at one data set, the standard deviation is a good measure of variation.
+ It is 6,943.88. </item>
+<item>The typical range is 6,414 +/- 6,943.88 = -529.88 to 13,357.88. As there can't be negative students enrolled, the typical range is 0 students to 13,357.88. Though there could be multiple caveats,
+ one concern is the rather large variation in the data. This means that community colleges have very different enrollment rates. Perhaps looking at community colleges that are similar to the one I would like to open would be more beneficial as that population would be more representative of my community college.</item>
+</list></solution>
+</exercise><exercise id="eip-547"><problem id="eip-366">
+  <para id="eip-268">
+    You work for a soda pop company that is producing a new label for their Asian market. Three different labels your company is considering are the same, except the colours are different. The colour choices are blue, green and orange.
+</para>
+<para id="eip-idm1169435696">
+To determine which label consumers prefer, focus groups were done. One such focus group asked 15 participants to rate the cans from 1 to 10. A score of 1 means they hated the label and 10 means they loved the label. The results follow. 
+  </para>
+
+<table id="eip-750" summary="Results of focus group">
+<tgroup cols="4">
+<tbody>
+  <row>
+    <entry><emphasis>Participant</emphasis></entry>
+    <entry><emphasis> Blue Label</emphasis></entry>
+    <entry> <emphasis>Green Label</emphasis> </entry>
+    <entry><emphasis>Orange Label</emphasis></entry>
+  </row>
+  <row>
+    <entry><emphasis> 1</emphasis></entry>
+    <entry>1</entry>
+    <entry>10</entry>
+    <entry>6</entry>
+  </row>
+  <row>
+    <entry><emphasis> 2</emphasis></entry>
+    <entry>4</entry>
+    <entry> 8</entry>
+    <entry> 7</entry>
+  </row>
+  <row>
+    <entry> <emphasis>3</emphasis></entry>
+    <entry> 2</entry>
+    <entry>9</entry>
+    <entry>7</entry>
+  </row>
+  <row>
+    <entry><emphasis>4</emphasis></entry>
+    <entry> 6</entry>
+    <entry>3</entry>
+    <entry>8</entry>
+  </row>
+  <row>
+    <entry><emphasis>5</emphasis></entry>
+    <entry>1</entry>
+    <entry>8 </entry>
+    <entry>6</entry>
+  </row>
+  <row>
+    <entry><emphasis>6</emphasis></entry>
+    <entry>1</entry>
+    <entry>7</entry>
+    <entry>7</entry>
+  </row>
+  <row>
+    <entry><emphasis>7</emphasis></entry>
+    <entry>1</entry>
+    <entry>3</entry>
+    <entry>7</entry>
+  </row>
+  <row>
+    <entry><emphasis>8</emphasis></entry>
+    <entry>4</entry>
+    <entry>9</entry>
+    <entry>8</entry>
+  </row>
+  <row>
+    <entry><emphasis>9</emphasis> </entry>
+    <entry> 1</entry>
+    <entry>10</entry>
+    <entry>9</entry>
+  </row>
+  <row>
+    <entry><emphasis>10</emphasis></entry>
+    <entry>7</entry>
+    <entry>4</entry>
+    <entry>6</entry>
+  </row>
+  <row>
+    <entry> <emphasis>11</emphasis></entry>
+    <entry>4</entry>
+    <entry>7</entry>
+    <entry>6</entry>
+  </row>
+  <row>
+    <entry><emphasis>12</emphasis></entry>
+    <entry>5</entry>
+    <entry>6</entry>
+    <entry>7</entry>
+  </row>
+  <row>
+    <entry><emphasis>13</emphasis></entry>
+    <entry>6</entry>
+    <entry>9</entry>
+    <entry>8</entry>
+  </row>
+  <row>
+    <entry><emphasis>14</emphasis></entry>
+    <entry>4</entry>
+    <entry>4</entry>
+    <entry>6</entry>
+  </row>
+  <row>
+    <entry><emphasis>15</emphasis></entry>
+    <entry>6</entry>
+    <entry>8</entry>
+    <entry>7</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+
+<para id="eip-idm1153292784"> Which label would you recommend as the new label for the Asian market? Support your decision using the data.
+</para>
+</problem>
+
+<solution id="eip-371">
+  <para id="eip-241">Label 1 is excluded as most people don’t like it. The mean for label 2 and label 3 is the same. Label 2 could be considered the better label because more people love it than label 3, but more people hate it. Label 3 could be considered a better label because the variation is less - nobody hates it, but nobody loves it. (Note: Even though you are comparing two data sets, it is ok to look only at the standard deviation instead of the coefficient of variation in this situation. Why?). 
+
+
+</para>
+<para id="eip-idm443544640"> Choosing label 2 has greater risk (love/hate relationship). Choosing label 3 has less risk (most people like it). 
+</para>
+</solution>
+</exercise><exercise id="eip-354"><problem id="eip-727">
+  <para id="eip-813">
+    Three publicly traded telecommunications companies reported their monthly profit for the last year. The results are presented below.</para> 
+
+
+<table id="eip-751" summary="Descriptive statistics for exercise">
+<tgroup cols="4"><tbody>
+  <row>
+    <entry> </entry>
+    <entry>Company A</entry>
+    <entry>Company B</entry>
+<entry>Company C</entry>
+  </row>
+  <row>
+    <entry>Mean</entry>
+    <entry>$10,930</entry>
+    <entry>$13,000</entry>
+<entry>$34,450</entry>
+  </row>
+  <row>
+    <entry>Median</entry>
+    <entry>$9,390</entry>
+    <entry>$13,500</entry>
+<entry>$34,450</entry>
+  </row>
+ <row>
+    <entry>Mode</entry>
+    <entry>None</entry>
+    <entry>$13,000 and $20,000</entry>
+<entry>$33,880</entry>
+  </row>
+ <row>
+    <entry>Standard deviation</entry>
+    <entry>$4,196</entry>
+    <entry>$9,360</entry>
+<entry>$4,116</entry>
+  </row>
+ <row>
+    <entry>Range</entry>
+    <entry>$15,050</entry>
+    <entry>$42,150</entry>
+<entry>$16,400</entry>
+  </row>
+</tbody>
+
+</tgroup>
+</table>
+
+
+<list id="eip-idm400468576" list-type="enumerated">
+<item>Donna is close to retirement and wants to invest in one of the three companies. She doesn’t want to see her investment drop significantly as she doesn’t want to see her retirement savings dwindle. Which company would you recommend she invest in and why?</item>
+<item>What information is missing from the list that you might want to have to help you answer the above question?
+ </item>
+<item>What information below is not necessary for making this decision?</item>
+</list>
+  
+
+
+</problem>
+
+<solution id="eip-798">
+  <para id="eip-99">
+ Note that this question is about risk, i.e. variation. 
+   </para>
+<list id="eip-idm353110912" list-type="enumerated">
+<item> Any answer requires that you examine the amount of variation in the data set. The coefficient of variation is the best measure to use to compare the variation as the means are different.
+
+<table id="eip-752" summary="CofV for exercise">
+<tgroup cols="4"><tbody>
+  <row>
+    <entry> </entry>
+    <entry>Company A</entry>
+    <entry>Company B</entry>
+<entry>Company C</entry>
+  </row>
+  <row>
+      <entry>Coefficient of variation</entry>
+    <entry>38.39%</entry>
+    <entry>72%</entry>
+<entry>11.95%</entry>
+
+  </row>
+  
+</tbody>
+
+
+</tgroup>
+</table></item>
+<item>The information provided is only for one year. It would be helpful to know about their changes over more than one year. Quartiles aren’t provided. They could help examine the variation as well. 
+ </item>
+<item>The median and the mode are not relevant as this is a question about variation. The mean is only required as it is needed to find the coefficient of variation. </item>
+
+</list>
+
+</solution>
+</exercise></section>
+</content>
+
+
+<glossary>
+<definition id="fs-idm7751856">
+<term>Frequency Table</term>
+<meaning id="fs-idp28775440"> a data representation in which grouped data is displayed along with the corresponding frequencies</meaning>
+</definition>
+
+<definition id="mean">
+<term>Mean</term>
+<meaning id="id10578364"> a number that measures the central tendency of the data; a common name for mean is 'average.' The term 'mean' is a shortened form of 'arithmetic mean.' By definition, the mean for a sample (denoted by <m:math><m:apply><m:conjugate/><m:ci>x</m:ci></m:apply></m:math>) is <m:math>
+ <m:mrow>
+  <m:mover accent="true">
+   <m:mi>x</m:mi>
+   <m:mo>–</m:mo>
+  </m:mover>
+  <m:mtext> </m:mtext><m:mo>=</m:mo><m:mtext> </m:mtext><m:mfrac>
+   <m:mrow>
+    <m:mtext>Sum of all values in the sample</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>Number of values in the sample</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+  
+ </m:mrow>
+</m:math>, and the mean for a population (denoted by <emphasis effect="italics">μ</emphasis>) is <m:math>
+ <m:mrow>
+  <m:mi>μ</m:mi><m:mo>=</m:mo><m:mfrac>
+   <m:mrow>
+    <m:mtext>Sum of all values in the population</m:mtext>
+   </m:mrow>
+   <m:mrow>
+    <m:mtext>Number of values in the population</m:mtext>
+   </m:mrow>
+  </m:mfrac>
+  
+ </m:mrow>
+</m:math>.</meaning>
+</definition>
+
+<definition id="median">
+<term>Median</term>
+<meaning id="id44836016"> a number that separates ordered data into halves;  half the values are the same number or smaller than the median and half the values are the same number or larger than the median. The median may or may not be part of the data.</meaning>
+</definition>
+
+<definition id="fs-idp5033152">
+<term>Midpoint</term>
+<meaning id="fs-idp75012256"> the mean of an interval in a frequency table</meaning>
+</definition>
+
+<definition id="mode">
+<term>Mode</term>
+<meaning id="id44836043"> the value that appears most frequently in a set of data</meaning>
+</definition>
+</glossary>
+</document>

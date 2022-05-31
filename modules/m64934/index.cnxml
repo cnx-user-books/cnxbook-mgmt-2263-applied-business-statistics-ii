@@ -1,0 +1,60 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Constructing Empirical Sampling Distributions</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m64934</md:content-id>
+  <md:title>Constructing Empirical Sampling Distributions</md:title>
+  <md:abstract>Introduction to how to construct a sampling distribution.</md:abstract>
+  <md:uuid>1f4fa708-8e45-4268-982f-ac31df9f43b7</md:uuid>
+</metadata>
+
+<content>
+    <section id="import-auto-idm346389616">
+      <title>How to construct an emprical sampling distribution</title><para id="import-auto-idm813291952">If we have access to the population, we can construct an empirical distribution from it. This can be done by using computer software to pull random samples from a population. An example of one such tool is from the Rossman Chance website, which has an applet that allows you to create an empirical sampling distribution from a finite population: <link url="http://www.rossmanchance.com/applets/OneSample53.html"><emphasis effect="underline">http://www.rossmanchance.com/applets/OneSample53.html</emphasis></link></para>
+      <para id="import-auto-idm364094528">When constructing an empirical sampling distribution, it is important to keep the law of large numbers in mind. That is, the more samples you take, the closer the empirical sampling distribution will be to the theoretical sampling distribution. In general, empirical sampling distributions should be constructed from at least 10,000 samples. </para>
+      <para id="import-auto-idm1018782736">To get an idea of how an empirical sampling distribution is constructed, go to <link url="http://onlinestatbook.com/stat_sim/sampling_dist/index.html"><emphasis effect="underline">http://onlinestatbook.com/stat_sim/sampling_dist/index.html</emphasis></link></para>
+      <example id="eip-499"><para id="eip-464">The images/figures in this example were generated from David Lane's sampling distribution applet that is part of the OnlineStatBook project <footnote id="eip-idm804139280">Online Statistics Education: A Multimedia Course of Study (http://onlinestatbook.com/). Project Leader: David M. Lane, Rice University.</footnote>.</para><para id="import-auto-idm1310928432"><link target-id="import-auto-idm799171808" document="">Figure 1</link>
+shows the histogram of the population we are going to generate an empirical sampling distribution from. We call this population the <emphasis effect="bold">parent population</emphasis> as it is the population we are creating the sampling distribution from. Notice that the parent population is skewed left.</para><para id="import-auto-idm354939248">
+          <figure id="import-auto-idm799171808"><media id="import-auto-idm825816928" alt=""><image mime-type="image/png" src="../../media/Picture 30.png" height="143" width="437"/></media> 
+<caption> Parent population</caption></figure>
+        </para>
+        <para id="import-auto-idm796471584">We are going to take multiple samples of size 10 from the parent population and look at the statistic of the sample mean for each sample. </para>
+        <para id="import-auto-idm1016276928">Here is the first sample: </para>
+<figure id="import-auto-idm861420240">
+      
+            <media id="import-auto-idm901242704" alt="">
+              <image mime-type="image/png" src="../../media/Picture 31.png" height="143" width="449"/>
+            </media> <caption> Sample of size 10 from the parent population
+ </caption>
+          </figure>
+
+
+        <para id="import-auto-idm330858832">This is the sample mean of the sample: </para>
+        
+          
+       
+            <figure id="import-auto-idm956329920">
+              <media id="import-auto-idm362433392" alt="">
+                <image mime-type="image/png" src="../../media/Picture 33.png" height="163" width="493"/>
+              </media>
+         
+            <caption>Sample mean for one sample of size 10</caption>
+        
+        </figure>
+        
+     
+        <para id="import-auto-idm992564304">
+Now one sample mean is not enough to tell us what the sampling distribution looks like. So let’s take a few more samples. Let’s take 5 more samples of size 10 and plot their sample means: </para>
+
+<figure id="import-auto-idm348296224"><media id="import-auto-idm1011663152" alt=""><image mime-type="image/png" src="../../media/Picture 36.png" height="165" width="512"/></media><caption>Six sample means from parent population</caption></figure><para id="import-auto-idm824582288">This is still a pretty small sample. </para>
+        <note id="import-auto-idm353211664" type="Note">There are two sample sizes here. One is the size of the sample we are taking from the parent population (10). The other is the number of samples we’ve taken (6). The first is the sample size for the sample. The second is the sample size for the empirical sampling distribution. </note>
+        <para id="import-auto-idm931801056">Now let’s take 10,000 samples of size 10 from the population and plot each of their sample means. This is what we get: 
+<figure id="eip-idm1140942880"><media id="import-auto-idm983734576a" alt=""><image mime-type="image/png" src="../../media/Picture 37.png" height="165" width="512"/></media>
+<caption>10,000 sample means from parent population</caption></figure></para><para id="import-auto-idm807971328">Finally, let take 100,000 samples of size 10 from the population and plot each of their sample means. This is what we get: 
+<figure id="import-auto-idm824450560"><media id="import-auto-idm983734576" alt=""><image mime-type="image/png" src="../../media/Picture 39.png" height="165" width="512"/></media><caption>100,000 sample means from parent population</caption></figure></para><para id="import-auto-idm843706512">Notice how there is no real difference between the distributions (shape, centre and variation) in <link document="eip-idm1140942880" version="1">Figure 5</link> and <link document="import-auto-idm824450560" version="1">Figure 6</link>. This means that are empirical distribution is now giving us a good sense of what the theoretical sampling distribution would look like. When this happens, this is called <emphasis effect="bold">convergence</emphasis>. That is, the empirical sampling distribution is converging on the theoretical sampling distribution. As the sample size of the empirical sampling distribution increases this is expected to happen due to law of large numbers.</para></example><section id="import-auto-idm903355728">
+        <title>Bootstrapping</title>
+        <para id="import-auto-idm819060896">Suppose we don’t have access to the population. This can happen if the population is infinite (e.g. in a manufacturing process) or where the population is large (e.g. population of Canada) or where most researchers wouldn’t have access to the population (e.g. list of students at a university). Can we still construct an empirical sampling distribution? </para>
+        <para id="import-auto-idm997417760">The answer is yes! To do this, we use a process called <emphasis effect="bold">bootstrapping</emphasis>. Essentially bootstrapping follows the same procedure as outlined in <link target-id="eip-499" document="">Example 1</link>, but instead of using a parent population, we use a parent sample. That is, we take a good sample from the population and use that to construct the sampling distribution. </para><para id="import-auto-idm862154128">Again the law of large numbers applies. If the random sample from the population is large enough, then the sample will most likely be a good estimate of the population. Then the empirical sampling distribution generated by the sample will most likely be a good estimate of the theoretical sampling distribution of the population. </para><note id="import-auto-idm854604272" type="Note">Bootstrapping only works if the sample being used has been collected properly and that the sampling technique ensures that the sample is random, the sample is representative of the population, and the sample size is large enough. There are no set rules on how big the sample needs to be, but for bootstrapping the bigger the better.</note>
+      </section>
+    </section>
+  </content>
+</document>

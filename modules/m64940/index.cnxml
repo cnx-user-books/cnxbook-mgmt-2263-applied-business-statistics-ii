@@ -1,0 +1,274 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML">
+<title>Using the Normal Distribution</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m64940</md:content-id>
+  <md:title>Using the Normal Distribution</md:title>
+  <md:abstract/>
+  <md:uuid>31bde35d-4fb0-491d-a4bf-770980805b84</md:uuid>
+</metadata>
+
+<content>
+<para id="fs-idm68176912" class="finger">The shaded area in the following graph indicates the area to the right of <emphasis effect="italics">x</emphasis>. This area is represented by the probability <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; <emphasis effect="italics">x</emphasis>). Normal tables, computers, and calculators provide or calculate the probability <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; <emphasis effect="italics">x</emphasis>).</para><figure id="fs-idm109348848"><media id="fs-idm158141984" alt="This is a normal distribution curve. A value, x, is labeled on the horizontal axis, X. A vertical line extends from point x to the curve, and the area under the curve to the left of x is shaded. The area of this shaded section represents the probability that a value of the variable is less than x.">
+<image mime-type="image/jpg" src="../../media/fig-ch06_04_01n.jpg" width="420"/>
+</media>
+</figure><para id="fs-idm95835008">The area to the right is then <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; <emphasis effect="italics">x</emphasis>) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &lt; <emphasis effect="italics">x</emphasis>). Remember, <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &lt; <emphasis effect="italics">x</emphasis>) = <term>Area to the left</term> of the vertical line through <emphasis effect="italics">x</emphasis>. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &lt; <emphasis effect="italics">x</emphasis>) = 1 – <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &lt; <emphasis effect="italics">x</emphasis>) = <term>Area to the right</term> of the vertical line through <emphasis effect="italics">x</emphasis>. <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &lt; <emphasis effect="italics">x</emphasis>) is the same as <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≤ <emphasis effect="italics">x</emphasis>) and <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> &gt; <emphasis effect="italics">x</emphasis>) is the same as <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">X</emphasis> ≥ <emphasis effect="italics">x</emphasis>) for continuous distributions.</para>
+
+<section id="fs-idm123993536" class="finger"><title>Calculations of Probabilities</title><para id="eip-84">To find the probability for probability curves with a continuous random variable  we need to calculate the area under the curve across the values of X we are interested in.  For the normal distribution this seems a difficult task given the complexity of the formula. There is, however, a simply way to get what we want.</para><para id="eip-543">We start knowing that the area under a probability curve is the probability. </para><figure id="eip-id1164525573746"><media id="eip-id1164532252617" alt="..."><image mime-type="image/jpeg" src="../../media/fig-ch06_02_01n.jpg" width="420"/></media></figure><para id="eip-649">This shows that the area between X<sub>1</sub> and X<sub>2</sub> is the probability as stated in the formula:  P (X<sub>1</sub> ≤ x ≤ X<sub>2</sub>) </para><para id="eip-584">The mathematical tool needed to find the area under a curve is integral calculus. The integral of the normal probability density function between the two points x<sub>1</sub> and x<sub>2</sub> is the area under the curve between these two points and is the probability between these two points. 
+</para><para id="eip-911">Doing these integrals is no fun and can be very time consuming. But now, remembering that there are an infinite number of normal distributions out there, we can consider the one with a mean of zero and a standard deviation of 1. This particular normal distribution is given the name Standard Normal Distribution. Putting these values into the formula it reduces to a very simple equation. We can now quite easily calculate all probabilities for any value of x, for this particular normal distribution, that has a mean of zero and a standard deviation of 1. These have been produced and are available here in the text or everywhere on the web. They are presented in various ways. The table in this text is the most common presentation and is set up with probabilities for one-half the distribution beginning with zero, the mean, and moving outward. The shaded area in the graph at the top of the table represents the probability from zero to the specific Z value noted on the horizontal axis, Z. 
+</para><para id="eip-827">The only problem is that even with this table, it would be a ridiculous coincidence that our data had a mean of zero and a standard deviation of one. The solution is to convert the distribution we have with its mean and standard deviation to this new Standard Normal Distribution. The Standard Normal has a random variable called Z. </para><para id="eip-15">Using the standard normal table, typically called the normal table, to find the probability of one standard deviation, go to the Z column, reading  down to 1.0 and then read at column 0. That number, 0.3413 is the probability from zero to 1 standard deviation. At the top of the table is the shaded area in the distribution which is the probability for one standard deviation. The table has solved our integral calculus problem.  But only if our data has a mean of zero and a standard deviation of 1. </para><para id="eip-248">However, the essential point here is, the probability for one standard deviation on one normal distribution is the same on every normal distribution. If the population data set has a mean of 10 and a standard deviation of 5 then the probability from 10 to 15, one standard deviation, is the same as from zero to 1, one standard deviation on the standard normal distribution. To compute probabilities, areas, for any normal distribution, we need only to convert the particular normal distribution to the standard normal distribution and look up the answer in the tables. As review, here again is the <term>standardizing formula</term>:</para><para id="eip-60"><equation id="eip-id1172177805034"><m:math><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>μ</m:mi></m:mrow><m:mo>σ</m:mo></m:mfrac></m:math></equation></para><para id="eip-822">where Z is the value on the standard normal distribution, X is the value from a normal distribution one wishes to convert to the standard normal, μ and σ are, respectively, the mean and standard deviation of that population. Note that the equation uses μ and σ which denotes population parameters. This is still dealing with probability so we always are dealing with the population, with <emphasis>known</emphasis> parameter values and a <emphasis>known</emphasis> distribution. It is also important to note that because the normal distribution is symmetrical it does not matter if the z-score is positive or negative when calculating a probability. One standard deviation to the left (negative Z-score) covers the same area as one standard deviation to the right (positive Z-score). This fact is why the Standard Normal tables do not provide areas for the left side of the distribution. Because of this symmetry, the Z-score formula is sometimes written as:</para><para id="eip-325"><equation id="eip-id1172091260480"><m:math><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mo>|</m:mo><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>μ</m:mi><m:mo>|</m:mo></m:mrow><m:mi>σ</m:mi></m:mfrac></m:math></equation></para><para id="eip-48">Where the vertical lines in the equation means the absolute value of the number.</para><para id="eip-301">What the standardizing formula is really doing is computing the number of standard deviations     X is from the mean of its own distribution. The standardizing formula and the concept of counting standard deviations from the mean is the secret of all that we will do in this statistics class. The reason this is true is that <emphasis>all</emphasis> of statistics boils down to variation,   and the counting of standard deviations is a measure of variation.</para><para id="eip-286">This formula, in many disguises, will reappear over and over throughout this course. </para><example id="element-961"><para id="element-231">The final exam scores in a statistics class were normally distributed with a mean of 63 and a standard deviation of five.<newline count="2"/></para><exercise id="element-857"><problem id="id1168986723014">
+<para id="element-415">a. Find the probability that a randomly selected student scored more than 65 on the exam.<newline/>b. Find the probability that a randomly selected student scored less than 85.</para></problem>
+
+<solution id="id1168986723026">
+<para id="element-83">a. Let <emphasis effect="italics">X</emphasis> = a score on the final exam. <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">N</emphasis>(63, 5), where <emphasis effect="italics">μ</emphasis> = 63 and <emphasis effect="italics">σ</emphasis> = 5</para>
+
+<para id="element-449">Draw a graph.</para>
+
+<para id="element-389">Then, find <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 65).</para>
+
+<para id="element-294"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 65) = 0.3446</para>
+
+<figure id="fs-idm5159232"><media id="id1168988266495" alt="This is a normal distribution curve. The peak of the curve coincides with the point 63 on the horizontal axis. The point 65 is also labeled. A vertical line extends from point 65 to the curve. The probability area to the right of 65 is shaded; it is equal to 0.3446.">
+<image src="../../media/fig-ch06_02_02n.jpg" mime-type="image/png" width="380"/>
+</media>
+</figure>
+
+<equation id="eip-id1169162996055"><m:math>
+<m:msub><m:mi>Z</m:mi><m:mn>1</m:mn></m:msub>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow><m:msub><m:mi>x</m:mi><m:mn>1</m:mn></m:msub>
+<m:mo>−</m:mo>
+<m:mi>μ</m:mi></m:mrow>
+<m:mi>σ</m:mi></m:mfrac>
+<m:mo>=</m:mo>
+<m:mfrac><m:mrow><m:mn>65</m:mn><m:mo>−</m:mo><m:mn>63</m:mn></m:mrow>
+<m:mn>5</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mn>0.4</m:mn>
+</m:math></equation><para id="eip-id1165970241433"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≥ <emphasis effect="italics">x</emphasis><sub>1</sub>) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">Z</emphasis> ≥ <emphasis effect="italics">Z</emphasis><sub>1</sub>) = 0.3446</para><para id="element-45">The probability that any student selected at random scores more than 65 is 0.3446. Here is how we found this answer.</para><para id="eip-id1167200953445">The normal table provides probabilities from zero to the value Z<sub>1</sub>. For this problem the question can be written as: P(X ≥ 65) = P(Z ≥ Z<sub>1</sub>), which is the area in the tail. To find this area the formula would be 0.5 – P(X ≤ 65). One half of the probability is above the mean value because this is a symmetrical distribution. The graph shows how to find the area in the tail by subtracting that portion from the mean, zero, to the Z<sub>1</sub> value. The final answer is: P(X ≥ 63) = P(Z ≥ 0.4)  = 0.3446 </para><para id="element-772"><emphasis effect="italics">z</emphasis> = <m:math>
+<m:mrow>
+<m:mfrac>
+<m:mrow>
+<m:mn>65</m:mn><m:mtext> – 63</m:mtext>
+</m:mrow>
+<m:mn>5</m:mn>
+</m:mfrac>
+</m:mrow>
+</m:math> = 0.4</para>
+
+<para id="fs-idm33523184">Area to the left of Z<sub>1</sub> to the mean of zero is 0.1554</para><para id="fs-idm125027840"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &gt; 65) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">z</emphasis> &gt; 0.4) = 0.5 – 0.1554 = 0.3446</para></solution>
+</exercise><exercise id="element-243"><problem id="id1168986705169">
+<para id="element-950"/></problem>
+
+<solution id="id1168986705184">
+<para id="element-181">b.</para>
+<para id="eip-id1167984436015"><m:math><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mi>σ</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mn>85</m:mn><m:mo>-</m:mo><m:mn>63</m:mn></m:mrow><m:mrow><m:mn>5</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>4.4</m:mn></m:math> which is larger than the maximum value on the Standard Normal Table. Therefore, the probability that one student scores less than 85 is approximately one or 100%.</para><para id="element-440">A score of 85 is 4.4 standard deviations from the mean of 63 which is beyond the range of the standard normal table. Therefore, the probability that one student scores less than 85 is approximately one (or 100%).<newline count="2"/></para></solution>
+</exercise></example><note id="fs-idm83435856" class="statistics try">
+<label/>
+<title>Try It</title>
+<exercise id="fs-idm160100784">
+<problem id="fs-idm31461824">
+<para id="fs-idm14759824">The golf scores for a school team were normally distributed with a mean of 68 and a standard deviation of three.</para>
+<para id="fs-idm103631648">Find the probability that a randomly selected golfer scored less than 65.</para>
+</problem>
+<solution id="fs-idm84810288">
+<label/>
+<para id="fs-idm3955808">normalcdf(10<sup>99</sup>,65,68,3) = 0.1587</para></solution>
+</exercise>
+</note>
+
+<example id="element-32">
+<para id="element-190">A personal computer is used for office work at home, research, communication, personal finances, education, entertainment, social networking, and a myriad of other things. Suppose that the average number of hours a household personal computer is used for entertainment is two hours per day. Assume the times for entertainment are normally distributed and the standard deviation for the times is half an hour.<newline count="2"/></para><exercise id="element-496"><problem id="id1168986736072">
+<para id="element-723">a. Find the probability that a household personal computer is used for entertainment between 1.8 and 2.75 hours per day.</para></problem>
+<solution id="id1168986736088">
+<para id="element-150">a. Let <emphasis effect="italics">X</emphasis> = the amount of time (in hours) a household personal computer is used for entertainment. <emphasis effect="italics">X</emphasis> ~ <emphasis effect="italics">N</emphasis>(2, 0.5) where <emphasis effect="italics">μ</emphasis> = 2 and <emphasis effect="italics">σ</emphasis> = 0.5.</para>
+<para id="element-923">Find <emphasis effect="italics">P</emphasis>(1.8 &lt; <emphasis effect="italics">x</emphasis> &lt; 2.75).</para>
+<para id="element-618">The probability for which you are looking is the area <emphasis>between</emphasis> <emphasis effect="italics">x</emphasis> = 1.8 and <emphasis effect="italics">x</emphasis> = 2.75. <emphasis effect="italics">P</emphasis>(1.8 &lt; <emphasis effect="italics">x</emphasis> &lt; 2.75) = 0.5886</para>
+
+<figure id="fs-idm13004032"><media id="id1168986736293" alt="This is a normal distribution curve. The peak of the curve coincides with the point 2 on the horizontal axis. The values 1.8 and 2.75 are also labeled on the x-axis. Vertical lines extend from 1.8 and 2.75 to the curve. The area between the lines is shaded.">
+<image src="../../media/fig-ch06_02_03n.jpg" mime-type="image/png" width="450"/>
+</media>
+</figure>
+<para id="eip-id1169382223633"><emphasis effect="italics">P</emphasis>(1.8 ≤ <emphasis effect="italics">x</emphasis> ≤ 2.75) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">Z<sub>i</sub></emphasis> ≤ <emphasis effect="italics">Z</emphasis> ≤ <emphasis effect="italics">Z<sub>2</sub></emphasis>)</para>
+<para id="element-292">The probability that a household personal computer is used between 1.8 and 2.75 hours per day for entertainment is 0.5886.<newline count="2"/></para></solution>
+</exercise><exercise id="element-423"><problem id="id1168986736344">
+<para id="element-72">b. Find the maximum number of hours per day that the bottom quartile of households uses a personal computer for entertainment.</para></problem>
+
+<solution id="id1168986736360">
+<para id="element-958">b. To find the maximum number of hours per day that the bottom quartile of households uses a personal computer for entertainment, <emphasis>find the 25<sup>th</sup> percentile,</emphasis> <emphasis effect="italics">k</emphasis>, where <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> &lt; <emphasis effect="italics">k</emphasis>) = 0.25.</para>
+
+<figure id="fs-idm66393568"><media id="id1168986736428" alt="This is a normal distribution curve. The area under the left tail of the curve is shaded. The shaded area shows that the probability that x is less than k is 0.25. It follows that k = 1.67.">
+<image src="../../media/fig-ch06_05_04N.jpg" mime-type="image/jpg" width="420"/>
+</media></figure><para id="eip-id1166639880910"><m:math><m:mi>f</m:mi><m:mo>(</m:mo><m:mi>Z</m:mi><m:mo>)</m:mo><m:mo>=</m:mo><m:mn>0.5</m:mn><m:mo>-</m:mo><m:mn>0.25</m:mn><m:mo>=</m:mo><m:mn>0.25</m:mn></m:math>, <emphasis effect="italics">therefore Z</emphasis><m:math><m:mo>≈</m:mo><m:mn>-0.675</m:mn></m:math>(<emphasis effect="italics">or just 0.67 using the table</emphasis>)<m:math><m:mi>Z</m:mi><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mi>μ</m:mi></m:mrow><m:mrow><m:mi>σ</m:mi></m:mrow></m:mfrac><m:mo>=</m:mo><m:mfrac><m:mrow><m:mi>x</m:mi><m:mo>-</m:mo><m:mn>2</m:mn></m:mrow><m:mrow><m:mn>0.5</m:mn></m:mrow></m:mfrac><m:mo>=</m:mo><m:mn>-0.675</m:mn></m:math>, <emphasis effect="italics">therefore x</emphasis><m:math><m:mo>=</m:mo><m:mn>-0.675</m:mn><m:mo>*</m:mo><m:mn>0.5</m:mn><m:mo>+</m:mo><m:mn>2</m:mn><m:mo>=</m:mo><m:mn>1.66</m:mn></m:math> <emphasis effect="italics">hours.</emphasis></para><para id="element-344">The maximum number of hours per day that the bottom quartile of households uses a personal computer for entertainment is 1.66 hours.</para></solution>
+</exercise></example>
+
+<note id="fs-idm101393328" class="statistics try"><label/>
+<title>Try It</title>
+<exercise id="fs-idm193708112"><problem id="fs-idm168992208">
+<para id="fs-idm120157248">The golf scores for a school team were normally distributed with a mean of 68 and a standard deviation of three. Find the probability that a golfer scored between 66 and 70.</para></problem>
+<solution id="fs-idm95163136">
+<label/>
+<para id="fs-idm109836448">normalcdf(66,70,68,3) = 0.4950</para></solution>
+</exercise></note>
+
+<example id="eip-562">
+<para id="eip-idm115363904">There are approximately one billion smartphone users in the world today. In the United States the ages 13 to 55+ of smartphone users approximately follow a normal distribution with approximate mean and standard deviation of 36.9 years and 13.9 years, respectively.<newline count="2"/></para><exercise id="eip-idm99631296">
+<problem id="eip-idm93440352">
+<para id="fs-idm218603968">a. Determine the probability that a random smartphone user in the age range 13 to 55+ is between 23 and 64.7 years old.</para></problem>
+<solution id="eip-idm151027840">
+<para id="eip-idm169219344">a. 0.8186<newline count="2"/> </para></solution>
+</exercise>
+
+<exercise id="eip-idm35763936">
+<problem id="eip-idm100019648">
+<para id="fs-idm1234448">b. Determine the probability that a randomly selected smartphone user in the age range 13 to 55+ is at most 50.8 years old.</para></problem>
+<solution id="eip-idm92673856">
+<para id="eip-idm21130928">b. 0.8413<newline count="2"/></para></solution>
+</exercise>
+
+</example><example id="eip-555"><para id="eip-19">
+A citrus farmer who grows mandarin oranges finds that the diameters of mandarin oranges harvested on his farm follow a normal distribution with a mean diameter of 5.85 cm and a standard deviation of 0.24 cm.<newline count="2"/> 
+</para><exercise id="eip-418"><problem id="eip-941">
+  <para id="eip-265">a. Find the probability that a randomly selected mandarin orange from this farm has a diameter larger than 6.0 cm. Sketch the graph.
+  </para></problem>
+
+<solution id="eip-250">
+  <para id="eip-975">
+    <figure id="fs-id1170969905478"><media id="eip-idp150275696" alt="This is a normal distribution curve. The peak of the curve coincides with the point 2 on the horizontal axis. The values 1.8 and 2.75 are also labeled on the x-axis. Vertical lines extend from 1.8 and 2.75 to the curve. The area between the lines is shaded.">
+<image mime-type="jpg/png" src="../../media/fig-ch06_02_04n.jpg" width="420"/>
+</media>
+</figure>
+  </para>
+<equation id="eip-430"><m:math><m:msub><m:mi>Z</m:mi><m:mn>1</m:mn></m:msub>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow><m:mn>6</m:mn>
+<m:mo>−</m:mo>
+<m:mn>5.85</m:mn>
+</m:mrow>
+<m:mn>.24</m:mn>
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mn>.625</m:mn>
+</m:math></equation><para id="eip-989"><emphasis effect="italics">P</emphasis>(<emphasis effect="italics">x</emphasis> ≥ 6) = <emphasis effect="italics">P</emphasis>(<emphasis effect="italics">z</emphasis> ≥ 0.625) = 0.2670</para><para id="eip-572">b. The middle 20% of mandarin oranges from this farm have diameters between ______ and ______.</para></solution>
+</exercise><exercise id="eip-647"><problem id="eip-66">
+  <para id="eip-512"/></problem>
+
+<solution id="eip-36">
+  <para id="eip-445"><m:math>
+<m:mi>f</m:mi>
+<m:mo>(</m:mo>
+<m:mi>Z</m:mi>
+<m:mo>)</m:mo>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mn>0.20</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>2</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mn>0.10</m:mn>
+</m:math>
+<emphasis effect="italics">, therefore Z</emphasis>
+<m:math>
+<m:mo>≈</m:mo>
+<m:mo>±</m:mo>
+<m:mn>0.25</m:mn>
+</m:math>
+<newline/>
+<m:math>
+<m:mi>Z</m:mi>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mi>x</m:mi><m:mo>-</m:mo><m:mi>μ</m:mi>
+</m:mrow>
+<m:mrow><m:mi>σ</m:mi>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mfrac>
+<m:mrow>
+<m:mi>x</m:mi>
+<m:mo>-</m:mo>
+<m:mn>5.85</m:mn>
+</m:mrow>
+<m:mrow>
+<m:mn>0.24</m:mn>
+</m:mrow>
+</m:mfrac>
+<m:mo>=</m:mo>
+<m:mo>±</m:mo>
+<m:mn>0.25</m:mn>
+<m:mo stretchy="false">→</m:mo>
+<m:mo>±</m:mo>
+<m:mn>0.25</m:mn>
+<m:mo>*</m:mo>
+<m:mn>0.24</m:mn>
+<m:mo>+</m:mo>
+<m:mn>5.85</m:mn>
+<m:mo>=</m:mo>
+<m:mo>(</m:mo>
+<m:mn>5.79</m:mn>
+<m:mo>,</m:mo><m:mn>5.91</m:mn><m:mo>)</m:mo></m:math></para></solution>
+</exercise>
+</example>
+
+</section><section id="fs-idm101453488" class="references"><title>References</title><para id="fs-idm202298288">“Naegele’s rule.” Wikipedia. Available online at http://en.wikipedia.org/wiki/Naegele's_rule (accessed May 14, 2013).</para>
+<para id="fs-idm133443328">“403: NUMMI.” Chicago Public Media &amp; Ira Glass, 2013. Available online at http://www.thisamericanlife.org/radio-archives/episode/403/nummi (accessed May 14, 2013).</para>
+<para id="fs-idm77712176">“Scratch-Off Lottery Ticket Playing Tips.” WinAtTheLottery.com, 2013. Available online at http://www.winatthelottery.com/public/department40.cfm (accessed May 14, 2013).</para>
+<para id="fs-idm127381280">“Smart Phone Users, By The Numbers.” Visual.ly, 2013. Available online at http://visual.ly/smart-phone-users-numbers (accessed May 14, 2013).</para>
+<para id="fs-idm165219840">“Facebook Statistics.” Statistics Brain. Available online at http://www.statisticbrain.com/facebook-statistics/(accessed May 14, 2013).</para>
+</section><section id="eip-916"><title>Practice questions</title><exercise id="eip-222"><problem id="eip-846">
+  <para id="eip-866">A local bank has determined that the daily balances of the chequing accounts of their customers are normally distributed with a mean of $280 and a standard deviation of $20. 
+<list id="eip-idm488662176" list-type="enumerated" number-style="lower-alpha"><item>What percentage of their customers has daily balances less than $290? </item>
+<item>What percentage of their customers has daily balances between $250 and $275? </item>
+<item>What percentage of their customers has daily balances over $260? </item>
+<item> The Bank is planning a special promotion where it is rewarding its customers whose balances are in the top 15% with a free toaster. What account balance must a customer achieve in order to qualify for a free toaster?</item>
+<item>68.26% of balances will be between what amount? </item>
+<item>What is the interquartile range for the account balances? </item>
+</list></para></problem>
+
+<solution id="eip-701">
+  <para id="eip-467"><list id="eip-idm580450704" list-type="enumerated" number-style="lower-alpha"><item>0.6915 </item>
+<item>0.3345
+</item>
+<item>0.8413 </item>
+<item>$300.70 </item>
+<item>$260 to $300 </item>
+<item> IQR = 293.5-266.5 = $27</item>
+</list></para></solution>
+</exercise><exercise id="eip-853"><problem id="eip-491">
+  <para id="eip-999">
+  The Old Baldy Tire Company is introducing a new steel belted radial tire. Old Baldy's engineering department has estimated that the average life of this tire will be 50,000 km and that the standard deviation of these tires will be 5000 km. It is assumed that the useful life of these tires follows a normal distribution. 
+  </para>
+<list id="eip-idm403549152" list-type="enumerated" number-style="lower-alpha"><item>What is the probability that:
+<list id="eip-idm403090112" list-type="enumerated" number-style="lower-roman"><item>These tires will last for longer than 60,000 km? </item>
+<item>These tires will last for less than 38,000 km? </item>
+<item>These tires will last for between 45,000 and 58,000 km? </item>
+<item>These tires will last for between 39,000 and 43,000 km?</item>
+</list></item>
+<item>The Old Baldy Tire Company is considering offering a tire guarantee that each new set of tires will last a certain number of kilometers. If the tires fail to last the specified number of kilometers a new set of tires will be provided to the purchaser for free. The Old Baldy Tire Company wants to ensure that no more than 10% of the tires produced qualify for this guarantee. For how many kilometers should these tires be guaranteed to last?</item>
+<item>35% of tires will last less than how many kilometers? </item>
+
+
+</list></problem>
+
+<solution id="eip-499">
+  <para id="eip-310"><list id="eip-idm242314912" list-type="enumerated" number-style="lower-alpha"><item>
+<list id="eip-idm242314400" list-type="enumerated" number-style="lower-roman"><item>0.0228 </item>
+<item>0.0082 </item>
+<item> 0.7865</item>
+<item>0.0669 </item>
+</list></item>
+<item> 56407.8 km</item>
+<item>48073.4 km </item>
+
+</list></para></solution>
+</exercise>
+</section></content>
+</document>

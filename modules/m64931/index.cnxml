@@ -1,0 +1,417 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Calculating Probabilities for Sampling Distributions--A Series of Examples</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m64931</md:content-id>
+  <md:title>Calculating Probabilities for Sampling Distributions--A Series of Examples</md:title>
+  <md:abstract>Four examples that show how to calculate and interpret probabilities found for sampling distributions</md:abstract>
+  <md:uuid>7fdbca37-3544-4b00-a425-53e3a9e7e6b0</md:uuid>
+</metadata>
+
+<content>
+    <para id="import-auto-idm384250208">If a sampling distribution is normally distributed, then we can find probabilities for the sampling distribution using the normal distribution just like we did in Chapter 5.</para>
+    <para id="import-auto-idm1182812320">The z-score for the sampling distribution for sample means would be:</para>
+    <equation xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-981"><m:math>
+<m:mi>Z</m:mi> <m:mo>=</m:mo> 
+<m:apply><m:divide/><m:apply><m:minus/><m:apply><m:conjugate/><m:ci>X</m:ci></m:apply>
+<m:ci><m:msub><m:mi>μ</m:mi><m:apply><m:conjugate/><m:ci>x</m:ci></m:apply>
+</m:msub></m:ci></m:apply><m:ci><m:msub><m:mi>σ</m:mi><m:apply><m:conjugate/><m:ci>x</m:ci></m:apply>
+</m:msub></m:ci></m:apply>
+<m:mo>=</m:mo>
+
+<m:apply><m:divide/><m:apply><m:minus/><m:apply><m:conjugate/><m:ci>X</m:ci></m:apply><m:ci><m:msub><m:mi>μ</m:mi><m:mi>x</m:mi></m:msub></m:ci></m:apply><m:apply><m:divide/><m:ci><m:msub><m:mi>σ</m:mi><m:mi>x</m:mi></m:msub></m:ci><m:apply><m:root/><m:ci>n</m:ci></m:apply></m:apply></m:apply>
+
+</m:math></equation><para id="import-auto-idm371202976">The z-score for the sampling distribution for sample proportions would be:</para>
+    <equation xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-293"><m:math>
+<m:mi>Z</m:mi> <m:mo>=</m:mo> 
+<m:apply><m:divide/><m:apply><m:minus/><m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+  </m:mrow>
+  <m:mo> ^</m:mo>
+</m:mover>
+
+<m:ci><m:msub><m:mi>μ</m:mi><m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+  </m:mrow>
+  <m:mo> ^</m:mo>
+</m:mover>
+
+</m:msub></m:ci></m:apply><m:ci><m:msub><m:mi>σ</m:mi><m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+  </m:mrow>
+  <m:mo> ^</m:mo>
+</m:mover>
+
+</m:msub></m:ci></m:apply>
+<m:mo>=</m:mo>
+
+<m:apply><m:divide/><m:apply><m:minus/>
+<m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+  </m:mrow>
+  <m:mo> ^</m:mo>
+</m:mover>
+<m:pi/>
+</m:apply>
+<m:apply><m:root/><m:apply><m:divide/><m:apply><m:times/><m:pi/><m:apply><m:minus/><m:cn>1</m:cn><m:pi/></m:apply></m:apply><m:ci>n</m:ci></m:apply></m:apply>
+</m:apply>
+
+
+</m:math></equation><exercise xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-141"><problem id="eip-846">
+
+      <para id="import-auto-idm1106877248">The Old Baldy Tire Company is introducing a new steel belted radial tire. Old Baldy's engineering department has estimated that the mean life of this tire will be 50,000 km and that the standard deviation of these tires will be 10,000 km. Suppose a large number of random samples of 100 tires is taken. The shape of the population distribution is unknown. </para>
+      <list id="import-auto-idm1145890512" list-type="enumerated" number-style="arabic">
+        <item>Can we assume the distribution of the mean life of these tires will be normal? Explain.</item>
+        <item>Regardless of your result in a), assume that we are dealing with a normal distribution. Find the probability that the mean life of a random sample of 100 tires is less than 49,000km.</item>
+        <item>A competitor of Old Baldy's takes a random sample of 100 tires and finds their mean life to be 49,000 km. Based off of this data, they claim that the engineering department of Old Baldy's has exaggerated the mean life of their new tires. Do you support the competitor's claim? Explain.</item>
+      </list>
+    
+</problem>
+
+<solution id="eip-104">
+  <para id="eip-47"><list id="import-auto-idm342093024" list-type="enumerated" number-style="lower-alpha"><item>Yes. As the sample size is greater than 30 (it is 100), we can assume that the sampling distribution of the sample mean lifespan of the tires is normally distributed regardless of the shape of the sampling distribution due to the central limit theorem. </item>
+        <item>
+<m:math>
+<m:apply><m:conjugate/><m:ci>x</m:ci></m:apply>
+</m:math>
+= mean lifespan of 100 Old Baldy tires, <m:math>
+<m:apply><m:eq/>
+<m:msub><m:mi>μ</m:mi> <m:apply><m:conjugate/><m:ci>x</m:ci></m:apply> </m:msub>
+<m:msub><m:mi>μ</m:mi><m:mi>x</m:mi></m:msub></m:apply>
+</m:math> = 50,000, 
+<m:math>
+<m:apply>
+<m:eq/>
+<m:msub>
+<m:mi>σ</m:mi> 
+<m:apply><m:conjugate/><m:ci>x</m:ci></m:apply>
+</m:msub>
+<m:apply><m:divide/>
+<m:ci>σ</m:ci>
+<m:apply><m:root/><m:ci>n</m:ci></m:apply>
+</m:apply>
+</m:apply>
+</m:math> = 10,000/10 = 1000. 
+Since we know that the data is normally distributed, we can use a computer program to calculate the probability <m:math>
+<m:ci> P( </m:ci><m:apply><m:conjugate/><m:mi>X</m:mi></m:apply> <m:mo> &lt;</m:mo> <m:ci> 49,000)</m:ci>
+</m:math>.
+From the computer program, we get <m:math>
+<m:ci> P( </m:ci><m:apply><m:conjugate/><m:mi>X</m:mi></m:apply> <m:mo> &lt;</m:mo> <m:ci> 49,000)</m:ci>
+</m:math>= 15.87%
+</item>
+      
+        <item>No. The probability that a random sample of 100 Old Baldy tires has a mean lifespan of 49,000km is 15.87% (assuming Old Baldy’s claim). This means that this event is likely to occur (as it is greater than 10%), under the assumption that the tires last on average 50,000 km, and does not provide sufficient evidence against Old Baldy’s claim. </item>
+      </list></para></solution>
+</exercise><exercise xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-640"><problem id="eip-687">
+
+      <para id="import-auto-idm1017012080">The maintenance manager at a popular mountain resort is trying to determine if the aging gondola is in need of some renovation—or perhaps outright replacement. Right now, the maximum load of the gondola is 900 kilograms or 12 persons. The manager knows that the average weight of North Americans has been on the rise for several years and wishes to test what the probabilities might be of this gondola exceeding the maximum capacity.</para>
+      <para id="import-auto-idm804413456">Since the operators don’t currently look at gender—just numbers—the manager is concerned about what might happen if the worst-case scenario were to occur: 12 large adult males were allowed on the gondola at the same time.</para>
+      <para id="import-auto-idm1134264448">To investigate this further the manager did some research into the current average weight of adult males and discovered that it is about 80 kilograms. He also knows that adult weight tends to be normally distributed by gender, with a standard deviation for males of about 12 kilograms. </para>
+      <list id="import-auto-idm850186112" list-type="enumerated" number-style="lower-alpha">
+        <item>Given this information, he first wants to know what the individual weight allowance is (i.e. the per person average) that the gondola can withstand.</item>
+        <item>He also wants to know how likely is it that the individual weight of any randomly selected male will exceed the individual weight allowance calculated above.</item>
+        <item>Finally, he wants to know how likely it would be that the average weight of a sample of 12 adult males would exceed the average individual weight allowance.</item>
+        <item>Based on your answers, do you think the manager should renovate the gondola? Is there any further information that the manager would need?</item>
+      </list>
+    
+</problem>
+
+<solution id="eip-654">
+  <para id="eip-665"><list id="import-auto-idm816270496" list-type="enumerated" number-style="lower-alpha"><item>900kg/12 people = 75kg/person</item>
+        <item>Since this is about an individual, we will use <m:math>
+<m:ci><m:msub><m:mi>μ</m:mi><m:mi>x</m:mi></m:msub></m:ci>
+</m:math> and <m:math>
+<m:ci><m:msub><m:mi>σ</m:mi><m:mi>x</m:mi></m:msub></m:ci>
+</m:math>. As stated in the question, we know that the population is normally distributed. From this, a computer program calculated that <m:math>
+<m:apply><m:geq/><m:ci>P(X</m:ci><m:cn>75)</m:cn></m:apply>
+</m:math>
+ = 66.15%, where <emphasis effect="italics">X</emphasis> is the weight of an individual person on the gondola.</item>
+        <item>Now, we are being asked about the mean for 12 people. Therefore, this question is about finding a probability for the sampling distribution for sample means.  Therefore, we will use <m:math>
+<m:apply><m:conjugate/><m:ci>x</m:ci></m:apply>
+</m:math>
+= mean weight of 12 people, <m:math>
+<m:apply><m:eq/>
+<m:msub><m:mi>μ</m:mi> <m:apply><m:conjugate/><m:ci>x</m:ci></m:apply> </m:msub>
+<m:msub><m:mi>μ</m:mi><m:mi>x</m:mi></m:msub></m:apply>
+</m:math> = 80, 
+<m:math>
+<m:apply>
+<m:eq/>
+<m:msub>
+<m:mi>σ</m:mi> 
+<m:apply><m:conjugate/><m:ci>x</m:ci></m:apply>
+</m:msub>
+<m:apply><m:divide/>
+<m:ci>σ</m:ci>
+<m:apply><m:root/><m:ci>n</m:ci></m:apply>
+</m:apply>
+</m:apply>
+</m:math> = 12/3.46 = 3.46. Since the population distribution is normal, we know that the sampling distribution will also be normal (regardless of the sample size). Therefore, we can use a computer program to calculate the probability <m:math>
+<m:ci> P( </m:ci><m:apply><m:conjugate/><m:mi>X</m:mi></m:apply> <m:mo> &gt;</m:mo> <m:ci> 75)</m:ci>
+</m:math>
+. We get 92.55%. </item>
+          <item>The probability found in c) is the probability that the average mass of 12 adult males will exceed the maximum individual weight for the gondola. The next question is “how likely is it that there will be 12 adult males on the gondola?” The manager should do further research to determine this before making a decision. While waiting for the results, the manager should implement a policy where any large groups of males are broken up and are required to take the lift in separate groups. I.e. break up a group of 12 males into two groups of 6 males. </item>
+      </list></para></solution>
+</exercise><exercise xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-942"><problem id="eip-233">
+ 
+      <para id="import-auto-idm850250288">The city of Montreal has an extensive bike lane system. In fact, it is one of the largest in North America. But many cyclists find that even with all of the bike lanes, it is still hard to get around the city on a bike. In particular, there are many lanes that run east/west, but few that run north/south. Thus, they are encouraging the city council to focus less on adding lots of kilometers to the system, but instead making sure that the current system properly connects all parts of the city. </para>
+      <para id="import-auto-idm337485936">The city council will only go forward with this idea if at least 66% of the residents support focusing on connecting the system rather than expanding the system. </para>
+      <para id="import-auto-idm1089886720">Suppose that 62% of residents do support connecting the system rather than expanding it. What is the probability that a random sample of 1000 residents will have a sample proportion of at least 66%?</para>
+      <list id="import-auto-idm993862304" list-type="enumerated" number-style="lower-alpha">
+        <item>Find the above probability using the binomial distribution. </item>
+        <item>Find the above probability by using the sampling distribution for sample proportions. </item>
+        <item>Compare the two answers. Do they give similar answers?</item>
+        <item>Based on your answers, do you think that it is possible that the city of Montreal will choose to focus on connecting the bike path system?</item>
+      </list>
+    
+</problem>
+
+<solution id="eip-590">
+  <para id="eip-841"><list id="import-auto-idm1055864128" list-type="enumerated" number-style="lower-alpha"><item>Since we are using the binomial distribution, we are being asked to find the probability that at least 660 of the 1000 people in the poll will want to focus on connecting the system. The 660 comes from 66% of 1000. In other words, we are asked to find the <m:math>
+<m:apply><m:geq/><m:ci>P(X</m:ci><m:cn>660)</m:cn></m:apply>
+</m:math>, with <emphasis effect="italics">n</emphasis> = 1000 and <m:math> <m:pi/></m:math>
+ = 60%. Using a computer program, this yields a probability of 0.48%. This is found, by highlighting all of the values above 660 and including 660.  </item>
+        <item>Since we are using the sampling distribution for sample proportions, we are asked to find the probability that the sample proportion will be at least 66%. In other words, we are asked to find the 
+<emphasis effect="italics"> P</emphasis>(<m:math>
+<m:apply><m:geq/><m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+  </m:mrow>
+  <m:mo> ^</m:mo>
+</m:mover> <m:cn>0.66</m:cn></m:apply>
+</m:math>). We can assume the sampling distribution for sample proportions is normal as the number of successes (<m:math>
+<m:apply><m:times/><m:ci>n</m:ci><m:pi/></m:apply>
+</m:math> =<m:math>
+<m:apply><m:times/><m:cn>1000</m:cn><m:cn>0.62</m:cn></m:apply>
+</m:math>=620) and the number of failures (<m:math>
+<m:apply><m:times/><m:ci>n</m:ci><m:apply><m:minus/><m:cn>1</m:cn><m:pi/></m:apply></m:apply>
+</m:math> = <m:math>
+<m:apply><m:times/><m:cn>1000</m:cn><m:cn>0.38</m:cn></m:apply>
+</m:math>=380) are both at least five. Therefore, we will use the normal distribution to find the probability with <m:math>
+<m:apply>
+<m:eq/>
+<m:msub>
+<m:mi>μ</m:mi>
+<m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+  </m:mrow>
+  <m:mo> ^</m:mo>
+</m:mover>
+</m:msub>
+<m:pi/>
+</m:apply>
+</m:math>
+= 0.62 and <m:math>
+<m:apply>
+<m:eq/>
+<m:msub>
+<m:mi>σ</m:mi>
+<m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+  </m:mrow>
+  <m:mo> ^</m:mo>
+</m:mover>
+</m:msub>
+
+<m:apply><m:root/><m:apply><m:divide/><m:apply><m:times/><m:pi/><m:apply><m:minus/><m:cn>1</m:cn><m:pi/></m:apply></m:apply><m:ci>n</m:ci></m:apply></m:apply>
+
+</m:apply>
+</m:math> = 
+<m:math>
+<m:apply><m:root/><m:apply><m:divide/><m:apply><m:times/><m:mi>0.62</m:mi><m:apply><m:minus/><m:cn>1</m:cn><m:mi>0.62</m:mi></m:apply></m:apply><m:ci><m:mi>1000</m:mi></m:ci></m:apply></m:apply>
+</m:math> = 0.01475.
+
+      Therefore, using a computer program we find <emphasis effect="italics">P</emphasis>(<m:math>
+<m:apply><m:geq/><m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+  </m:mrow>
+  <m:mo> ^</m:mo>
+</m:mover> <m:cn>0.66</m:cn></m:apply>
+</m:math>) = 0.33%
+</item>
+        <item>The two probabilities are quite close. They are only 0.15% apart. Therefore, the two methods give us similar results. </item>
+        <item>It is unlikely that if the proportion of residents that want to focus on connecting the bike system is 62% that a poll of 1000 people would result in a sample proportion of 66%. Therefore, it is unlikely that the city of Montreal will chose to focus on connecting the system. </item>
+      </list></para></solution>
+</exercise><exercise xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-54"><problem id="eip-120">
+  
+      <para id="import-auto-idm1123572752">Video games are gaining more and more popularity. Children often try to convince their parents to buy games even when they are not appropriate. For example, they may want to play a very violent game that is not appropriate for their age group. To help parents out, video games have rating categories to suggest age appropriateness. But how aware are parents of these categories? </para>
+      <para id="import-auto-idm350241280">To investigate this, you conduct a survey of Canadian families that have young children who play video games. You show parents three video game covers that have the category rating clearly marked on it. You then ask the parents whether the games would be appropriate for children and why. If the parent correctly identifies which games are appropriate for their children and refers to the ratings in making their choice, you categorize the parents as well informed. </para>
+      <para id="import-auto-idm1047378832">Suppose that we want to use your results to justify the claim that less than 30 percent of parents are well informed about video game ratings. In your random sample of 1000 parents, you actually found that 27 percent of the parents that you polled were well informed about video game ratings. </para>
+      <list id="import-auto-idm1048172144" list-type="enumerated" number-style="lower-alpha">
+        <item>Assuming that the proportion of parents that are well informed about video game ratings is 30%, what is the probability that you would observe a sample proportion of less than 27%. Use the normal approximation of the binomial distribution to find your answer. </item>
+        <item>Based on your results, do you believe that this is enough evidence to suggest that less than 30% of parents are well informed about video game ratings? Explain your answer. </item>
+      </list>
+    
+</problem>
+
+<solution id="eip-226">
+  <para id="eip-276"><list id="import-auto-idm805631168" list-type="enumerated" number-style="lower-alpha"><item>Since we are using the sampling distribution for sample proportions, we are asked to find the probability that the sample proportion will be at most 27%. In other words, we are asked to find the <emphasis effect="italics"> P</emphasis>(<m:math>
+<m:apply><m:leq/><m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+  </m:mrow>
+  <m:mo> ^</m:mo>
+</m:mover> <m:cn>0.27</m:cn></m:apply>
+</m:math>). We can assume the sampling distribution for sample proportions is normal as the number of successes ( and the number of failures ((<m:math>
+<m:apply><m:times/><m:ci>n</m:ci><m:pi/></m:apply>
+</m:math> =<m:math>
+<m:apply><m:times/><m:cn>1000</m:cn><m:cn>0.30</m:cn></m:apply>
+</m:math>=300) and the number of failures (<m:math>
+<m:apply><m:times/><m:ci>n</m:ci><m:apply><m:minus/><m:cn>1</m:cn><m:pi/></m:apply></m:apply>
+</m:math> = <m:math>
+<m:apply><m:times/><m:cn>1000</m:cn><m:cn>0.7</m:cn></m:apply>
+</m:math>=700) are both at least five. Therefore, we will use the normal distribution to find the probability with <m:math>
+<m:apply>
+<m:eq/>
+<m:msub>
+<m:mi>μ</m:mi>
+<m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+  </m:mrow>
+  <m:mo> ^</m:mo>
+</m:mover>
+</m:msub>
+<m:pi/>
+</m:apply>
+</m:math>
+= 0.30 and <m:math>
+<m:apply>
+<m:eq/>
+<m:msub>
+<m:mi>σ</m:mi>
+<m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+  </m:mrow>
+  <m:mo> ^</m:mo>
+</m:mover>
+</m:msub>
+
+<m:apply><m:root/><m:apply><m:divide/><m:apply><m:times/><m:pi/><m:apply><m:minus/><m:cn>1</m:cn><m:pi/></m:apply></m:apply><m:ci>n</m:ci></m:apply></m:apply>
+
+</m:apply>
+</m:math> = 
+<m:math>
+<m:apply><m:root/><m:apply><m:divide/><m:apply><m:times/><m:mi>0.3</m:mi><m:apply><m:minus/><m:cn>1</m:cn><m:mi>0.3</m:mi></m:apply></m:apply><m:ci><m:mi>1000</m:mi></m:ci></m:apply></m:apply>
+</m:math> = 0.01145.
+
+      Therefore, using a computer program we find <emphasis effect="italics">P</emphasis>(<m:math>
+<m:apply><m:leq/><m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+  </m:mrow>
+  <m:mo> ^</m:mo>
+</m:mover> <m:cn>0.27</m:cn></m:apply>
+</m:math>) = 0.44%.</item>
+        <item>Since the probability that we would observe a sample proportion of 27% (assuming a population proportion of 30%) is 0.44%, it is very unlikely we would have observed this evidence if the assumption is true. Therefore, it is more likely that the population proportion is less than 30%. Thus there is enough evidence to suggest that less than 30% of parents are well informed about video game ratings.</item>
+      </list></para></solution>
+</exercise><section xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-317"><title>Practice questions</title><para id="eip-382">
+The following practice questions are from Lyryx Learning, Business Statistics I -- MGMT 2262 -- Mt Royal University -- Version 2016 Revision A. OpenStax CNX. Sep 8, 2016 http://cnx.org/contents/f3aefa9e-58d2-41ea-969f-04dc2cb04c82@5.5
+</para><para id="eip-798"><emphasis effect="italics">Use the following information to answer the next ten exercises:</emphasis> A manufacturer produces 25-pound lifting weights. The lowest actual weight is 24 pounds, and the highest is 26 pounds. Each weight is equally likely so the distribution of weights is uniform. A sample of 100 weights is taken. The standard deviation is 0.58 pounds.</para><exercise id="eip-140"><problem id="fs-idm108112736">
+<list id="fs-idm44419104" list-type="enumerated" number-style="lower-alpha">
+<item>What is the distribution for the weights of one 25-pound lifting weight? What is the mean and standard deivation?</item>
+<item>What is the distribution for the mean weight of 100 25-pound lifting weights?</item>
+<item>Find the probability that the mean actual weight for the 100 weights is less than 24.9.</item>
+</list>
+</problem>
+
+<solution id="fs-idm27647648">
+<list id="fs-idp41045488" list-type="enumerated" number-style="lower-alpha"><item>Uniform with a mean of 25 and a standard deviation of 0.58 pounds. Remember when a distribution is uniform all of the values are equally likely. Therefore the mean will be halfway between the lowest value (24) and the highest value (26).</item>
+<item>Normal with a mean of 25 and a standard deviation of 0.0577</item>
+<item>0.0416</item>
+</list></solution>
+
+</exercise><exercise id="eip-21"><problem id="fs-idm151567920">
+<para id="fs-idm68403024">Find the probability that the mean actual weight for the 100 weights is greater than 25.2.</para>
+</problem>
+<solution id="fs-idm73291392">
+<para id="fs-idm73292848">0.0003</para>
+</solution>
+
+</exercise><exercise id="eip-448"><problem id="fs-idm65102048">
+<para id="fs-idm147870912">Find the 90<sup>th</sup> percentile for the mean weight for the 100 weights.</para>
+</problem>
+<solution id="fs-idm110485568">
+<para id="fs-idm150922624">25.07</para>
+</solution>
+
+</exercise><exercise id="eip-312"><problem id="id6273949">
+<para id="element-365">Suppose that the distance of fly balls hit to the outfield (in baseball) is normally distributed with a mean of 250 feet and a standard deviation of 50 feet. We randomly sample 49 fly balls.</para><list id="element-530" list-type="enumerated" number-style="lower-alpha">
+<item>What is the probability that the 49 balls traveled an average of less than 240 feet? </item>
+<item>Find the 80<sup>th</sup> percentile of the distribution of the average of 49 fly balls.</item>
+</list></problem>
+
+<solution id="id6274098">
+<list id="element-804" list-type="enumerated" number-style="lower-alpha"><item>0.0808</item>
+<item>256.01 feet</item></list></solution> 
+
+</exercise><exercise id="eip-405"><problem id="id6533450">
+<para id="element-518">According to the Internal Revenue Service, the average length of time for an individual to complete (keep records for, learn, prepare, copy, assemble, and send) IRS Form 1040 is 10.53 hours (without any attached schedules). The distribution is unknown. Let us assume that the standard deviation is two hours. Suppose we randomly sample 36 taxpayers.</para>
+
+<list id="element-685" list-type="enumerated" number-style="lower-alpha">
+<item>Would you be surprised if the 36 taxpayers finished their Form 1040s in an average of more than 12 hours? Explain why or why not in complete sentences.</item>
+<item>Would you be surprised if one taxpayer finished his or her Form 1040 in more than 12 hours? In a complete sentence, explain why.</item></list></problem>
+<solution id="fs-idm166717360">
+<list id="fs-idm37918272" list-type="enumerated" number-style="lower-alpha">
+<item>Yes. I would be surprised, because the probability is almost 0.</item>
+<item>No. I would not be totally surprised because the probability is 0.2312</item></list></solution>
+
+</exercise><exercise id="eip-684"><problem id="id6533652">
+<para id="element-243">Suppose that a category of world-class runners are known to run a marathon (26 miles) in an average of 145 minutes with a standard deviation of 14 minutes. Consider 49 of the races. Let <m:math>
+<m:mover accent="true">
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:math> the average of the 49 races.</para>
+
+<list id="element-45" list-type="enumerated" number-style="lower-alpha">
+<item>Find the probability that the runner will average between 142 and 146 minutes in these 49 marathons.</item>
+<item>Find the 80<sup>th</sup> percentile for the average of these 49 marathons.</item>
+<item>Find the median of the average running times.</item></list></problem>
+
+ <solution id="id6533816">
+<list id="element-402" list-type="enumerated" number-style="lower-alpha">
+<item>0.6247</item>
+<item>146.68 </item>
+<item>145 minutes</item></list></solution>
+
+</exercise><exercise id="eip-509"><problem id="id6264723">
+<para id="fs-idm19354672">Determine which of the following are true and which are false. Then, in complete sentences, justify your answers.</para>
+
+<list id="fs-idm39736064" list-type="enumerated" number-style="lower-alpha">
+<item>When the sample size is large, the mean of <m:math>
+ <m:mover accent="true">
+  <m:mi>X</m:mi>
+  <m:mo>–</m:mo>
+ </m:mover>
+ 
+</m:math> is approximately equal to the mean of <emphasis effect="italics">Χ</emphasis>.</item>
+<item>When the sample size is large, <m:math>
+<m:mover accent="true">
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:math> is approximately normally distributed.</item>
+<item>When the sample size is large, the standard deviation of <m:math>
+<m:mover accent="true">
+<m:mi>X</m:mi>
+<m:mo>–</m:mo>
+</m:mover>
+
+</m:math> is approximately the same as the standard deviation of <emphasis effect="italics">Χ</emphasis>.</item></list></problem>
+<solution id="fs-idp58516336">
+<list id="fs-idp58516592" list-type="enumerated" number-style="lower-alpha"><item>True. The mean of a sampling distribution of the means is approximately the mean of the data distribution.</item>
+<item>True. According to the Central Limit Theorem, the larger the sample, the closer the sampling distribution of the means becomes normal.</item>
+<item>The standard deviation of the sampling distribution of the means will decrease making it approximately the same as the standard deviation of X as the sample size increases.</item></list></solution>
+
+</exercise></section></content>
+</document>

@@ -1,0 +1,266 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>The Central Limit Theorem</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m64935</md:content-id>
+  <md:title>The Central Limit Theorem</md:title>
+  <md:abstract>Introduction to the key properties of the central limit theorem for the mean and proportions.</md:abstract>
+  <md:uuid>29938db8-a3e2-4839-998b-b837c6ee574b</md:uuid>
+</metadata>
+
+<content>
+    <para id="import-auto-idm1254879680">Another way to determine what the sampling distribution looks like is by using theory. The main theory that helps us understand the characteristics of the sampling distribution is called the <emphasis effect="bold">central limit theorem</emphasis>. </para>
+    <para id="import-auto-idm330715728">The central limit theorem is an incredibly useful and powerful theorem. The theorem tells us about the distribution of many different sampling distributions. But be careful! The central limit theorem cannot be applied always and only applies to sampling distributions. </para>
+    <section id="import-auto-idm927004576">
+      <title>The central limit theorem for the sampling distribution for sample means</title>
+      <para id="import-auto-idm926017808">The sampling distribution for the sample means comes from a parent population that is comprised of quantitative data. Random samples of size <emphasis effect="italics">n</emphasis> are taken from the parent population and the sample mean is calculated for each sample. What will the distribution of the sample means look like? That is, what is the shape of the distribution of sample means, where are the sample means centred, and what is the sampling variability? </para>
+      <note id="import-auto-idm922648704" type="Note">The following refers to the theoretical sampling distribution for the sample means. Further, when sample size is mentioned, it is referring to the size of the sample taken from the population. That is, it is not referring to how many different random samples have been taken. </note>
+      <section id="import-auto-idm331783088">
+        <title>Where are the sample means centred?</title>
+        <para id="import-auto-idm1129906544">As the sample means are estimating the population mean, it makes sense that the sample means are centred around the population mean. </para>
+        <para id="import-auto-idm327126688">In the previous section, we saw the right skewed parent population in <link target-id="import-auto-idm799171808" document="m64934">Figure 1</link>. The population mean of that parent population is 8.08. Notice that the empirical sampling distributions shown in <link target-id="eip-idm1140942880" document="m64934">Figures 5</link> and <link target-id="import-auto-idm824450560" document="m64934">
+6</link> are both centred around 8.08. </para><para id="import-auto-idm1286526448">In general, the mean of the theoretical sampling distribution for the sample means equals the population mean.</para>
+        <equation xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-424"><m:math>
+<m:apply><m:eq/><m:msub><m:mi>μ</m:mi> <m:apply><m:conjugate/><m:ci>x</m:ci></m:apply> </m:msub><m:msub><m:mi>μ</m:mi><m:mi>x</m:mi></m:msub></m:apply>
+</m:math>
+
+</equation><note xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm949365024" type="Note">The variable for the sample means is <m:math>
+<m:apply><m:conjugate/><m:ci>x</m:ci></m:apply>
+</m:math>.
+ That is why the subscript for the mean of the sample means (<m:math>
+<m:ci><m:msub><m:mi>μ</m:mi> <m:apply><m:conjugate/><m:ci>x</m:ci></m:apply>
+ </m:msub></m:ci>
+</m:math>
+) has changed.</note></section>
+      <section id="import-auto-idm1025721744">
+        <title>What is the sampling variability? (or what is the variation in the sampling distribution)</title><para id="import-auto-idm1142035552">Based on the law of large numbers, the sampling variability of the sample means will decrease as the sample size increases. As the sample size increases, the sample means will become better and better estimates of the population mean and, therefore, there will be less variability between them. That is, there will be more variability between the sample means for samples of size 2, then there will be for samples of size 30.</para>
+        <para xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm314022656">Just like we can measure variability for individual data values, we can also measure variability for sample means. We will use the standard deviation to measure the sampling variability. The standard deviation of the sampling distribution for sample means is called the <emphasis effect="bold">standard error of the sample means</emphasis>. It is found with the following formula<sup>
+<footnote id="import-auto-footnote-1"><para id="import-auto-idm312656480"> This formula assumes the population is infinite or very large. If this is not the case, then the formula is</para>
+<equation id="eip-idm491355168">
+<m:math>
+<m:apply>
+<m:eq/>
+<m:msub>
+<m:mi>σ</m:mi> 
+<m:apply><m:conjugate/><m:ci>x</m:ci></m:apply>
+</m:msub>
+
+<m:apply><m:times/><m:apply><m:divide/><m:ci>σ</m:ci><m:apply><m:root/><m:ci>n</m:ci></m:apply></m:apply><m:apply><m:root/><m:apply><m:divide/><m:apply><m:minus/><m:ci>N</m:ci><m:ci>n</m:ci></m:apply><m:apply><m:minus/><m:ci>N</m:ci><m:cn>1</m:cn></m:apply></m:apply></m:apply></m:apply>
+
+</m:apply>
+</m:math>
+
+</equation>
+<para id="import-auto-idm1149563200">As the population size (<emphasis effect="italics">N</emphasis>) increases, <m:math>
+<m:apply><m:divide/><m:apply><m:minus/><m:ci>N</m:ci><m:ci>n</m:ci></m:apply><m:apply><m:minus/><m:ci>N</m:ci><m:cn>1</m:cn></m:apply></m:apply>
+</m:math> approaches 1 and no longer affects the standard error. </para></footnote></sup>
+: </para><equation xmlns:m="http://www.w3.org/1998/Math/MathML" id="eip-412"><m:math>
+<m:apply>
+<m:eq/>
+<m:msub>
+<m:mi>σ</m:mi> 
+<m:apply><m:conjugate/><m:ci>x</m:ci></m:apply>
+</m:msub>
+<m:apply><m:divide/>
+<m:ci>σ</m:ci>
+<m:apply><m:root/><m:ci>n</m:ci></m:apply>
+</m:apply>
+</m:apply>
+</m:math>
+
+</equation></section>
+      <section id="import-auto-idm1036254240">
+        <title>What is the shape of the distribution?</title>
+        <para id="import-auto-idm1263453456">This is actually a really interesting question. </para>
+        <para id="import-auto-idm1291221360">Suppose the parent population looks like this <footnote id="eip-idm386754432"><para id="eip-idm322940416">The images/figures that follow were generated from David Lane's sampling distribution applet that is part of the OnlineStatBook project</para> <para id="eip-idm1156204432"> Online Statistics Education: A Multimedia Course of Study (http://onlinestatbook.com/). Project Leader: David M. Lane, Rice University. </para></footnote>: </para><para id="import-auto-idm1249630000"><figure id="import-auto-idm1265167872"><media id="import-auto-idm289485408" alt=""><image mime-type="image/png" src="../../media/Picture 40.png" height="164" width="471"/></media><caption> Parent population </caption></figure></para><para id="import-auto-idm913904640">What will the sampling distribution for sample means look like? </para>
+        <para id="import-auto-idm350002688">Here’s the answer: </para>
+        <list id="import-auto-idm1044424720" list-type="bulleted">
+          <item>If the parent population is normal, then the sampling distribution for sample means will be normal. Always. </item>
+          <item>As the sample size of the samples being taken from the parent population increases, the more normal the sampling distribution for sample means will become. </item>
+        </list>
+        <para id="import-auto-idm1150000608">Since the population in <link target-id="import-auto-idm1265167872" document="">Figure 1</link> is not normally distributed, then we would expect the sampling distribution will not be normal for smaller sample sizes, but will be normal for larger sample size.</para><para id="import-auto-idm309991136"><figure id="import-auto-idm896689248"><media id="import-auto-idm952336960" alt=""><image mime-type="image/png" src="../../media/Picture 41.png" height="135" width="420"/></media>
+<caption>Sampling distribution for <link target-id="import-auto-idm1265167872" document="">Figure 1</link> for samples of size 2</caption></figure></para><note id="eip-818" type="aside">For each of these empirical sampling distributions, 100,000 samples were taken of size <emphasis> n</emphasis>. Therefore, we can be very confident that the empirical sampling distributions are good representations of the theoretical sampling distributions.</note><figure id="import-auto-idm902371408"><media id="import-auto-idm333030512" alt="">
+              <image mime-type="image/png" src="../../media/Picture 42.png" height="133" width="401"/>
+            </media>
+                    
+          
+<caption>Sampling distribution for <link target-id="import-auto-idm1265167872" document="">Figure 1</link> for samples of size 5 </caption></figure><figure id="import-auto-idm900555952"><media id="import-auto-idm1147592336" alt="">
+                <image mime-type="image/png" src="../../media/Picture 43.png" height="138" width="413"/>
+              </media>
+
+            <caption>Sampling distribution for <link target-id="import-auto-idm1265167872" document="">Figure 1</link> for samples of size 10 </caption></figure><figure id="import-auto-idm338632848"><media id="import-auto-idm1033517312" alt="">
+                  <image mime-type="image/png" src="../../media/Picture 44.png" height="139" width="425"/>
+                </media>
+              
+              
+<caption>Sampling distribution for <link target-id="import-auto-idm1265167872" document="">Figure 1</link> for samples of size 16</caption></figure><figure id="import-auto-idm913146464"><media id="import-auto-idm1118010928" alt="">
+                      <image mime-type="image/png" src="../../media/Picture 45.png" height="130" width="425"/>
+                    </media>
+                  
+                  
+              
+        <caption>Sampling distribution for <link target-id="import-auto-idm1265167872" document="">Figure 1</link> for samples of size 20</caption></figure><para id="import-auto-idm295830640"><figure id="import-auto-idm351775776"><media id="import-auto-idm1035050320" alt=""><image mime-type="image/png" src="../../media/Picture 46.png" height="130" width="425"/></media><caption>Sampling distribution for <link target-id="import-auto-idm1265167872" document="">Figure 1</link> for samples of size 25 </caption></figure></para>
+      
+        <para id="import-auto-idm324680992"><link target-id="import-auto-idm1265167872" document="">Figure 1</link> (the parent population) is not even close to being normal, but notice that as the sample size increases, the sampling distribution for sample means gets closer and closer to being normally distributed!</para><para id="import-auto-idm1034702976">In general, the closer the population is to being normally distributed, the “faster” the sampling distribution gets closer to normal. Here “faster” means for a smaller sample size. </para>
+        <note id="eip-315" type="important">The central limit theorem states that regardless of the shape of the population, if the sample size is greater than 30, the sampling distribution will be approximately normal. </note><table xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm340087840" summary="Summary of measures">
+<tgroup cols="4"><colspec colnum="1" colname="c1"/>
+            <colspec colnum="2" colname="c2"/>
+            <colspec colnum="3" colname="c3"/>
+            <colspec colnum="4" colname="c4"/>
+            <thead>
+              <row>
+                <entry>
+                  
+                    <emphasis effect="bold">Measure</emphasis>
+                 
+                </entry>
+                <entry>
+                 
+                    <emphasis effect="bold">Population</emphasis>
+                  
+                </entry>
+                <entry>
+                  
+                    <emphasis effect="bold">Sample</emphasis>
+                  
+                </entry>
+                <entry>
+                 
+                    <emphasis effect="bold">Sampling distribution for the sample mean</emphasis>
+                  
+                </entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>Mean</entry>
+                <entry>
+                  <m:math>
+<m:ci><m:msub><m:mi>μ</m:mi><m:mi>x</m:mi></m:msub></m:ci>
+</m:math>
+                </entry>
+                <entry>
+<m:math>
+<m:apply><m:conjugate/><m:ci>x</m:ci></m:apply>
+</m:math>                 
+</entry>
+                <entry>
+                  <m:math>
+<m:apply><m:eq/>
+<m:msub><m:mi>μ</m:mi> <m:apply><m:conjugate/><m:ci>x</m:ci></m:apply> </m:msub>
+<m:msub><m:mi>μ</m:mi><m:mi>x</m:mi></m:msub></m:apply>
+</m:math>
+                </entry>
+              </row>
+              <row>
+                <entry>Standard deviation</entry>
+                <entry>
+                <m:math>
+<m:ci><m:msub><m:mi>σ</m:mi><m:mi>x</m:mi></m:msub></m:ci>
+</m:math>
+                </entry>
+                <entry>
+                  <m:math>
+<m:ci><m:msub><m:mi>s</m:mi><m:mi>x</m:mi></m:msub></m:ci>
+</m:math>
+                </entry>
+                <entry>
+                 <m:math>
+<m:apply>
+<m:eq/>
+<m:msub>
+<m:mi>σ</m:mi> 
+<m:apply><m:conjugate/><m:ci>x</m:ci></m:apply>
+</m:msub>
+<m:apply><m:divide/>
+<m:ci>σ</m:ci>
+<m:apply><m:root/><m:ci>n</m:ci></m:apply>
+</m:apply>
+</m:apply>
+</m:math> (standard error)
+
+                </entry>
+              </row>
+            </tbody>
+          
+
+
+
+
+
+</tgroup><caption>Summary of measures</caption>
+</table></section>
+    </section>
+    <section id="import-auto-idm1043418160">
+      <title>The central limit theorem for the sampling distribution for sample proportions</title>
+      <para id="import-auto-idm908941264">The sampling distribution for the sample proportions comes from a parent population that satisfies the criteria of the binomial distribution. Random samples of size <emphasis effect="italics">n</emphasis> are taken from the parent population and the sample proportion is calculated for each sample. What will the distribution of the sample means look like? That is, what is the shape of the distribution of sample proportions, where are the sample proportions centred, and what is the sampling variability?</para>
+      <para id="import-auto-idm322754240">The sampling distribution for sample proportions has similar characteristics as the sampling distribution for the sample means.  </para>
+      <section id="import-auto-idm932384928">
+        <title>Where are the sample proportions centred?</title>
+        <para id="import-auto-idm307708432">They are centred around the population proportion.</para>
+      </section>
+      <section id="import-auto-idm1121541296">
+        <title>What is the sampling variability?</title>
+        <para id="import-auto-idm904426736">It decreases as the sample size increases. </para>
+      </section>
+      <section xmlns:m="http://www.w3.org/1998/Math/MathML" id="import-auto-idm336035984"><title>What is the shape? </title><para id="import-auto-idm1049881712">The shape of sampling distributions of the sample proportions also becomes normal. Unlike for sample means though, the normality is not based on sample size, but is based on the number of successes (<m:math>
+<m:apply><m:times/><m:ci>n</m:ci><m:pi/></m:apply>
+</m:math>) and failures (<m:math>
+<m:apply><m:times/><m:ci>n</m:ci><m:apply><m:minus/><m:cn>1</m:cn><m:pi/></m:apply></m:apply>
+</m:math>).</para>
+        <para id="import-auto-idm290270704">To illustrate, here are the empirical sampling distributions for proportions for various population proportions. The sample size is 100 in each case and the number of samples taken is 10,000. </para>
+       <figure id="eip-idm343527280"><media id="import-auto-idm1036541408" alt="Drawing">
+          <image mime-type="image/png" src="../../media/Picture55.png" width="600"/>
+        </media> <caption>Empirical sampling distributions for sample proportions  </caption></figure>
+        <para id="import-auto-idm907506400">In <link target-id="eip-idm343527280 " document="">Figure 8</link>
+a, n =100 and <m:math>
+<m:pi/>
+</m:math> = 0.01. Therefore, the number of successes is 1 and the number of failures is 99. The sampling distribution is skewed to the right. </para><para id="import-auto-idm1077057488">In <link target-id="eip-idm343527280 " document="">Figure 8</link>
+b, n =100 and <m:math>
+<m:pi/>
+</m:math> = 0.20. Therefore, the number of successes is 20 and the number of failures is 80. The sampling distribution is approximately normal.</para><para id="import-auto-idm340077920">In <link target-id="eip-idm343527280 " document="">Figure 8</link>
+c, n =100 and <m:math>
+<m:pi/>
+</m:math> = 0.60. Therefore, the number of successes is 60 and the number of failures is 40. The sampling distribution is approximately normal.</para><para id="import-auto-idm1079357952">In <link target-id="eip-idm343527280 " document="">Figure 8</link>
+d, n =100 and <m:math>
+<m:pi/>
+</m:math> = 0.96. Therefore, the number of successes is 96 and the number of failures is 4. The sampling distribution is skewed to the left.  </para><note id="eip-684" type="important">In general, the shape of the sampling distribution for sample proportions is approximately normal if the number of successes and the number failures are both at least 5. </note><para id="import-auto-idm948638416">If the sampling distribution for sample proportions is normal, we can find probabilities for the distribution using two methods. The first method is using the binomial distribution. The second method is the normal distribution. This might seem a bit strange as the binomial distribution is for discrete random variables and the normal distribution is for continuous random variables. In reality, we use the normal distribution to approximate probabilities for the sampling distribution for sample proportions. This is called the <emphasis effect="bold">normal approximation to the binomial distribution</emphasis>. To get the exact probability, one would need to use the binomial distribution. But this can be cumbersome when the sample sizes are very large (e.g. 1000). Therefore, using the normal distribution can be beneficial, especially because it gives very accurate approximations. In example 6.4 below we will investigate this further. </para>
+        <para id="import-auto-idm1263634544">Further when we begin to do inferential statistics, we won’t know the population proportion (otherwise inferential statistics wouldn’t be necessary). Since we won’t know <m:math>
+<m:pi/>
+</m:math> it will hard to use the binomial distribution. Therefore, we use the normal approximation to the binomial distribution instead. </para>
+        <para id="import-auto-idm1031622944">If we use a normal approximation to the binomial distribution, we need to know the mean and standard deviation of the sampling distribution. </para>
+        <para id="import-auto-idm936028064">The mean of the sampling distribution for sample proportions is the population proportion. </para>
+        
+        <equation id="eip-393"><m:math>
+<m:apply>
+<m:eq/>
+<m:msub>
+<m:mi>μ</m:mi>
+<m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+  </m:mrow>
+  <m:mo> ^</m:mo>
+</m:mover>
+</m:msub>
+<m:pi/>
+</m:apply>
+</m:math>
+</equation><para id="import-auto-idm342624912">The standard deviation of the sampling distribution for sample proportions (or the <emphasis effect="bold"> standard error of sample proportions</emphasis>) is found using the following formula:</para><equation id="eip-626"><m:math>
+<m:apply>
+<m:eq/>
+<m:msub>
+<m:mi>σ</m:mi>
+<m:mover accent="true">
+  <m:mrow>
+    <m:mi> p </m:mi>
+  </m:mrow>
+  <m:mo> ^</m:mo>
+</m:mover>
+</m:msub>
+
+<m:apply><m:root/><m:apply><m:divide/><m:apply><m:times/><m:pi/><m:apply><m:minus/><m:cn>1</m:cn><m:pi/></m:apply></m:apply><m:ci>n</m:ci></m:apply></m:apply>
+
+</m:apply>
+</m:math></equation></section></section>
+  </content>
+</document>
